@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Normas</title>
+    <script>import Chart from 'chart.js/auto';</script>
+</head>
+<body>
+
+<div class="container">
+    <div>
+        <h1>Auditoria ISO</h1>
+        <p>Bem-vindo ao Sistema de Normas para Auditoria ISO. Este sistema foi desenvolvido para auxiliar na gestão e conformidade com as normas ISO, garantindo que sua organização esteja em conformidade com os padrões internacionais de qualidade e eficiência.</p>
+
+        <h2>Recursos Disponíveis</h2>
+        <button onclick="abrirPagina('iso27001')">
+            Formulário ISO 27001
+        </button>
+
+        <button onclick="abrirPagina('iso27701')">
+            Formulário ISO 27701
+        </button>
+
+        <h3>Historico de Empresas</h3>
+
+        <div class="cadastro-box">
+
+            <input
+                type="text"
+                id="novaEmpresa"
+                placeholder="Nome da Empresa"
+            >
+
+            <button onclick="cadastrarEmpresa()">
+                Cadastrar Empresa
+            </button>
+
+        </div>
+
+        <select id="empresaselect">
+            <option value+"">
+                Nenhuma empresa cadastrada
+            </option>
+        </select>
+
+        <button onclick="abrirHistorico()">
+            Ver Histórico
+        </button>
+    </div>
+
+    <div id="iso27001" class="hidden">
+
+    <div class="card">
+        <h1> ISO 27001</h1>
+        <form id="form27001"></form>
+    </div>
+
+    </div>
+
+    <div id="iso27701" class="hidden">
+
+    <div class="card">
+        <h1> ISO 27701</h1>
+        <form id="form27701"></form>
+
+    </div>
+
+    </div>
+
+    <div id="historico" class="hidden">
+        <h1>Histórico de Empresas</h1>
+        <table id="tabelaHistorico">
+            <thead>
+                <tr>
+                    <th>Empresa</th>
+                    <th>Data de Cadastro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- As linhas do histórico serão adicionadas aqui dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="graficos" class="hidden">
+        <div class="card">
+        <h1>Gráficos de Conformidade</h1>
+        <canvas id="graficoConformidade"></canvas>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
