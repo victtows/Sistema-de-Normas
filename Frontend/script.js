@@ -10,5 +10,26 @@ function abrirPagina(pagina){
     }
 }
 
-
+function cadastrarEmpresa(){
+    $.ajax({
+            url: "./Backend/formulario.php",
+            type: "post",
+            data: {
+                tipo_acao: "cadastro",
+                filtros: {
+                    cnpj: $("#cadNomeInv").val(),
+                    nomeEmpresa: $("#cadTipoInv").val(),
+                }
+            },
+            success: function (result) {
+                console.log("EMppresa salvou");
+                Limpar();
+                alert('Empresa salvouu');
+            },
+            error: function (data) {
+                console.log(data);
+                alert('OCorreu um erro eu acho');
+            }
+        });
+}
 
