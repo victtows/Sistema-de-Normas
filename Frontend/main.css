@@ -9,18 +9,41 @@ body {
     color: var(--cor_3);
 }
 
+h1 {
+    margin: 0; font-size: 4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--cor_3);
+}
+
+
 header {
-    width: 100%; height: 10vh; line-height: 10vh;
+    width: 100%; height: 8rem; line-height: 8rem;
     background-color: var(--cor_1);
     text-align: center; justify-content: center;
-    color: var(--cor_2);
 }
-h1 {
-    margin: 0;
+
+header h1 {
+    color: var(--cor_2);
 }
 
 button {
     background-color: var(--cor_1);
     border: 0; padding: 1rem 0.5rem;
     border-radius: 10px; box-shadow: inset -2px  -2px var(--cor_1_complemento);
+    color: var(--cor_2); font-weight: bolder; 
+    max-width: 30rem;
 }
+
+.introducao {
+    padding: 1rem 3rem;
+    text-align: center;
+}
+
+.recursos {
+    margin: 0 1rem;
+    display: flex; gap: 1rem;
+    flex-direction: column;
+}
+
