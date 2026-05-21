@@ -1,0 +1,6 @@
+:root {
+    --cor1: red;
+}
+body {
+    background-color: var(--cor1);
+}
