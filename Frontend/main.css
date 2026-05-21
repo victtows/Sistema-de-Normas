@@ -1,6 +1,26 @@
 :root {
-    --cor1: red;
+    --cor_1: #f8d942;
+    --cor_2: #edf8fb;
+    --cor_3: #0e0910;
+    --cor_1_complemento: #e8b534;
 }
 body {
-    background-color: var(--cor1);
+    margin: 0;
+    color: var(--cor_3);
+}
+
+header {
+    width: 100%; height: 10vh; line-height: 10vh;
+    background-color: var(--cor_1);
+    text-align: center; justify-content: center;
+    color: var(--cor_2);
+}
+h1 {
+    margin: 0;
+}
+
+button {
+    background-color: var(--cor_1);
+    border: 0; padding: 1rem 0.5rem;
+    border-radius: 10px; box-shadow: inset -2px  -2px var(--cor_1_complemento);
 }
