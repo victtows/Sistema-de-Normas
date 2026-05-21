@@ -6,7 +6,9 @@ function abrirPagina(pagina){
     } else if(pagina === 'historico'){
         window.location.href = "historico.html";
     } else {
-        alert("Página não encontrada!");
+        alert("Página não encontrada");
     }
 }
+
+
 
