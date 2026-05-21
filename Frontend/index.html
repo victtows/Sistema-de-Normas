@@ -4,54 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Normas</title>
-    <script>import Chart from 'chart.js/auto';</script>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+    <div class="container">
+        <div>
+            <h1>Auditoria ISO</h1>
+            <p>Bem-vindo ao Sistema de Normas para Auditoria ISO. Este sistema foi desenvolvido para auxiliar na gestão e conformidade com as normas ISO, garantindo que sua organização esteja em conformidade com os padrões internacionais de qualidade e eficiência.</p>
 
-<div class="container">
-    <div>
-        <h1>Auditoria ISO</h1>
-        <p>Bem-vindo ao Sistema de Normas para Auditoria ISO. Este sistema foi desenvolvido para auxiliar na gestão e conformidade com as normas ISO, garantindo que sua organização esteja em conformidade com os padrões internacionais de qualidade e eficiência.</p>
-
-        <h2>Recursos Disponíveis</h2>
-        <button onclick="abrirPagina('iso27001')">
-            Formulário ISO 27001
-        </button>
-
-        <button onclick="abrirPagina('iso27701')">
-            Formulário ISO 27701
-        </button>
-
-        <h3>Historico de Empresas</h3>
-
-        <div class="cadastro-box">
-
-            <input
-                type="text"
-                id="novaEmpresa"
-                placeholder="Nome da Empresa"
-            >
-
-            <button onclick="cadastrarEmpresa()">
-                Cadastrar Empresa
+            <h2>Recursos Disponíveis</h2>
+            <button onclick="abrirPagina('iso27001')">
+                Formulário ISO 27001
             </button>
 
+            <button onclick="abrirPagina('iso27701')">
+                Formulário ISO 27701
+            </button>
+
+            <h3>Historico de Empresas</h3>
+
+            <div class="cadastro-box">
+
+                <input
+                    type="text"
+                    id="novaEmpresa"
+                    placeholder="Nome da Empresa"
+                >
+
+                <button onclick="cadastrarEmpresa()">
+                    Cadastrar Empresa
+                </button>
+
+            </div>
+
+            <select id="empresaselect">
+                <option value+"">
+                    Nenhuma empresa cadastrada
+                </option>
+            </select>
+
+            <button onclick="abrirHistorico()">
+                Ver Histórico
+            </button>
         </div>
 
-        <select id="empresaselect">
-            <option value+"">
-                Nenhuma empresa cadastrada
-            </option>
-        </select>
-
-        <button onclick="abrirHistorico()">
-            Ver Histórico
-        </button>
     </div>
 
-</div>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
+    <script>import Chart from 'chart.js/auto';</script>
 </body>
 </html>
