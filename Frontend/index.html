@@ -1,66 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Normas</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <title>Auditoria ISO</title>
+
+    <link rel="stylesheet" href="main.css">
+
 </head>
+
 <body>
+
     <header>
-        <h1>Auditoria ISO</h1>
+
+        <div class="logo">
+
+            <img src="/assets/img/logo.png" alt="Logo" class="logo-img">
+            <span>Auditoria ISO</span>
+        
+        </div>
+
     </header>
+
     <div class="container">
+
         <section class="introducao">
-            <p>Bem-vindo ao Sistema de Normas para Auditoria ISO.</p>
-            <p>Este sistema foi desenvolvido para auxiliar na gestão e conformidade com as normas ISO, garantindo que sua organização esteja em conformidade com os padrões internacionais de qualidade e eficiência.</p>
-        </section>
-        <div>
-            <section class="recursos">
-            <h2>Recursos Disponíveis</h2>
-     
-                <button id="27001" onclick="abrirPagina('iso27001')">
-                    Formulário ISO 27001
-                </button>
 
-                <button id="27701" onclick="abrirPagina('iso27701')">
-                    Formulário ISO 27701
-                </button>
-     
+            <h1>Auditoria ISO</h1>
+
+            <p>
+                Sistema para gestão e conformidade
+                com normas ISO.
+            </p>
+
         </section>
 
-        <section class="historico">           
-            <h3>Historico de Empresas</h3>
+        <div class="recursos">
 
-            <div class="cadastro-box">
+            <section class="card">
 
-                <input
-                    type="text"
-                    id="novaEmpresa"
-                    placeholder="Nome da Empresa"
-                >
+                <h2>Normas</h2>
 
-                <button onclick="cadastrarEmpresa()">
-                    Cadastrar Empresa
+                <button
+                    class="norma-btn iso27001"
+                    onclick="abrirPagina('iso27001')">
+
+                    <h3>ISO 27001</h3>
+
+                    <p>
+                        Gestão de Segurança da Informação
+                    </p>
+
                 </button>
 
-            </div>
+                <button
+                    class="norma-btn iso27701"
+                    onclick="abrirPagina('iso27701')">
 
-            <select id="empresaselect">
-                <option value+"">
-                    Nenhuma empresa cadastrada
-                </option>
-            </select>
+                    <h3>ISO 27701</h3>
 
-            <button onclick="abrirPagina('historico')">
-                Ver Histórico
-            </button>
-        </section>
+                    <p>
+                        Gestão de Privacidade da Informação
+                    </p>
+
+                </button>
+
+            </section>
+
+            <section class="card">
+
+                <h2>Empresas</h2>
+
+                <p>
+                    Cadastre uma empresa
+                </p>
+
+                <div class="cadastro-box">
+
+                    <input
+                        type="text"
+                        id="novaEmpresa"
+                        placeholder="Nome da Empresa"
+                    >
+
+                    <button onclick="cadastrarEmpresa()">
+                        Cadastrar Empresa
+                    </button>
+
+                </div>
+
+                <p style="margin-top:25px;">
+                    Empresas cadastradas
+                </p>
+
+                <select id="empresaSelect">
+
+                    <option value="">
+                        Nenhuma empresa cadastrada
+                    </option>
+
+                </select>
+
+                <button onclick="abrirPagina('historico')">
+
+                    Ver Histórico
+
+                </button>
+
+            </section>
 
         </div>
+
     </div>
 
     <script src="script.js"></script>
     <script>import Chart from 'chart.js/auto';</script>
+
 </body>
 </html>
