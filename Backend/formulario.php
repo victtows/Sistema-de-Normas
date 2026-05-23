@@ -3,13 +3,11 @@
 
     if(isset($_POST["tipo_acao"]) && !empty($_POST["tipo_acao"])){
         $tipo_acao = $_POST["tipo_acao"];
-        $filtros = $_POST["filtros"];
 
         if($tipo_acao === "cadastro"){
-            var_dump("Estou aqui");
+            $filtros = $_POST["filtros"];
             $CNPJ = $filtros['cnpj'];
             $nomeEmpresa = $filtros['nomeEmpresa'];
-            var_dump($CNPJ, $nomeEmpresa);
 
             $sql = "INSERT INTO Empresa (CNPJ, nomeEmpresa)
             VALUES ('$CNPJ', '$nomeEmpresa');";
@@ -20,8 +18,18 @@
                 echo "Erro: " . $sql . "<br>" . mysqli_error($conexao);
             }
 
-        } elseif($tipo_acao === "leitura"){
-
+        } elseif($tipo_acao === "select"){
+            $sql = "SELECT * FROM empresa";
+            $resultado = mysqli_query($conexao, $sql);
+            if($resultado){
+                $empresas = [];
+                while($linha = mysqli_fetch_assoc($resultado)){
+                    $empresas[] = $linha;
+                }
+                echo json_encode($empresas);
+            } else {
+                echo "Erro: " . mysqli_error($conexao);
+            }
         }
 
     }

@@ -11,7 +11,6 @@ function abrirPagina(pagina){
 }
 
 function cadastrarEmpresa(){
-    console.log("teste")
     $.ajax({
             url: "../Backend/formulario.php",
             type: "post",
@@ -24,7 +23,6 @@ function cadastrarEmpresa(){
             },
             success: function (result) {
                 console.log("EMppresa salvou");
-                Limpar();
                 alert('Empresa salvouu');
             },
             error: function (data) {
@@ -34,3 +32,25 @@ function cadastrarEmpresa(){
         });
 }
 
+function selectEmpresa() {
+    console.log("teste2");
+
+    $.ajax({
+        url: "../Backend/formulario.php",
+        type: "POST",
+        data: {
+            tipo_acao: "select"
+        },
+        dataType: "json",
+        
+        success: function(result) {
+            console.log(result);
+
+
+        },
+        error: function(xhr) {
+            console.log(xhr.responseText);
+            alert("Erro ao pesquisar empresas");
+        }
+    });
+}
