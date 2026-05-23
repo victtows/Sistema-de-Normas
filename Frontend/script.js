@@ -22,8 +22,10 @@ function cadastrarEmpresa(){
                 }
             },
             success: function (result) {
-                console.log("EMppresa salvou");
+                console.log("Empresa salvou");
                 alert('Empresa salvouu');
+                limparSelect()
+                selectEmpresa() 
             },
             error: function (data) {
                 console.log(data);
@@ -33,6 +35,7 @@ function cadastrarEmpresa(){
 }
 
 function selectEmpresa() {
+
     console.log("teste2");
 
     $.ajax({
@@ -46,6 +49,10 @@ function selectEmpresa() {
         success: function(result) {
             console.log(result);
 
+            result.forEach((element) => {
+                document.getElementById('empresaSelect').innerHTML += '\n\n<option value="' + element['idEmpresa'] + '">\n' + element['nomeEmpresa'] + '\n</option>\n\n'
+            });
+
 
         },
         error: function(xhr) {
@@ -53,4 +60,9 @@ function selectEmpresa() {
             alert("Erro ao pesquisar empresas");
         }
     });
+}
+
+
+function limparSelect() {
+    document.getElementById('empresaSelect').options.length = 0;
 }
