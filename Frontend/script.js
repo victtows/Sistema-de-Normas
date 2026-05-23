@@ -59,6 +59,24 @@ function selectEmpresa() {
     });
 }
 
+function selectNorma() {
+    $.ajax({
+        url: "../Backend/formulario.php",
+        type: "POST",
+        data: {
+            tipo_acao: "select_norma"
+        },
+        dataType: "json",
+        
+        success: function(result) {
+            console.log(result);
+        },
+        error: function(xhr) {
+            console.log(xhr.responseText);
+            alert("Erro ao pesquisar os Controles");
+        }
+    });
+}
 
 function limparSelect() {
     document.getElementById('empresaSelect').options.length = 0;
