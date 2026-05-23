@@ -18,8 +18,21 @@
                 echo "Erro: " . $sql . "<br>" . mysqli_error($conexao);
             }
 
-        } elseif($tipo_acao === "select"){
+        } elseif($tipo_acao === "select_empresa"){
             $sql = "SELECT * FROM empresa";
+            $resultado = mysqli_query($conexao, $sql);
+            if($resultado){
+                $empresas = [];
+                while($linha = mysqli_fetch_assoc($resultado)){
+                    $empresas[] = $linha;
+                }
+                echo json_encode($empresas);
+            } else {
+                echo "Erro: " . mysqli_error($conexao);
+            }
+
+        } elseif($tipo_acao === "select_norma"){
+            $sql = "SELECT * FROM controle";
             $resultado = mysqli_query($conexao, $sql);
             if($resultado){
                 $empresas = [];

@@ -35,14 +35,11 @@ function cadastrarEmpresa(){
 }
 
 function selectEmpresa() {
-
-    console.log("teste2");
-
     $.ajax({
         url: "../Backend/formulario.php",
         type: "POST",
         data: {
-            tipo_acao: "select"
+            tipo_acao: "select_empresa"
         },
         dataType: "json",
         
