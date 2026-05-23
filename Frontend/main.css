@@ -488,26 +488,26 @@ canvas{
 
 }
 
-.conforme .custom-radio{
+.sim .custom-radio{
     border-color:#22c55e;
 }
 
-.conforme input:checked + .custom-radio::after{
+.sim input:checked + .custom-radio::after{
     background:#22c55e;
 }
 
-.parcial .custom-radio{
+.não .custom-radio{
     border-color:#ef4444;
 }
 
-.parcial input:checked + .custom-radio::after{
+.não input:checked + .custom-radio::after{
     background:#ef4444;
 }
 
-.nao .custom-radio{
+.NA .custom-radio{
     border-color:#f59e0b;
 }
 
-.nao input:checked + .custom-radio::after{
+.NA input:checked + .custom-radio::after{
     background:#f59e0b;
 }
