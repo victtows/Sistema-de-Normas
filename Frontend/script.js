@@ -11,14 +11,15 @@ function abrirPagina(pagina){
 }
 
 function cadastrarEmpresa(){
+    console.log("teste")
     $.ajax({
-            url: "./Backend/formulario.php",
+            url: "../Backend/formulario.php",
             type: "post",
             data: {
                 tipo_acao: "cadastro",
                 filtros: {
-                    cnpj: $("#cadNomeInv").val(),
-                    nomeEmpresa: $("#cadTipoInv").val(),
+                    cnpj: $("#cnpjEmpresa").val(),
+                    nomeEmpresa: $("#novaEmpresa").val(), 
                 }
             },
             success: function (result) {
