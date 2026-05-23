@@ -11,6 +11,11 @@
     <title>Controles ISO 27001</title>
 </head>
 <body>
+    <h1>ISO 27001</h1>
+    <div class="breadcrumb">
+        <a href="index.html">Início</a>
+    </div>
+
     <div class="container">
         <section class="card formulario">
             <div>
@@ -23,17 +28,60 @@
                     </option>
                 </select>
             </div>
-            <div>
-                <p>
-                    Selecione a empresa
-                </p>
-                <select id="empresaSelect">
-                    <option value="">
-                        Nenhuma empresa selecionada
-                    </option>
-                </select>
-            </div>
         </section>
-    </div>
+
+        <div class="progress-container">
+
+            <div class="progress-info">
+        
+                <span id="progressText">
+                    0 / 0 respondidas
+                </span>
+        
+            </div>
+        
+            <div class="progress-bar">
+        
+                <div class="progress-fill" id="progressFill"></div>
+        
+            </div>
+        
+        </div>
+
+        <section class="question-card">Você possui um sistema de gestão de segurança da informação implementado e em conformidade com a norma ISO 27001?
+            
+                <div class="options">
+            
+                    <label class="radio-option conforme">
+            
+                        <input type="radio" name="q1">
+            
+                        <span class="custom-radio"></span>
+            
+                        <span>Sim</span>
+            
+                    </label>
+            
+                    <label class="radio-option parcial">
+            
+                        <input type="radio" name="q1">
+            
+                        <span class="custom-radio"></span>
+            
+                        <span>Não</span>
+            
+                    </label>
+            
+                    <label class="radio-option nao">
+            
+                        <input type="radio" name="q1">
+            
+                        <span class="custom-radio"></span>
+            
+                        <span>Não Aplicavel</span>
+            
+                    </label>
+            
+                </div>
 </body>
 </html>
