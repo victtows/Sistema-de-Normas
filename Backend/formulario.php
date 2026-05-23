@@ -6,13 +6,12 @@
         $filtros = $_POST["filtros"];
 
         if($tipo_acao === "cadastro"){
-            $input = trim($_POST["input"]);
 
             $CNPJ = $filtros['cnpj'];
             $nomeEmpresa = $filtros['nomeEmpresa'];
 
             $sql = "INSERT INTO Empresa (CNPJ, nomeEmpresa)
-            VALUES ('$CNPJ', '$nomeEmpresa');";
+            VALUES ($CNPJ, '$nomeEmpresa');";
 
             if (mysqli_query($conexao, $sql)) {
                 echo "Novo registro criado com sucesso";
@@ -21,7 +20,7 @@
             }
 
         } elseif($tipo_acao === "leitura"){
-            $input = trim($_POST["input"]);
+
         }
 
     }
