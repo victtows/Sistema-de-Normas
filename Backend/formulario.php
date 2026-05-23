@@ -6,12 +6,13 @@
         $filtros = $_POST["filtros"];
 
         if($tipo_acao === "cadastro"){
-
+            var_dump("Estou aqui");
             $CNPJ = $filtros['cnpj'];
             $nomeEmpresa = $filtros['nomeEmpresa'];
+            var_dump($CNPJ, $nomeEmpresa);
 
             $sql = "INSERT INTO Empresa (CNPJ, nomeEmpresa)
-            VALUES ($CNPJ, '$nomeEmpresa');";
+            VALUES ('$CNPJ', '$nomeEmpresa');";
 
             if (mysqli_query($conexao, $sql)) {
                 echo "Novo registro criado com sucesso";
