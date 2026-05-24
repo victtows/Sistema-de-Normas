@@ -559,3 +559,13 @@ canvas{
     color: #f8d942; 
     margin: 0;
 }
+
+.question {
+    margin: 1rem 0;
+}
+
+
+
+.tab {
+    display: none;
+}

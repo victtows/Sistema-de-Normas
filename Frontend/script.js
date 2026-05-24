@@ -70,6 +70,13 @@ function selectNorma() {
         
         success: function(result) {
             console.log(result);
+            result.forEach((element) => {
+
+                
+                document.getElementById('empresaSelect').innerHTML += '\n\n<option value="' + element['idEmpresa'] + '">\n' + element['nomeEmpresa'] + '\n</option>\n\n'
+            });
+
+
         },
         error: function(xhr) {
             console.log(xhr.responseText);
@@ -80,4 +87,61 @@ function selectNorma() {
 
 function limparSelect() {
     document.getElementById('empresaSelect').options.length = 0;
+}
+
+
+/// CÓDIGO DAS TABS DO FORMULARIO ///
+
+var currentTab = 0;
+showTab(currentTab)
+function showTab(n) {
+    var x = document.getElementsByClassName('tab');
+    console.log(x)
+    x[n].style.display = "block";
+    
+    if (n == 0) {
+        document.getElementById("prevBtn").style.display = "none"
+    } else {
+        document.getElementById("prevBtn").style.display = "inline"
+    }
+
+    if (n == (x.length - 1)) {
+        document.getElementById("nextBtn").style.display = "none"
+    } else {
+        document.getElementById("nextBtn").style.display = "inline"
+    }
+}
+
+function nextPrev(n) {
+    var x = document.getElementsByClassName("tab");
+    
+    if (n == 1 && !validateForm()) return false;
+
+    x[currentTab].style.display = "none";
+    currentTab = currentTab + n;
+
+    if (currentTab >= x.length) {
+        document.getElementById("formulario").submit()
+        return false;
+    }
+
+    showTab(currentTab);
+}
+
+function validateForm() {
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+
+  for (i = 0; i < y.length; i++) {
+
+    if (y[i].value == "") {
+
+      y[i].className += " invalid";
+
+      valid = false;
+    }
+  }
+
+  return valid; 
 }

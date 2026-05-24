@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="./script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,41 +44,132 @@
             </div>
         
         </div>
-
-        <section class="question-card">Você possui um sistema de gestão de segurança da informação implementado e em conformidade com a norma ISO 27001?
+        <form id="formulario" class="question-card">
+            <div class="tab">
+                <section class="question">Você possui um sistema de gestão de segurança da informação implementado e em conformidade com a norma ISO 27001?
             
-                <div class="options">
+                    <div class="options">
+                        
+                        <label class="radio-option sim">
             
-                    <label class="radio-option sim">
+                            <input type="radio" name="q1">
             
-                        <input type="radio" name="q1">
+                            <span class="custom-radio"></span>
             
-                        <span class="custom-radio"></span>
+                            <span>Conforme</span>
             
-                        <span>Sim</span>
+                        </label>
             
-                    </label>
+                        <label class="radio-option não">
             
-                    <label class="radio-option não">
+                            <input type="radio" name="q1">
             
-                        <input type="radio" name="q1">
+                            <span class="custom-radio"></span>
             
-                        <span class="custom-radio"></span>
+                            <span>Não Conforme</span>
             
-                        <span>Não</span>
+                        </label>
             
-                    </label>
+                        <label class="radio-option NA">
             
-                    <label class="radio-option NA">
+                            <input type="radio" name="q1">
             
-                        <input type="radio" name="q1">
+                            <span class="custom-radio"></span>
             
-                        <span class="custom-radio"></span>
+                            <span>Não Aplicavel</span>
             
-                        <span>Não Aplicavel</span>
+                        </label>
             
-                    </label>
+                    </div>
+                </section>
+                <section class="question">Você possui um sistema de gestão de segurança da informação implementado e em conformidade com a norma ISO 27001?
             
+                    <div class="options">
+            
+                        <label class="radio-option sim">
+            
+                            <input type="radio" name="q1">
+            
+                            <span class="custom-radio"></span>
+            
+                            <span>Conforme</span>
+            
+                        </label>
+            
+                        <label class="radio-option não">
+            
+                            <input type="radio" name="q1">
+            
+                            <span class="custom-radio"></span>
+            
+                            <span>Não Conforme</span>
+            
+                        </label>
+            
+                        <label class="radio-option NA">
+            
+                            <input type="radio" name="q1">
+            
+                            <span class="custom-radio"></span>
+            
+                            <span>Não Aplicavel</span>
+            
+                        </label>
+            
+                        </div>
+                </section>
+            </div>
+            <div class="tab">
+                <section class="question">afsasfsafasfasfVocê possui um sistema de gestão de segurança da informação implementado e em conformidade com a norma ISO 27001?
+            
+                    <div class="options">
+                        
+                        <label class="radio-option sim">
+            
+                            <input type="radio" name="q1">
+            
+                            <span class="custom-radio"></span>
+            
+                            <span>Conforme</span>
+            
+                        </label>
+            
+                        <label class="radio-option não">
+            
+                            <input type="radio" name="q1">
+            
+                            <span class="custom-radio"></span>
+            
+                            <span>Não Conforme</span>
+            
+                        </label>
+            
+                        <label class="radio-option NA">
+            
+                            <input type="radio" name="q1">
+            
+                            <span class="custom-radio"></span>
+            
+                            <span>Não Aplicavel</span>
+            
+                        </label>
+            
+                    </div>
+                </section>
+            </div>
+            
+            
+            <div style="overflow:auto;">
+                <div style="float:right; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
                 </div>
+            </div>
+            
+        </form>
+        
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </html>
