@@ -511,3 +511,51 @@ canvas{
 .NA input:checked + .custom-radio::after{
     background:#f59e0b;
 }
+
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    margin: 5px; 
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); 
+    font-size: 16px; 
+    color: #333; 
+    width: fit-content;
+    position: relative; 
+    top: 30px; 
+}
+
+.iso-header {
+    display: flex; 
+    align-items: center; 
+    margin: 20px 0; 
+    padding: 0 10px; 
+    max-width: 1200px; 
+    width: 100%; 
+    position: relative; 
+    left: 250px; 
+    top: 20px; 
+}
+
+.back-arrow {
+    text-decoration: none; 
+    color: #f8d942; 
+    font-size: 40px; 
+    font-weight: bold; 
+    margin-right: 10px;
+}
+
+.back-arrow:hover {
+    color: #0e0910; 
+}
+
+.iso-topo {
+    font-size: 28px; 
+    font-weight: bold; 
+    color: #f8d942; 
+    margin: 0;
+}
