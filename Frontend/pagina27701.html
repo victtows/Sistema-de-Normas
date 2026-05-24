@@ -5,9 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/x-icon" href="../assets/img/logo.ico">
-    <title>Controles ISO 27701</title>
+    <title>Controles ISO 27001</title>
 </head>
 <body>
+    <div class="iso-header">
+        <a href="index.html" class="back-arrow">&#8592;</a>
+        <h1 class="iso-topo">ISO 27701</h1>
+    </div>
     
+    <div class="container">
+        <section class="card formulario">
+            <div>
+                <p>
+                    Selecione a empresa
+                </p>
+                <select id="empresaSelect">
+                    <option value="">
+                        Nenhuma empresa selecionada
+                    </option>
+                </select>
+            </div>
+        </section>
+
+        <div class="progress-container">
+
+            <div class="progress-info">
+        
+                <span id="progressText">
+                    0 / 0 respondidas
+                </span>
+        
+            </div>
+        
+            <div class="progress-bar">
+        
+                <div class="progress-fill" id="progressFill"></div>
+        
+            </div>
+        
+        </div>
+        <form id="formulario" class="question-card">
+            
+            
+        </form>
+        
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </html>
