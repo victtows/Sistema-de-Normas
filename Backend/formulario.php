@@ -31,17 +31,18 @@
                 echo "Erro: " . mysqli_error($conexao);
             }
 
-        } elseif($tipo_acao === "select_norma"){
-            $sql = "SELECT * FROM controle";
-            $resultado = mysqli_query($conexao, $sql);
-            if($resultado){
-                $empresas = [];
-                while($linha = mysqli_fetch_assoc($resultado)){
-                    $empresas[] = $linha;
-                }
-                echo json_encode($empresas);
+        } elseif($tipo_acao === "cadastro_resultado"){
+            $filtros = $_POST["filtros"];
+            $CNPJ = $filtros['cnpj'];
+            $nomeEmpresa = $filtros['nomeEmpresa'];
+
+            $sql = "INSERT INTO Empresa (CNPJ, nomeEmpresa)
+            VALUES ('$CNPJ', '$nomeEmpresa');";
+
+            if (mysqli_query($conexao, $sql)) {
+                echo "Novo registro criado com sucesso";
             } else {
-                echo "Erro: " . mysqli_error($conexao);
+                echo "Erro: " . $sql . "<br>" . mysqli_error($conexao);
             }
         }
 

@@ -59,35 +59,6 @@ function selectEmpresa() {
     });
 }
 
-function selectNorma() {
-    $.ajax({
-        url: "../Backend/formulario.php",
-        type: "POST",
-        data: {
-            tipo_acao: "select_norma"
-        },
-        dataType: "json",
-        
-        success: function(result) {
-            console.log(result);
-
-            for (var i = 0; i < (result.length-1); i+4) {
-                document.getElementById('formulario').innerHTML += "<div class='tab' id='" + String(i) + "'></div>";
-                for (var j = i; j < (i+4); j++) {
-                    document.getElementById(i).innerHTML += "<section class='question'>"+ result[j]['descricaoControle'] + "<div class='options'><label class='radio-option sim'><input type='radio' name='q1'><span class='custom-radio'></span><span>Conforme</span></label><label class='radio-option não'><input type='radio' name='q1'><span class='custom-radio'></span><span>Não Conforme</span></label><label class='radio-option NA'><input type='radio' name='q1'><span class='custom-radio'></span><span>Não Aplicavel</span></label></div></section>";
-                }
-            }
-            document.getElementById('formulario').innerHTML += "<div style='overflow:auto;'> <div style='float:right; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;'>  <button type='button' id='prevBtn' onclick='nextPrev(-1)'>Previous</button><button type='button' id='nextBtn' onclick='nextPrev(1)'>Next</button></div></div>"
-        },
-        error: function(xhr) {
-            console.log(xhr.responseText);
-            alert("Erro ao pesquisar os Controles");
-        }
-    });
-}
-
-selectNorma()
-
 function limparSelect() {
     document.getElementById('empresaSelect').options.length = 0;
 }
