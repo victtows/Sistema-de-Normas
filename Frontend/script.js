@@ -70,13 +70,14 @@ function selectNorma() {
         
         success: function(result) {
             console.log(result);
-            result.forEach((element) => {
 
-                
-                document.getElementById('empresaSelect').innerHTML += '\n\n<option value="' + element['idEmpresa'] + '">\n' + element['nomeEmpresa'] + '\n</option>\n\n'
-            });
-
-
+            for (var i = 0; i < (result.length-1); i+4) {
+                document.getElementById('formulario').innerHTML += "<div class='tab' id='" + String(i) + "'></div>";
+                for (var j = i; j < (i+4); j++) {
+                    document.getElementById(i).innerHTML += "<section class='question'>"+ result[j]['descricaoControle'] + "<div class='options'><label class='radio-option sim'><input type='radio' name='q1'><span class='custom-radio'></span><span>Conforme</span></label><label class='radio-option não'><input type='radio' name='q1'><span class='custom-radio'></span><span>Não Conforme</span></label><label class='radio-option NA'><input type='radio' name='q1'><span class='custom-radio'></span><span>Não Aplicavel</span></label></div></section>";
+                }
+            }
+            document.getElementById('formulario').innerHTML += "<div style='overflow:auto;'> <div style='float:right; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;'>  <button type='button' id='prevBtn' onclick='nextPrev(-1)'>Previous</button><button type='button' id='nextBtn' onclick='nextPrev(1)'>Next</button></div></div>"
         },
         error: function(xhr) {
             console.log(xhr.responseText);
@@ -84,6 +85,8 @@ function selectNorma() {
         }
     });
 }
+
+selectNorma()
 
 function limparSelect() {
     document.getElementById('empresaSelect').options.length = 0;
