@@ -398,10 +398,11 @@ if(!isset($_SESSION["usuario"])){
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="5.9-ob">Observação</label>
+                                    <input type="text" name="5.9-ob" style="display: inline;">
                                 </div>
                             </section>
-                            <label for="5.9-ob">Observação</label>
-                            <input type="text" name="5.9-ob" style="display: inline;">
+                            
                         </label>
                         <label class='radio-option NA'>
                             <input type='radio' name='5.9'>
@@ -914,10 +915,10 @@ if(!isset($_SESSION["usuario"])){
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="5.23-ob">Observação</label>
+                                    <input type="text" name="5.23-ob" style="display: inline;">
                                 </div>
                             </section>
-                            <label for="5.23-ob">Observação</label>
-                            <input type="text" name="5.23-ob" style="display: inline;">
                         </label>
                         <label class='radio-option NA'>
                             <input type='radio' name='5.23'>
@@ -950,10 +951,11 @@ if(!isset($_SESSION["usuario"])){
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="5.24-ob">Observação</label>
+                                    <input type="text" name="5.24-ob" style="display: inline;">
                                 </div>
                             </section>
-                            <label for="5.24-ob">Observação</label>
-                            <input type="text" name="5.24-ob" style="display: inline;">
+                            
                         </label>
                         <label class='radio-option NA'>
                             <input type='radio' name='5.24'>

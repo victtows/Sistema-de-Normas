@@ -153,7 +153,7 @@ function showTab(n) {
 function nextPrev(n) {
     var x = document.getElementsByClassName("tab");
     
-    if (n == 1 && !validateForm()) return false;
+    
 
     x[currentTab].style.display = "none";
     currentTab = currentTab + n;
