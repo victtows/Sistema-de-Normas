@@ -65,9 +65,9 @@ function selectEmpresa() {
 }
 
 function resultadoFormulario() {
-    // if (!validacaoSubmit()) {
-    //     return;
-    // }
+    if (!validacaoSubmit()) {
+        return;
+    }
     $.ajax({
         url: "../Backend/formulario.php",
         type: "post",
