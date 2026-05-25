@@ -70,24 +70,22 @@ function resultadoFormulario() {
     });
 
     console.log(respostas);
-    console.log($("#empresaSelect").val())
 
     $.ajax({
         url: "../Backend/formulario.php",
-        type: "POST",
+        type: "post",
         data: {
             tipo_acao: "cadastro_resultado",
-            filtros: respostas,
             empresa: $("#empresaSelect").val(),
         },
-        dataType: "json",
-        contentType: "application/json",
-        success: function (response) {
-            console.log("Sucesso:", response);
-        },
-        error: function (xhr, status, error) {
-            console.log("Erro:", error);
-        }
+        success: function (result) {
+                console.log("pesquisa salvou");
+                alert('pesquisa salvouu');
+            },
+            error: function (data) {
+                console.log(data);
+                alert('OCorreu um erro eu acho');
+            }
     });
 }
 
@@ -104,7 +102,6 @@ var currentTab = 0;
 showTab(currentTab)
 function showTab(n) {
     var x = document.getElementsByClassName('tab');
-    console.log(x)
     x[n].style.display = "block";
     
     if (n == 0) {

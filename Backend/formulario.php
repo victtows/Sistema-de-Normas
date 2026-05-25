@@ -32,20 +32,16 @@
             }
 
         } elseif($tipo_acao === "cadastro_resultado"){
-            $filtros = $_POST["filtros"];
             $empresa = $_POST["empresa"];
 
-            $sql = "INSERT INTO Pesquisa (Empresa, dataPesquisa)
+            $sql = "INSERT INTO pesquisa (Empresa, dataPesquisa)
             VALUES ('$empresa', CURDATE())";
 
             if (mysqli_query($conexao, $sql)) {
-                echo "Novo registro criado com sucesso";
+                echo "Novo registro criado";
             } else {
                 echo "Erro: " . $sql . "<br>" . mysqli_error($conexao);
             }
-
-            $sql = "INSERT INTO Resultado (Empresa, dataPesquisa)
-            VALUES ('$empresa', CURDATE())";
         }
 
     }
