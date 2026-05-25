@@ -83,31 +83,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.2.2 A organização identifica e documenta os propósitos específicos para o tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='1-q'>
+                            <input type='radio' name='A.1.2.2'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='1-q'>
+                            <input type='radio' name='A.1.2.2'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='1-subq'>
+                                        <input type='radio' name='A.1.2.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='1-subq'>
+                                        <input type='radio' name='A.1.2.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.2.2-ob">Observação</label>
+                                    <input type="text" name="A.1.2.2-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='1-q'>
+                            <input type='radio' name='A.1.2.2'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -590,7 +592,7 @@ if(!isset($_SESSION["usuario"])){
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='A.1.3.7-q'>
+                            <input type='radio' name='A.1.3.7'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
