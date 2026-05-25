@@ -1,10 +1,10 @@
 function abrirPagina(pagina){
     if(pagina === 'iso27001'){
-        window.location.href = 'pagina27001.html';
+        window.location.href = 'pagina27001.php';
     } else if(pagina === 'iso27701'){
-        window.location.href = 'pagina27701.html';
+        window.location.href = 'pagina27701.php';
     } else if(pagina === 'historico'){
-        window.location.href = "historico.html";
+        window.location.href = "historico.php";
     } else {
         alert("Página não encontrada");
     }

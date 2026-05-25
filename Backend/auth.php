@@ -11,7 +11,7 @@ if($tipo_acao === "cadastro"){
     $email = $_POST["email"];
     $senha = $_POST["senha"];
 
-    $sql = "SELECT * FROM usuario WHERE email = '$email'";
+    $sql = "SELECT * FROM usuario WHERE emailUsuario = '$email'";
     $resultado = mysqli_query($conexao, $sql);
 
     if(mysqli_num_rows($resultado) > 0){
@@ -31,7 +31,7 @@ if($tipo_acao === "cadastro"){
     );
 
     $sql = "INSERT INTO usuario
-    (nomeUsuario , emailUsuario , senhaUsuario )
+    (nomeUsuario , emailUsuario, senhaUsuario )
     VALUES
     ('$nome', '$email', '$senhaHash')";
 
@@ -58,7 +58,7 @@ elseif($tipo_acao === "login"){
     $senha = $_POST["senha"];
 
     $sql = "SELECT * FROM usuario
-    WHERE email = '$email'";
+    WHERE emailUsuario = '$email'";
 
     $resultado = mysqli_query($conexao, $sql);
 
@@ -70,13 +70,13 @@ elseif($tipo_acao === "login"){
 
         if(password_verify(
             $senha,
-            $usuario["senha"]
+            $usuario["senhaUsuario"]
         )){
 
             $_SESSION["usuario"] = [
                 "id" => $usuario["idUsuario"],
-                "nome" => $usuario["nome"],
-                "email" => $usuario["email"]
+                "nome" => $usuario["nomeUsuario"],
+                "email" => $usuario["emailUsuario"]
             ];
 
             echo json_encode([
