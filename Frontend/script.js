@@ -60,6 +60,29 @@ function selectEmpresa() {
 }
 
 function resultadoFormulario() {
+    $.ajax({
+        url: "../Backend/formulario.php",
+        type: "post",
+        dataType: "json",
+        data: {
+            tipo_acao: "cadastro_pesquisa",
+            empresa: $("#empresaSelect").val(),
+        },
+        success: function (result) {
+                console.log("Pesquisa salvou");
+                let idPesquisa = result.idPesquisa;
+
+                SalvarAuditoria(idPesquisa)
+            },
+            error: function (data) {
+                console.log(data);
+                alert('OCorreu um erro eu acho');
+            }
+    });
+}
+
+function SalvarAuditoria(idPesquisa) {
+    console.log(idPesquisa)
     let respostas = {};
 
     $("input[type='radio']:checked").each(function () {
@@ -70,13 +93,14 @@ function resultadoFormulario() {
     });
 
     console.log(respostas);
-
+    return
     $.ajax({
         url: "../Backend/formulario.php",
         type: "post",
         data: {
-            tipo_acao: "cadastro_resultado",
-            empresa: $("#empresaSelect").val(),
+            tipo_acao: "cadastro_auditoria",
+            filtros: respostas,
+            idPesquisa: idPesquisa,
         },
         success: function (result) {
                 console.log("pesquisa salvou");
@@ -88,7 +112,6 @@ function resultadoFormulario() {
             }
     });
 }
-
 
 
 function limparSelect() {

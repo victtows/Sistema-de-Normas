@@ -31,17 +31,45 @@
                 echo "Erro: " . mysqli_error($conexao);
             }
 
-        } elseif($tipo_acao === "cadastro_resultado"){
+        } elseif($tipo_acao === "cadastro_pesquisa"){
             $empresa = $_POST["empresa"];
 
             $sql = "INSERT INTO pesquisa (Empresa, dataPesquisa)
             VALUES ('$empresa', CURDATE())";
 
             if (mysqli_query($conexao, $sql)) {
-                echo "Novo registro criado";
+                $idPesquisa = mysqli_insert_id($conexao);
+                echo json_encode([
+                    "success" => true,
+                    "idPesquisa" => $idPesquisa,
+                    "mensagem" => "Pesquisa feita"
+                ]);
+
             } else {
-                echo "Erro: " . $sql . "<br>" . mysqli_error($conexao);
+                echo json_encode([
+                    "success" => false,
+                    "erro" => mysqli_error($conexao)
+                ]);
             }
+        } elseif($tipo_acao === "cadastro_auditoria"){
+            $idPesquisa = $_POST["idPesquisa"];
+            $filtros = $_POST["filtros"];
+
+            foreach($filtros as $controle => $resultado){
+                $idControle = explode("-", $controle)[0];
+
+                $sql = "INSERT INTO Resultado
+                (idPesquisa, idControle, resultado, andamento)
+                VALUES
+                ('$idPesquisa', '$idControle', '$resultado', 'Pendente')";
+
+                mysqli_query($conexao, $sql);
+            }
+
+            echo json_encode([
+                "success" => true,
+                "mensagem" => "Auditoria salva"
+            ]);
         }
 
     }
