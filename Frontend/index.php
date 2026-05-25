@@ -67,18 +67,18 @@ if(!isset($_SESSION["usuario"])){
                 </div>
             </section>
 
-            <section class="card">
+            <section class="card" style="max-width: 50%;">
 
                 <h2>Empresas</h2>
 
-                <div style="align-content: center; height: 70%;">
+                <div style="align-content: center;">
                     <button onclick="abrirPagina('empresa')" class="norma-btn iso27001">
-                        Cadastrar uma Empresa
+                        <h3>Cadastrar uma Empresa</h3>
                     </button>
 
                     <button onclick="abrirPagina('historico')" class="norma-btn iso27701">
-                        Abrir histórico de Auditoria
-                    </button>
+                        <h3>Abrir histórico de Auditoria</h3>
+                    </buttn>
                 </div>  
 
             </section>
