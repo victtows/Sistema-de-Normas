@@ -296,6 +296,7 @@ textarea:focus{
 
     gap:18px;
 
+
 }
 
 .options label{
@@ -315,7 +316,6 @@ textarea:focus{
     width:auto;
 
     margin:0;
-
 }
 
 .result-grid{
@@ -433,7 +433,7 @@ canvas{
     flex-direction:column;
 
     gap:18px;
-
+    
 }
 
 .radio-option{
@@ -563,7 +563,6 @@ canvas{
 .question {
     margin: 1rem 0;
 }
-
 
 
 .tab {
