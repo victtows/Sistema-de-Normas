@@ -109,7 +109,7 @@ if(!isset($_SESSION["usuario"])){
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='5.1-q'>
+                            <input type='radio' name='5.1'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1976,7 +1976,7 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>7.7 Existe política de mesa limpa e tela limpa?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='7.7.'>
+                            <input type='radio' name='7.7'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
@@ -3266,7 +3266,7 @@ if(!isset($_SESSION["usuario"])){
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='8.27-q'>
+                            <input type='radio' name='8.27'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -3414,7 +3414,7 @@ if(!isset($_SESSION["usuario"])){
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='8.31-q'>
+                            <input type='radio' name='8.31'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
