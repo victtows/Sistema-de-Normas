@@ -607,7 +607,7 @@ if(!isset($_SESSION["usuario"])){
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='A.1.3.8-q'>
+                            <input type='radio' name='A.1.3.8'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
@@ -2354,7 +2354,7 @@ if(!isset($_SESSION["usuario"])){
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='A.3.14-q'>
+                            <input type='radio' name='A.3.14'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
