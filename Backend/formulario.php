@@ -47,7 +47,7 @@ if(!isset($_SESSION["usuario"])){
         } elseif($tipo_acao === "cadastro_pesquisa"){
             $empresa = $_POST["empresa"];
 
-            $sql = "INSERT INTO pesquisa (Empresa, dataPesquisa)
+            $sql = "INSERT INTO Auditoria (idEmpresa, dataAuditoria)
             VALUES ('$empresa', CURDATE())";
 
             if (mysqli_query($conexao, $sql)) {
@@ -68,15 +68,42 @@ if(!isset($_SESSION["usuario"])){
             $idPesquisa = $_POST["idPesquisa"];
             $filtros = $_POST["filtros"];
 
-            foreach($filtros as $controle => $resultado){
-                $NomeControle = explode("-", $controle)[0];
+            foreach($filtros as $numeroControle => $dados){
+                switch($dados["resultado"]){
+                    case "Conforme":
+                        $resultado = 1;
+                        break;
+                    case "Não Conforme":
+                        $resultado = 2;
+                        break;
+                    case "Não Aplicavel":
+                        $resultado = 3;
+                        break;
+                }
+                switch($dados["andamento"] ?? ""){
+                    case "Sim":
+                        $andamento = 1;
+                        break;
+                    case "Não":
+                        $andamento = 2;
+                        break;
+                    default:
+                        $andamento = 0;
+                }
+                $observacao = mysqli_real_escape_string(
+                    $conexao,
+                    $dados["observacao"] ?? ""
+                );
+                $sql = "INSERT INTO Resultado(idAuditoria, numeroControle, resultado, andamento, observacao)
+                VALUES('$idPesquisa', '$numeroControle', '$resultado', '$andamento', '$observacao')";
 
-                $sql = "INSERT INTO Resultado
-                (idPesquisa, NomeControle, resultado, andamento)
-                VALUES
-                ('$idPesquisa', '$NomeControle', '$resultado', 'Pendente')";
-
-                mysqli_query($conexao, $sql);
+                if(!mysqli_query($conexao, $sql)){
+                    echo json_encode([
+                        "success" => false,
+                        "controle" => $numeroControle
+                    ]);
+                    exit;
+                }
             }
 
             echo json_encode([

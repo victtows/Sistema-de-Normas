@@ -28,7 +28,7 @@ function cadastrarEmpresa(){
             },
             success: function (result) {
                 console.log("Empresa salvou");
-                alert('Empresa salvouu');
+                alert('salvouu');
                 limparSelect()
                 selectEmpresa() 
             },
@@ -65,9 +65,9 @@ function selectEmpresa() {
 }
 
 function resultadoFormulario() {
-    if (!validacaoSubmit()) {
-        return;
-    }
+    // if (!validacaoSubmit()) {
+    //     return;
+    // }
     $.ajax({
         url: "../Backend/formulario.php",
         type: "post",
@@ -79,7 +79,6 @@ function resultadoFormulario() {
         success: function (result) {
                 console.log("Pesquisa salvou");
                 let idPesquisa = result.idPesquisa;
-
                 SalvarAuditoria(idPesquisa)
             },
             error: function (data) {
@@ -90,29 +89,42 @@ function resultadoFormulario() {
 }
 
 function SalvarAuditoria(idPesquisa) {
-    console.log(idPesquisa)
     let respostas = {};
-
     $("input[type='radio']:checked").each(function () {
         let nome = $(this).attr("name");
-        let valor = $(this).closest("label").find("span:last").text().trim();
+        if (nome.includes("-subq")) {
+            return;
+        }
 
-        respostas[nome] = valor;
+        let numeroControle = nome;
+        let resultado = $(this)
+            .closest("label")
+            .find("span:last")
+            .text()
+            .trim();
+
+        let andamento = $(`input[name='${numeroControle}-subq']:checked`).closest("label").find("span:last").text().trim();
+        let observacao = $(`input[name='${numeroControle}-ob']`).val();
+
+        respostas[numeroControle] = {
+            resultado: resultado,
+            andamento: andamento || null,
+            observacao: observacao || null
+        };
     });
-
     console.log(respostas);
-    return
     $.ajax({
         url: "../Backend/formulario.php",
         type: "post",
+        dataType: "json",
         data: {
             tipo_acao: "cadastro_auditoria",
             filtros: respostas,
             idPesquisa: idPesquisa,
         },
         success: function (result) {
-                console.log("pesquisa salvou");
-                alert('pesquisa salvouu');
+                console.log("auditoriaaasdasdasdasdasde me mataaaa salvou");
+                alert('auditoria salvouu');
             },
             error: function (data) {
                 console.log(data);
