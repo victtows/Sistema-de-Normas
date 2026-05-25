@@ -17,9 +17,9 @@
 
     <div id="login" class="form active">
         <h2>Entrar</h2>
-        <input type="text" placeholder="Usuário">
-        <input type="password" placeholder="Senha">
-        <button>Login</button>
+        <input type="text" placeholder="Email" id="login_email">
+        <input type="password" placeholder="Senha" id="login_senha">
+        <button onclick="login()">Login</button>
     </div>
 
     <div id="register" class="form">
@@ -96,13 +96,13 @@ function login(){
         dataType: "json",
         data: {
             tipo_acao: "login",
-            email: $("#email").val(),
-            senha: $("#senha").val()
+            email: $("#login_email").val(),
+            senha: $("#login_senha").val()
         },
         success: function(result){
             if(result.success){
                 window.location.href =
-                    "dashboard.php";
+                    "index.php";
             } else {
                 alert(result.mensagem);
             }

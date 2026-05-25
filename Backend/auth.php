@@ -58,7 +58,7 @@ elseif($tipo_acao === "login"){
     $senha = $_POST["senha"];
 
     $sql = "SELECT * FROM usuario
-    WHERE email = '$email'";
+    WHERE emailUsuario = '$email'";
 
     $resultado = mysqli_query($conexao, $sql);
 
@@ -70,13 +70,13 @@ elseif($tipo_acao === "login"){
 
         if(password_verify(
             $senha,
-            $usuario["senha"]
+            $usuario["senhaUsuario"]
         )){
 
             $_SESSION["usuario"] = [
                 "id" => $usuario["idUsuario"],
-                "nome" => $usuario["nome"],
-                "email" => $usuario["email"]
+                "nome" => $usuario["nomeUsuario"],
+                "email" => $usuario["emailUsuario"]
             ];
 
             echo json_encode([
