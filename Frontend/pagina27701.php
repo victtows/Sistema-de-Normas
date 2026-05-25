@@ -76,7 +76,11 @@ if(!isset($_SESSION["usuario"])){
         <form id="formulario" class="question-card">
             <div class="tab">
                 
-                <section class='question'>A organização identifica e documenta os propósitos específicos para o tratamento de dados pessoais?
+                <h3 class="norma-classe">
+                    A.1 - condições para coleta e tratamento
+                </h3>
+
+                <section class='question'>A.1.2.2 A organização identifica e documenta os propósitos específicos para o tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='1-q'>
@@ -110,7 +114,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section>
                 
-                <section class='question'>A organização determina e documenta as bases legais aplicáveis para o tratamento de dados pessoais?
+                <section class='question'>A.1.2.3 A organização determina e documenta as bases legais aplicáveis para o tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='2-q'>
@@ -144,7 +148,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização determina quando e como o consentimento deve ser obtido?
+                <section class='question'>A.1.2.4 A organização determina quando e como o consentimento deve ser obtido?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='3-q'>
@@ -178,7 +182,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section>
                 
-                <section class='question'>A organização obtém e registra o consentimento dos titulares de dados pessoais?
+                <section class='question'>A.1.2.5 A organização obtém e registra o consentimento dos titulares de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='4-q'>
@@ -215,7 +219,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
                 
-                <section class='question'>A organização realiza avaliação de impacto de privacidade quando necessário?
+                <section class='question'>A.1.2.6 A organização realiza avaliação de impacto de privacidade quando necessário?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='5-q'>
@@ -249,7 +253,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section>  
 
-                <section class='question'>A organização possui contratos com operadores de dados pessoais?
+                <section class='question'>A.1.2.7 A organização possui contratos com operadores de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='6-q'>
@@ -283,7 +287,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section>  
 
-                <section class='question'>A organização define papéis e responsabilidades em casos de controlador conjunto?
+                <section class='question'>A.1.2.8 A organização define papéis e responsabilidades em casos de controlador conjunto?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='7-q'>
@@ -317,7 +321,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section>  
 
-                <section class='question'>A organização mantém registros relacionados ao tratamento de dados pessoais?
+                <section class='question'>A.1.2.9 A organização mantém registros relacionados ao tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='8-q'>
@@ -355,7 +359,11 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>'A organização determina e cumpre obrigações relacionadas aos titulares de dados pessoais?
+                <h3 class="norma-classe">
+                    A.1 - Obrigações com os titulares de dados pessoais
+                </h3>
+
+                <section class='question'>'A.1.3.2 A organização determina e cumpre obrigações relacionadas aos titulares de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='9-q'>
@@ -389,7 +397,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
                 
-                <section class='question'>A organização determina as informações que devem ser fornecidas aos titulares de dados pessoais?
+                <section class='question'>A.1.3.3 A organização determina as informações que devem ser fornecidas aos titulares de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='10-q'>
@@ -423,7 +431,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section>  
 
-                <section class='question'>A organização fornece informações claras aos titulares de dados pessoais sobre o tratamento realizado?
+                <section class='question'>A.1.3.4 A organização fornece informações claras aos titulares de dados pessoais sobre o tratamento realizado?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='11-q'>
@@ -457,7 +465,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section>  
 
-                <section class='question'>A organização fornece mecanismo para modificar ou retirar o consentimento?
+                <section class='question'>A.1.3.5 A organização fornece mecanismo para modificar ou retirar o consentimento?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='12-q'>
@@ -495,7 +503,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>A organização fornece mecanismo para oposição ao tratamento de dados pessoais?
+                <section class='question'>A.1.3.6 A organização fornece mecanismo para oposição ao tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='13-q'>
@@ -529,7 +537,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização possui mecanismos para acesso, correção ou exclusão de dados pessoais?
+                <section class='question'>A.1.3.7 A organização possui mecanismos para acesso, correção ou exclusão de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='14-q'>
@@ -563,7 +571,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização informa terceiros sobre alterações, retirada ou oposição relacionadas aos dados pessoais compartilhados?
+                <section class='question'>A.1.3.8 A organização informa terceiros sobre alterações, retirada ou oposição relacionadas aos dados pessoais compartilhados?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='15-q'>
@@ -597,7 +605,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização fornece cópia dos dados pessoais tratados quando solicitado?
+                <section class='question'>A.1.3.9 A organização fornece cópia dos dados pessoais tratados quando solicitado?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='16-q'>
@@ -635,7 +643,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>'A organização possui procedimentos para tratamento de solicitações dos titulares de dados pessoais?
+                <section class='question'>A.1.3.10 A organização possui procedimentos para tratamento de solicitações dos titulares de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='17-q'>
@@ -669,7 +677,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização possui controles relacionados à tomada de decisão automatizada?
+                <section class='question'>A.1.3.11 A organização possui controles relacionados à tomada de decisão automatizada?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='18-q'>
@@ -701,9 +709,13 @@ if(!isset($_SESSION["usuario"])){
                             <span>Não Aplicavel</span>
                         </label>
                     </div>
-                </section> 
+                </section>
+                
+                <h3 class="norma-classe">
+                    A.1 - Privacidade por design e privacidade por default
+                </h3>
 
-                <section class='question'>A organização aplica limitação na coleta de dados pessoais?
+                <section class='question'>A.1.4.2 A organização aplica limitação na coleta de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='19-q'>
@@ -737,7 +749,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização aplica limitação no tratamento de dados pessoais?
+                <section class='question'>A.1.4.3 A organização aplica limitação no tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='20-q'>
@@ -775,7 +787,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>'A organização garante precisão e qualidade dos dados pessoais?
+                <section class='question'>A.1.4.4 A organização garante precisão e qualidade dos dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='21-q'>
@@ -809,7 +821,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização aplica objetivos de minimização de dados pessoais?
+                <section class='question'>A.1.4.5 A organização aplica objetivos de minimização de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='22-q'>
@@ -843,7 +855,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização realiza desidentificação ou exclusão de dados pessoais ao final do tratamento?
+                <section class='question'>A.1.4.6 A organização realiza desidentificação ou exclusão de dados pessoais ao final do tratamento?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='23-q'>
@@ -877,7 +889,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização controla arquivos temporários contendo dados pessoais?
+                <section class='question'>A.1.4.7 A organização controla arquivos temporários contendo dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='24-q'>
@@ -915,7 +927,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>A organização possui política de retenção de dados pessoais?
+                <section class='question'>A.1.4.8 A organização possui política de retenção de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='25-q'>
@@ -949,7 +961,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização realiza descarte seguro de dados pessoais?
+                <section class='question'>A.1.4.9 A organização realiza descarte seguro de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='26-q'>
@@ -983,7 +995,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização aplica controles para transmissão de dados pessoais?
+                <section class='question'>A.1.4.10 A organização aplica controles para transmissão de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='27-q'>
@@ -1017,7 +1029,11 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização identifica bases legais para transferência internacional de dados pessoais?
+                <h3 class="norma-classe">
+                    A.1 - Compatilhamento, transferência e divulgação de dados pessoais
+                </h3>
+
+                <section class='question'>A.1.5.2 A organização identifica bases legais para transferência internacional de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='28-q'>
@@ -1055,7 +1071,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>A organização identifica os países e organizações internacionais para os quais os dados pessoais podem ser transferidos?
+                <section class='question'>A.1.5.3 A organização identifica os países e organizações internacionais para os quais os dados pessoais podem ser transferidos?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='29-q'>
@@ -1089,7 +1105,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização mantém registros de transferência de dados pessoais?
+                <section class='question'>A.1.5.4 A organização mantém registros de transferência de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='30-q'>
@@ -1123,7 +1139,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização mantém registros de divulgação de dados pessoais a terceiros?
+                <section class='question'>A.1.5.5 A organização mantém registros de divulgação de dados pessoais a terceiros?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='31-q'>
@@ -1157,7 +1173,11 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização possui acordo formal com o cliente sobre o tratamento de dados pessoais?
+                <h3 class="norma-classe">
+                    A.2 - condições para coleta e tratamento
+                </h3>
+
+                <section class='question'>A.2.2.2 A organização possui acordo formal com o cliente sobre o tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='32-q'>
@@ -1195,7 +1215,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>A organização define claramente os propósitos relacionados ao tratamento de dados pessoais?
+                <section class='question'>A.2.2.3 A organização define claramente os propósitos relacionados ao tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='33-q'>
@@ -1229,7 +1249,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização controla o uso de dados pessoais para marketing e propaganda?
+                <section class='question'>A.2.2.4 A organização controla o uso de dados pessoais para marketing e propaganda?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='34-q'>
@@ -1263,7 +1283,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização possui controles para lidar com instruções infratoras?
+                <section class='question'>A2.2.5 A organização possui controles para lidar com instruções infratoras?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='35-q'>
@@ -1297,7 +1317,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização define obrigações do cliente relacionadas ao tratamento de dados pessoais?
+                <section class='question'>A.2.2.6 A organização define obrigações do cliente relacionadas ao tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='36-q'>
@@ -1335,7 +1355,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>A organização mantém registros relativos ao tratamento de dados pessoais?
+                <section class='question'>A.2.2.7 A organização mantém registros relativos ao tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='37-q'>
@@ -1369,7 +1389,11 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização cumpre obrigações relacionadas aos titulares de dados pessoais?
+                <h3 class="norma-classe">
+                    A.2 - Obrigação com os titulares de dados pessoais
+                </h3>
+
+                <section class='question'>A.2.3.2 A organização cumpre obrigações relacionadas aos titulares de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='38-q'>
@@ -1403,7 +1427,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização controla arquivos temporários contendo dados pessoais?
+                <section class='question'>A.2.4.2 A organização controla arquivos temporários contendo dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='39-q'>
@@ -1437,7 +1461,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização realiza devolução, transferência ou descarte seguro de dados pessoais?
+                <section class='question'>A.2.4.3 A organização realiza devolução, transferência ou descarte seguro de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='40-q'>
@@ -1475,7 +1499,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>A organização aplica controles para transmissão de dados pessoais?
+                <section class='question'>A.2.4.4 A organização aplica controles para transmissão de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='41-q'>
@@ -1509,7 +1533,11 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização possui fundamentação para transferência internacional de dados pessoais?
+                <h3 class="norma-classe">
+                    A.2 - Compartilhamento, transferência e divulgação de dados pessoais
+                </h3>
+
+                <section class='question'>A.2.5.2 A organização possui fundamentação para transferência internacional de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='42-q'>
@@ -1543,7 +1571,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização identifica países e organizações internacionais para os quais os dados pessoais podem ser transferidos?
+                <section class='question'>A.2.5.3 A organização identifica países e organizações internacionais para os quais os dados pessoais podem ser transferidos?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='43-q'>
@@ -1577,7 +1605,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização mantém registros de divulgação de dados pessoais a terceiros?
+                <section class='question'>A.2.5.4 A organização mantém registros de divulgação de dados pessoais a terceiros?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='44-q'>
@@ -1615,7 +1643,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>A organização notifica solicitações de divulgação de dados pessoais?
+                <section class='question'>A.2.5.5 A organização notifica solicitações de divulgação de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='45-q'>
@@ -1649,7 +1677,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização controla divulgações de dados pessoais legalmente obrigatórias?
+                <section class='question'>A.2.5.6 A organização controla divulgações de dados pessoais legalmente obrigatórias?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='46-q'>
@@ -1683,7 +1711,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização divulga os subcontratados utilizados no tratamento de dados pessoais?
+                <section class='question'>A.2.5.7 A organização divulga os subcontratados utilizados no tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='47-q'>
@@ -1717,7 +1745,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização controla o envolvimento de subcontratados no tratamento de dados pessoais?
+                <section class='question'>A.2.5.8 A organização controla o envolvimento de subcontratados no tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='48-q'>
@@ -1755,7 +1783,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>A organização controla a troca de subcontratados envolvidos no tratamento de dados pessoais?
+                <section class='question'>A.2.5.9 A organização controla a troca de subcontratados envolvidos no tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='49-q'>
@@ -1787,9 +1815,13 @@ if(!isset($_SESSION["usuario"])){
                             <span>Não Aplicavel</span>
                         </label>
                     </div>
-                </section> 
+                </section>
+                
+                <h3 class="norma-classe">
+                    A.3 - Considerações de segurança para controladores e operadores de dados pessoais
+                </h3>
 
-                <section class='question'>A organização possui políticas de segurança da informação?
+                <section class='question'>A.3.3 A organização possui políticas de segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='50-q'>
@@ -1823,7 +1855,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização define papéis e responsabilidades em segurança da informação?
+                <section class='question'>A.3.4 A organização define papéis e responsabilidades em segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='51-q'>
@@ -1857,7 +1889,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização realiza classificação das informações?
+                <section class='question'>A.3.5 A organização realiza classificação das informações?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='52-q'>
@@ -1895,7 +1927,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>A organização aplica rotulagem das informações?
+                <section class='question'>A.3.6 A organização aplica rotulagem das informações?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='53-q'>
@@ -1929,7 +1961,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização controla a transferência de informações?
+                <section class='question'>A.3.7 A organização controla a transferência de informações?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='54-q'>
@@ -1963,7 +1995,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização realiza gestão de identidade?
+                <section class='question'>A.3.8 A organização realiza gestão de identidade?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='55-q'>
@@ -1997,7 +2029,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização controla os direitos de acesso?
+                <section class='question'>A.3.9 A organização controla os direitos de acesso?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='56-q'>
@@ -2035,7 +2067,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>A organização aplica requisitos de segurança da informação em contratos com fornecedores?
+                <section class='question'>A.3.10 A organização aplica requisitos de segurança da informação em contratos com fornecedores?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='57-q'>
@@ -2069,7 +2101,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização realiza planejamento e preparação para gestão de incidentes de segurança da informação?
+                <section class='question'>A.3.11 A organização realiza planejamento e preparação para gestão de incidentes de segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='58-q'>
@@ -2103,7 +2135,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização possui resposta a incidentes de segurança da informação?
+                <section class='question'>A.3.12 A organização possui resposta a incidentes de segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='59-q'>
@@ -2137,7 +2169,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização atende requisitos legais, estatutários, regulatórios e contratuais?
+                <section class='question'>A.3.13 A organização atende requisitos legais, estatutários, regulatórios e contratuais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='60-q'>
@@ -2175,7 +2207,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>A organização protege registros e informações documentadas?
+                <section class='question'>A.3.14 A organização protege registros e informações documentadas?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='61-q'>
@@ -2209,7 +2241,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização realiza análise crítica independente da segurança da informação?
+                <section class='question'>A.3.15 A organização realiza análise crítica independente da segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='62-q'>
@@ -2243,7 +2275,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização verifica compliance com políticas e normas de segurança da informação?
+                <section class='question'>A.3.16 A organização verifica compliance com políticas e normas de segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='63-q'>
@@ -2277,7 +2309,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização promove conscientização, educação e treinamento em segurança da informação?
+                <section class='question'>A.3.17 A organização promove conscientização, educação e treinamento em segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='64-q'>
@@ -2315,7 +2347,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>A organização utiliza acordos de confidencialidade ou não divulgação?
+                <section class='question'>A.3.18 A organização utiliza acordos de confidencialidade ou não divulgação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='65-q'>
@@ -2349,7 +2381,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização aplica política de mesa limpa e tela limpa?
+                <section class='question'>A.3.19 A organização aplica política de mesa limpa e tela limpa?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='66-q'>
@@ -2383,7 +2415,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização controla mídias de armazenamento?
+                <section class='question'>A.3.20 A organização controla mídias de armazenamento?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='67-q'>
@@ -2417,7 +2449,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização realiza descarte seguro ou reutilização adequada de equipamentos?
+                <section class='question'>A.3.21 A organização realiza descarte seguro ou reutilização adequada de equipamentos?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='68-q'>
@@ -2455,7 +2487,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>A organização protege dispositivos endpoint dos usuários?
+                <section class='question'>A.3.22 A organização protege dispositivos endpoint dos usuários?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='69-q'>
@@ -2489,7 +2521,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização aplica autenticação segura?
+                <section class='question'>A.3.23 A organização aplica autenticação segura?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='70-q'>
@@ -2523,7 +2555,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização realiza backup das informações?
+                <section class='question'>A.3.24 A organização realiza backup das informações?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='71-q'>
@@ -2557,7 +2589,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização mantém registros de log?
+                <section class='question'>A.3.25 A organização mantém registros de log?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='72-q'>
@@ -2595,7 +2627,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>A organização utiliza criptografia para proteção das informações?
+                <section class='question'>A.3.26 A organização utiliza criptografia para proteção das informações?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='73-q'>
@@ -2629,7 +2661,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização aplica ciclo de vida de desenvolvimento seguro?
+                <section class='question'>A.3.27 A organização aplica ciclo de vida de desenvolvimento seguro?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='74-q'>
@@ -2663,7 +2695,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização define requisitos de segurança para aplicações?
+                <section class='question'>A.3.28 A organização define requisitos de segurança para aplicações?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='75-q'>
@@ -2697,7 +2729,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização aplica princípios de arquitetura e engenharia de sistemas seguros?
+                <section class='question'>A.3.29 A organização aplica princípios de arquitetura e engenharia de sistemas seguros?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='76-q'>
@@ -2735,7 +2767,7 @@ if(!isset($_SESSION["usuario"])){
 
             <div class="tab">
 
-                <section class='question'>A organização controla o desenvolvimento terceirizado?
+                <section class='question'>A.3.30 A organização controla o desenvolvimento terceirizado?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='77-q'>
@@ -2769,7 +2801,7 @@ if(!isset($_SESSION["usuario"])){
                     </div>
                 </section> 
 
-                <section class='question'>A organização protege as informações utilizadas em testes?
+                <section class='question'>A.3.31 A organização protege as informações utilizadas em testes?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='78-q'>
