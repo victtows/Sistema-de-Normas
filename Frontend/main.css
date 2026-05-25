@@ -569,3 +569,11 @@ canvas{
 .tab {
     display: none;
 }
+
+.sub-question {
+    display: none;
+}
+
+.não input:checked ~ .sub-question {
+    display: inline;
+}

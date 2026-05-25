@@ -45,8 +45,81 @@
         
         </div>
         <form id="formulario" class="question-card">
-            
-            
+            <div class="tab">
+                <section class='question'>Insira a descrição aqui 
+                    <div class='options'>
+                        <label class='radio-option sim'>
+                            <input type='radio' name='q1'>
+                            <span class='custom-radio'></span>
+                            <span>Conforme</span>
+                        </label>
+                        <label class='radio-option não'>
+                            <input type='radio' name='q1'>
+                            <span class='custom-radio'></span>
+                            <span>Não Conforme</span>
+                            <section class='sub-question'>Está em Andamento 
+                                <div class='options'>
+                                    <label class='radio-option sim'>
+                                        <input type='radio' name='q1-sub'>
+                                        <span class='custom-radio'></span>
+                                        <span>Sim</span>
+                                    </label>
+                                    <label class='radio-option não'>
+                                        <input type='radio' name='q1-sub'>
+                                        <span class='custom-radio'></span>
+                                        <span>Não</span>
+                                    </label>
+                                </div>
+                            </section>
+                        </label>
+                        <label class='radio-option NA'>
+                            <input type='radio' name='q1'>
+                            <span class='custom-radio'></span>
+                            <span>Não Aplicavel</span>
+                        </label>
+                    </div>
+                </section>
+                <section class='question'>Insira a descrição aqui 
+                    <div class='options'>
+                        <label class='radio-option sim'>
+                            <input type='radio' name='q2'>
+                            <span class='custom-radio'></span>
+                            <span>Conforme</span>
+                        </label>
+                        <label class='radio-option não'>
+                            <input type='radio' name='q2'>
+                            <span class='custom-radio'></span>
+                            <span>Não Conforme</span>
+                            <section class='sub-question'>Está em Andamento 
+                                <div class='options'>
+                                    <label class='radio-option sim'>
+                                        <input type='radio' name='q2-sub'>
+                                        <span class='custom-radio'></span>
+                                        <span>Sim</span>
+                                    </label>
+                                    <label class='radio-option não'>
+                                        <input type='radio' name='q2-sub'>
+                                        <span class='custom-radio'></span>
+                                        <span>Não</span>
+                                    </label>
+                                </div>
+                            </section>
+                        </label>
+                        <label class='radio-option NA'>
+                            <input type='radio' name='q2'>
+                            <span class='custom-radio'></span>
+                            <span>Não Aplicavel</span>
+                        </label>
+                    </div>
+                </section>
+
+            </div>
+            <div style='overflow:auto;'> 
+                <div style='float:right; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;'>  
+                    <button type='button' id='prevBtn' onclick='nextPrev(-1)'>Previous</button>
+                    <button type='button' id='nextBtn' onclick='nextPrev(1)'>Next</button>
+                </div>
+            </div>
         </form>
         
 </body>
