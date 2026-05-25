@@ -19,6 +19,9 @@ function cadastrarEmpresa(){
                 filtros: {
                     cnpj: $("#cnpjEmpresa").val(),
                     nomeEmpresa: $("#novaEmpresa").val(), 
+                    email: $("#emailEmpresa").val(), 
+                    descricao: $("#descricaoEmpresa").val(), 
+                    endereco: $("#enderecoEmpresa").val(), 
                 }
             },
             success: function (result) {

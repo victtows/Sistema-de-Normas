@@ -98,7 +98,6 @@ if(!isset($_SESSION["usuario"])){
             </section>
 
         </div>
-        <script>selectEmpresa()</script>
         <section class="card">
                 <h2>
                     Empresas cadastradas
@@ -126,4 +125,5 @@ if(!isset($_SESSION["usuario"])){
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="./script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>selectEmpresa()</script>
 </html>
