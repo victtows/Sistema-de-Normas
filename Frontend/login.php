@@ -101,8 +101,7 @@ function login(){
         },
         success: function(result){
             if(result.success){
-                window.location.href =
-                    "index.php";
+                window.location.href = "index.php";
             } else {
                 alert(result.mensagem);
             }

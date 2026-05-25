@@ -1,4 +1,11 @@
 <?php
+session_start();
+if(!isset($_SESSION["usuario"])){
+    header("Location: login.php");
+    exit;
+}
+?>
+<?php
     include("conexao.php");
 
     if(isset($_POST["tipo_acao"]) && !empty($_POST["tipo_acao"])){
@@ -6,11 +13,15 @@
 
         if($tipo_acao === "cadastro"){
             $filtros = $_POST["filtros"];
-            $CNPJ = $filtros['cnpj'];
-            $nomeEmpresa = $filtros['nomeEmpresa'];
+            $CNPJ = mysqli_real_escape_string($conexao, $filtros['cnpj']);
+            $nomeEmpresa = mysqli_real_escape_string($conexao, $filtros['nomeEmpresa']);
+            $email = mysqli_real_escape_string($conexao, $filtros['email']);
+            $descricao = mysqli_real_escape_string($conexao, $filtros['descricao']);
+            $endereco = mysqli_real_escape_string($conexao, $filtros['endereco']);
+            $idUsuario = $_SESSION["usuario"]["id"];
 
-            $sql = "INSERT INTO Empresa (CNPJ, nomeEmpresa)
-            VALUES ('$CNPJ', '$nomeEmpresa');";
+            $sql = "INSERT INTO Empresa (CNPJ, nomeEmpresa, emailEmpresa, descricaoEmpresa, enderecoEmpresa, idUsuario)
+            VALUES ('$CNPJ', '$nomeEmpresa', '$email', '$descricao', '$endereco', '$idUsuario');";
 
             if (mysqli_query($conexao, $sql)) {
                 echo "Novo registro criado com sucesso";
@@ -19,7 +30,9 @@
             }
 
         } elseif($tipo_acao === "select_empresa"){
-            $sql = "SELECT * FROM empresa";
+            $idUsuario = $_SESSION["usuario"]["id"];
+
+            $sql = "SELECT * FROM empresa WHERE idUsuario = '$idUsuario'";
             $resultado = mysqli_query($conexao, $sql);
             if($resultado){
                 $empresas = [];

@@ -48,30 +48,29 @@ if(!isset($_SESSION["usuario"])){
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
                 <div>
                     <label for='nomeEmpresa'>Nome:</label>
-                    <input type='text' name='nomeEmpresa'>
+                    <input type='text' name='nomeEmpresa' id="novaEmpresa">
                 </div>
                 <div>
                     <label for='enderecoEmpresa'>Endereço:</label>
-                    <input type='text' name='enderecoEmpresa'>
+                    <input type='text' name='enderecoEmpresa' id="enderecoEmpresa">
                 </div>
                 <div>
                     <label for='emailEmpresa'>Email:</label>
-                    <input type='text' name='emailEmpresa'>
+                    <input type='text' name='emailEmpresa' id="emailEmpresa">
                 </div>
                 <div>
                     <label for='cnpjEmpresa'>CNPJ:</label>
-                    <input type='text' name='cnpjEmpresa'>
+                    <input type='text' name='cnpjEmpresa' id="cnpjEmpresa">
                 </div>
             </div>
             <div>
                 <label for='descricaoEmpresa'>Descrição:</label>
-                <input type='text' name='descricaoEmpresa'>
+                <input type='text' name='descricaoEmpresa' id="descricaoEmpresa">
             </div>
-            <button type='button' id='submBtn' onclick='resultadoFormulario()'>Submit</button>
+            <button type='button' id='submBtn' onclick='cadastrarEmpresa()'>Submit</button>
         </section>
     </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="./script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>selectEmpresa()</script>
 </html>

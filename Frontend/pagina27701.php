@@ -117,31 +117,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.2.3 A organização determina e documenta as bases legais aplicáveis para o tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='2-q'>
+                            <input type='radio' name='A.1.2.3'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='2-q'>
+                            <input type='radio' name='A.1.2.3'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='2-subq'>
+                                        <input type='radio' name='A.1.2.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='2-subq'>
+                                        <input type='radio' name='A.1.2.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.2.3-ob">Observação</label>
+                                    <input type="text" name="A.1.2.3-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='2-q'>
+                            <input type='radio' name='A.1.2.3'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -151,31 +153,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.2.4 A organização determina quando e como o consentimento deve ser obtido?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='3-q'>
+                            <input type='radio' name='A.1.2.4'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='3-q'>
+                            <input type='radio' name='A.1.2.4'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='3-subq'>
+                                        <input type='radio' name='A.1.2.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='3-subq'>
+                                        <input type='radio' name='A.1.2.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.2.4-ob">Observação</label>
+                                    <input type="text" name="A.1.2.4-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='3-q'>
+                            <input type='radio' name='A.1.2.4'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -185,31 +189,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.2.5 A organização obtém e registra o consentimento dos titulares de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='4-q'>
+                            <input type='radio' name='A.1.2.5'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='4-q'>
+                            <input type='radio' name='A.1.2.5'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='4-subq'>
+                                        <input type='radio' name='A.1.2.5-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='4-subq'>
+                                        <input type='radio' name='A.1.2.5-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.2.5-ob">Observação</label>
+                                    <input type="text" name="A.1.2.5-ob" style="display: inline;">                                    
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='4-q'>
+                            <input type='radio' name='A.1.2.5'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -222,31 +228,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.2.6 A organização realiza avaliação de impacto de privacidade quando necessário?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='5-q'>
+                            <input type='radio' name='A.1.2.6'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='5-q'>
+                            <input type='radio' name='A.1.2.6'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='5-subq'>
+                                        <input type='radio' name='A.1.2.6-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='5-subq'>
+                                        <input type='radio' name='A.1.2.6-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.2.6-ob">Observação</label>
+                                    <input type="text" name="A.1.2.6-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='5-q'>
+                            <input type='radio' name='A.1.2.6'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -256,31 +264,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.2.7 A organização possui contratos com operadores de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='6-q'>
+                            <input type='radio' name='A.1.2.7'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='6-q'>
+                            <input type='radio' name='A.1.2.7'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='6-subq'>
+                                        <input type='radio' name='A.1.2.7-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='6-subq'>
+                                        <input type='radio' name='A.1.2.7-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.2.7-ob">Observação</label>
+                                    <input type="text" name="A.1.2.7-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='6-q'>
+                            <input type='radio' name='A.1.2.7'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -290,31 +300,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.2.8 A organização define papéis e responsabilidades em casos de controlador conjunto?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='7-q'>
+                            <input type='radio' name='A.1.2.8'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='7-q'>
+                            <input type='radio' name='A.1.2.8'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='7-subq'>
+                                        <input type='radio' name='A.1.2.8-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='7-subq'>
+                                        <input type='radio' name='A.1.2.8-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.2.8-ob">Observação</label>
+                                    <input type="text" name="A.1.2.8-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='7-q'>
+                            <input type='radio' name='A.1.2.8'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -324,31 +336,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.2.9 A organização mantém registros relacionados ao tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='8-q'>
+                            <input type='radio' name='A.1.2.9'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='8-q'>
+                            <input type='radio' name='A.1.2.9'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='8-subq'>
+                                        <input type='radio' name='A.1.2.9-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='8-subq'>
+                                        <input type='radio' name='A.1.2.9-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.2.9-ob">Observação</label>
+                                    <input type="text" name="A.1.2.9-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='8-q'>
+                            <input type='radio' name='A.1.2.9'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -366,31 +380,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>'A.1.3.2 A organização determina e cumpre obrigações relacionadas aos titulares de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='9-q'>
+                            <input type='radio' name='A.1.3.2'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='9-q'>
+                            <input type='radio' name='A.1.3.2'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='9-subq'>
+                                        <input type='radio' name='A.1.3.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='9-subq'>
+                                        <input type='radio' name='A.1.3.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.3.2-ob">Observação</label>
+                                    <input type="text" name="A.1.3.2-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='9-q'>
+                            <input type='radio' name='A.1.3.2'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -400,31 +416,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.3.3 A organização determina as informações que devem ser fornecidas aos titulares de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='10-q'>
+                            <input type='radio' name='A.1.3.3'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='10-q'>
+                            <input type='radio' name='A.1.3.3'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='10-subq'>
+                                        <input type='radio' name='A.1.3.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='10-subq'>
+                                        <input type='radio' name='A.1.3.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.3.3-ob">Observação</label>
+                                    <input type="text" name="A.1.3.3-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='10-q'>
+                            <input type='radio' name='A.1.3.3'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -434,31 +452,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.3.4 A organização fornece informações claras aos titulares de dados pessoais sobre o tratamento realizado?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='11-q'>
+                            <input type='radio' name='A.1.3.4'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='11-q'>
+                            <input type='radio' name='A.1.3.4'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='11-subq'>
+                                        <input type='radio' name='A.1.3.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='11-subq'>
+                                        <input type='radio' name='A.1.3.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.3.4-ob">Observação</label>
+                                    <input type="text" name="A.1.3.4-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='11-q'>
+                            <input type='radio' name='A.1.3.4'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -468,31 +488,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.3.5 A organização fornece mecanismo para modificar ou retirar o consentimento?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='12-q'>
+                            <input type='radio' name='A.1.3.5'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='12-q'>
+                            <input type='radio' name='A.1.3.5'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='12-subq'>
+                                        <input type='radio' name='A.1.3.5-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='12-subq'>
+                                        <input type='radio' name='A.1.3.5-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.3.5-ob">Observação</label>
+                                    <input type="text" name="A.1.3.5-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='12-q'>
+                            <input type='radio' name='A.1.3.5'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -506,31 +528,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.3.6 A organização fornece mecanismo para oposição ao tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='13-q'>
+                            <input type='radio' name='A.1.3.6'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='13-q'>
+                            <input type='radio' name='A.1.3.6'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='13-subq'>
+                                        <input type='radio' name='A.1.3.6-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='13-subq'>
+                                        <input type='radio' name='A.1.3.6-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.3.6-ob">Observação</label>
+                                    <input type="text" name="A.1.3.6-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='13-q'>
+                            <input type='radio' name='A.1.3.6'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -540,31 +564,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.3.7 A organização possui mecanismos para acesso, correção ou exclusão de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='14-q'>
+                            <input type='radio' name='A.1.3.7'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='14-q'>
+                            <input type='radio' name='A.1.3.7'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='14-subq'>
+                                        <input type='radio' name='A.1.3.7-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='14-subq'>
+                                        <input type='radio' name='A.1.3.7-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.3.7-ob">Observação</label>
+                                    <input type="text" name="A.1.3.7-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='14-q'>
+                            <input type='radio' name='A.1.3.7-q'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -574,31 +600,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.3.8 A organização informa terceiros sobre alterações, retirada ou oposição relacionadas aos dados pessoais compartilhados?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='15-q'>
+                            <input type='radio' name='A.1.3.8'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='15-q'>
+                            <input type='radio' name='A.1.3.8-q'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='15-subq'>
+                                        <input type='radio' name='A.1.3.8-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='15-subq'>
+                                        <input type='radio' name='A.1.3.8-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.3.8-ob">Observação</label>
+                                    <input type="text" name="A.1.3.8-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='15-q'>
+                            <input type='radio' name='A.1.3.8'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -608,31 +636,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.3.9 A organização fornece cópia dos dados pessoais tratados quando solicitado?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='16-q'>
+                            <input type='radio' name='A.1.3.9'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='16-q'>
+                            <input type='radio' name='A.1.3.9'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='16-subq'>
+                                        <input type='radio' name='A.1.3.9-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='16-subq'>
+                                        <input type='radio' name='A.1.3.9-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.3.9-ob">Observação</label>
+                                    <input type="text" name="A.1.3.9-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='16-q'>
+                            <input type='radio' name='A.1.3.9'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -646,31 +676,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.3.10 A organização possui procedimentos para tratamento de solicitações dos titulares de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='17-q'>
+                            <input type='radio' name='A.1.3.10'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='17-q'>
+                            <input type='radio' name='A.1.3.10'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='17-subq'>
+                                        <input type='radio' name='A.1.3.10-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='17-subq'>
+                                        <input type='radio' name='A.1.3.10-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.3.10-ob">Observação</label>
+                                    <input type="text" name="A.1.3.10-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='17-q'>
+                            <input type='radio' name='A.1.3.10'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -680,31 +712,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.3.11 A organização possui controles relacionados à tomada de decisão automatizada?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='18-q'>
+                            <input type='radio' name='A.1.3.11'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='18-q'>
+                            <input type='radio' name='A.1.3.11'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='18-subq'>
+                                        <input type='radio' name='A.1.3.11-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='18-subq'>
+                                        <input type='radio' name='A.1.3.11-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.3.11-ob">Observação</label>
+                                    <input type="text" name="A.1.3.11-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='18-q'>
+                            <input type='radio' name='A.1.3.11'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -718,31 +752,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.4.2 A organização aplica limitação na coleta de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='19-q'>
+                            <input type='radio' name='A.1.4.2'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='19-q'>
+                            <input type='radio' name='A.1.4.2'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='19-subq'>
+                                        <input type='radio' name='A.1.4.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='19-subq'>
+                                        <input type='radio' name='A.1.4.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.4.2-ob">Observação</label>
+                                    <input type="text" name="A.1.4.2-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='19-q'>
+                            <input type='radio' name='A.1.4.2'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -752,31 +788,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.4.3 A organização aplica limitação no tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='20-q'>
+                            <input type='radio' name='A.1.4.3'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='20-q'>
+                            <input type='radio' name='A.1.4.3'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='20-subq'>
+                                        <input type='radio' name='A.1.4.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='20-subq'>
+                                        <input type='radio' name='A.1.4.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.4.3-ob">Observação</label>
+                                    <input type="text" name="A.1.4.3-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='20-q'>
+                            <input type='radio' name='A.1.4.3'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -790,31 +828,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.4.4 A organização garante precisão e qualidade dos dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='21-q'>
+                            <input type='radio' name='A.1.4.4'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='21-q'>
+                            <input type='radio' name='A.1.4.4'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='21-subq'>
+                                        <input type='radio' name='A.1.4.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='21-subq'>
+                                        <input type='radio' name='A.1.4.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.4.4-ob">Observação</label>
+                                    <input type="text" name="A.1.4.4-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='21-q'>
+                            <input type='radio' name='A.1.4.4'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -824,31 +864,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.4.5 A organização aplica objetivos de minimização de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='22-q'>
+                            <input type='radio' name='A.1.4.5'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='22-q'>
+                            <input type='radio' name='A.1.4.5'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='22-subq'>
+                                        <input type='radio' name='A.1.4.5-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='22-subq'>
+                                        <input type='radio' name='A.1.4.5-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.4.5-ob">Observação</label>
+                                    <input type="text" name="A.1.4.5-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='22-q'>
+                            <input type='radio' name='A.1.4.5'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -858,31 +900,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.4.6 A organização realiza desidentificação ou exclusão de dados pessoais ao final do tratamento?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='23-q'>
+                            <input type='radio' name='A.1.4.6'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='23-q'>
+                            <input type='radio' name='A.1.4.6'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='23-subq'>
+                                        <input type='radio' name='A.1.4.6-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='23-subq'>
+                                        <input type='radio' name='A.1.4.6-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.4.6-ob">Observação</label>
+                                    <input type="text" name="A.1.4.6-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='23-q'>
+                            <input type='radio' name='A.1.4.6'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -892,31 +936,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.4.7 A organização controla arquivos temporários contendo dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='24-q'>
+                            <input type='radio' name='A.1.4.7'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='24-q'>
+                            <input type='radio' name='A.1.4.7'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='24-subq'>
+                                        <input type='radio' name='A.1.4.7-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='24-subq'>
+                                        <input type='radio' name='A.1.4.7-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.4.7-ob">Observação</label>
+                                    <input type="text" name="A.1.4.7-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='24-q'>
+                            <input type='radio' name='A.1.4.7'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -930,31 +976,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.4.8 A organização possui política de retenção de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='25-q'>
+                            <input type='radio' name='A.1.4.8'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='25-q'>
+                            <input type='radio' name='A.1.4.8'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='25-subq'>
+                                        <input type='radio' name='A.1.4.8-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='25-subq'>
+                                        <input type='radio' name='A.1.4.8-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.4.8-ob">Observação</label>
+                                    <input type="text" name="A.1.4.8-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='25-q'>
+                            <input type='radio' name='A.1.4.8'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -964,31 +1012,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.4.9 A organização realiza descarte seguro de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='26-q'>
+                            <input type='radio' name='A.1.4.9'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='26-q'>
+                            <input type='radio' name='A.1.4.9'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='26-subq'>
+                                        <input type='radio' name='A.1.4.9-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='26-subq'>
+                                        <input type='radio' name='A.1.4.9-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.4.9-ob">Observação</label>
+                                    <input type="text" name="A.1.4.9-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='26-q'>
+                            <input type='radio' name='A.1.4.9'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -998,31 +1048,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.4.10 A organização aplica controles para transmissão de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='27-q'>
+                            <input type='radio' name='A.1.4.10'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='27-q'>
+                            <input type='radio' name='A.1.4.10'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='27-subq'>
+                                        <input type='radio' name='A.1.4.10-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='27-subq'>
+                                        <input type='radio' name='A.1.4.10-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.4.10-ob">Observação</label>
+                                    <input type="text" name="A.1.4.10-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='27-q'>
+                            <input type='radio' name='A.1.4.10'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1036,31 +1088,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.5.2 A organização identifica bases legais para transferência internacional de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='28-q'>
+                            <input type='radio' name='A.1.5.2'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='28-q'>
+                            <input type='radio' name='A.1.5.2'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='28-subq'>
+                                        <input type='radio' name='A.1.5.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='28-subq'>
+                                        <input type='radio' name='A.1.5.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.5.2-ob">Observação</label>
+                                    <input type="text" name="A.1.5.2-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='28-q'>
+                            <input type='radio' name='A.1.5.2'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1074,31 +1128,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.5.3 A organização identifica os países e organizações internacionais para os quais os dados pessoais podem ser transferidos?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='29-q'>
+                            <input type='radio' name='A.1.5.3'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='29-q'>
+                            <input type='radio' name='A.1.5.3'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='29-subq'>
+                                        <input type='radio' name='A.1.5.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='29-subq'>
+                                        <input type='radio' name='A.1.5.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.5.3-ob">Observação</label>
+                                    <input type="text" name="A.1.5.3-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='29-q'>
+                            <input type='radio' name='A.1.5.3'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1108,31 +1164,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.5.4 A organização mantém registros de transferência de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='30-q'>
+                            <input type='radio' name='A.1.5.4'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='30-q'>
+                            <input type='radio' name='A.1.5.4'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='30-subq'>
+                                        <input type='radio' name='A.1.5.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='30-subq'>
+                                        <input type='radio' name='A.1.5.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.5.4-ob">Observação</label>
+                                    <input type="text" name="A.1.5.4-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='30-q'>
+                            <input type='radio' name='A.1.5.4'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1142,31 +1200,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.1.5.5 A organização mantém registros de divulgação de dados pessoais a terceiros?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='31-q'>
+                            <input type='radio' name='A.1.5.5'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='31-q'>
+                            <input type='radio' name='A.1.5.5'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='31-subq'>
+                                        <input type='radio' name='A.1.5.5-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='31-subq'>
+                                        <input type='radio' name='A.1.5.5-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.1.5.5-ob">Observação</label>
+                                    <input type="text" name="A.1.5.5-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='31-q'>
+                            <input type='radio' name='A.1.5.5'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1180,31 +1240,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.2.2 A organização possui acordo formal com o cliente sobre o tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='32-q'>
+                            <input type='radio' name='A.2.2.2'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='32-q'>
+                            <input type='radio' name='A.2.2.2'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='32-subq'>
+                                        <input type='radio' name='A.2.2.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='32-subq'>
+                                        <input type='radio' name='A.2.2.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.2.2-ob">Observação</label>
+                                    <input type="text" name="A.2.2.2-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='32-q'>
+                            <input type='radio' name='A.2.2.2'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1218,31 +1280,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.2.3 A organização define claramente os propósitos relacionados ao tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='33-q'>
+                            <input type='radio' name='A.2.2.3'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='33-q'>
+                            <input type='radio' name='A.2.2.3'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='33-subq'>
+                                        <input type='radio' name='A.2.2.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='33-subq'>
+                                        <input type='radio' name='A.2.2.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.2.3-ob">Observação</label>
+                                    <input type="text" name="A.2.2.3-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='33-q'>
+                            <input type='radio' name='A.2.2.3'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1252,65 +1316,69 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.2.4 A organização controla o uso de dados pessoais para marketing e propaganda?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='34-q'>
+                            <input type='radio' name='A.2.2.4'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='34-q'>
+                            <input type='radio' name='A.2.2.4'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='34-subq'>
+                                        <input type='radio' name='A.2.2.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='34-subq'>
+                                        <input type='radio' name='A.2.2.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.2.4-ob">Observação</label>
+                                    <input type="text" name="A.2.2.4-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='34-q'>
+                            <input type='radio' name='A.2.2.4'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
                     </div>
                 </section> 
 
-                <section class='question'>A2.2.5 A organização possui controles para lidar com instruções infratoras?
+                <section class='question'>A.2.2.5 A organização possui controles para lidar com instruções infratoras?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='35-q'>
+                            <input type='radio' name='A.2.2.5'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='35-q'>
+                            <input type='radio' name='A.2.2.5'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='35-subq'>
+                                        <input type='radio' name='A.2.2.5-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='35-subq'>
+                                        <input type='radio' name='A.2.2.5-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.2.5-ob">Observação</label>
+                                    <input type="text" name="A.2.2.5-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='35-q'>
+                            <input type='radio' name='A.2.2.5'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1320,31 +1388,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.2.6 A organização define obrigações do cliente relacionadas ao tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='36-q'>
+                            <input type='radio' name='A.2.2.6'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='36-q'>
+                            <input type='radio' name='A.2.2.6'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='36-subq'>
+                                        <input type='radio' name='A.2.2.6-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='36-subq'>
+                                        <input type='radio' name='A.2.2.6-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.2.6-ob">Observação</label>
+                                    <input type="text" name="A.2.2.6-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='36-q'>
+                            <input type='radio' name='A.2.2.6'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1358,31 +1428,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.2.7 A organização mantém registros relativos ao tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='37-q'>
+                            <input type='radio' name='A.2.2.7'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='37-q'>
+                            <input type='radio' name='A.2.2.7'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='37-subq'>
+                                        <input type='radio' name='A.2.2.7-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='37-subq'>
+                                        <input type='radio' name='A.2.2.7-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.2.7-ob">Observação</label>
+                                    <input type="text" name="A.2.2.7-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='37-q'>
+                            <input type='radio' name='A.2.2.7'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1396,31 +1468,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.3.2 A organização cumpre obrigações relacionadas aos titulares de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='38-q'>
+                            <input type='radio' name='A.2.3.2'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='38-q'>
+                            <input type='radio' name='A.2.3.2'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='38-subq'>
+                                        <input type='radio' name='A.2.3.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='38-subq'>
+                                        <input type='radio' name='A.2.3.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.3.2-ob">Observação</label>
+                                    <input type="text" name="A.2.3.2-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='38-q'>
+                            <input type='radio' name='A.2.3.2'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1430,31 +1504,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.4.2 A organização controla arquivos temporários contendo dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='39-q'>
+                            <input type='radio' name='A.2.4.2'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='39-q'>
+                            <input type='radio' name='A.2.4.2'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='39-subq'>
+                                        <input type='radio' name='A.2.4.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='39-subq'>
+                                        <input type='radio' name='A.2.4.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.4.2-ob">Observação</label>
+                                    <input type="text" name="A.2.4.2-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='39-q'>
+                            <input type='radio' name='A.2.4.2'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1464,31 +1540,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.4.3 A organização realiza devolução, transferência ou descarte seguro de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='40-q'>
+                            <input type='radio' name='A.2.4.3'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='40-q'>
+                            <input type='radio' name='A.2.4.3'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='40-subq'>
+                                        <input type='radio' name='A.2.4.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='40-subq'>
+                                        <input type='radio' name='A.2.4.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.4.3-ob">Observação</label>
+                                    <input type="text" name="A.2.4.3-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='40-q'>
+                            <input type='radio' name='A.2.4.3'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1502,31 +1580,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.4.4 A organização aplica controles para transmissão de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='41-q'>
+                            <input type='radio' name='A.2.4.4'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='41-q'>
+                            <input type='radio' name='A.2.4.4'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='41-subq'>
+                                        <input type='radio' name='A.2.4.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='41-subq'>
+                                        <input type='radio' name='A.2.4.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.4.4-ob">Observação</label>
+                                    <input type="text" name="A.2.4.4-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='41-q'>
+                            <input type='radio' name='A.2.4.4'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1540,31 +1620,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.5.2 A organização possui fundamentação para transferência internacional de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='42-q'>
+                            <input type='radio' name='A.2.5.2'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='42-q'>
+                            <input type='radio' name='A.2.5.2'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='42-subq'>
+                                        <input type='radio' name='A.2.5.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='42-subq'>
+                                        <input type='radio' name='A.2.5.2-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.5.2-ob">Observação</label>
+                                    <input type="text" name="A.2.5.2-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='42-q'>
+                            <input type='radio' name='A.2.5.2'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1574,31 +1656,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.5.3 A organização identifica países e organizações internacionais para os quais os dados pessoais podem ser transferidos?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='43-q'>
+                            <input type='radio' name='A.2.5.3'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='43-q'>
+                            <input type='radio' name='A.2.5.3'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='43-subq'>
+                                        <input type='radio' name='A.2.5.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='43-subq'>
+                                        <input type='radio' name='A.2.5.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.5.3-ob">Observação</label>
+                                    <input type="text" name="A.2.5.3-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='43-q'>
+                            <input type='radio' name='A.2.5.3'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1608,31 +1692,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.5.4 A organização mantém registros de divulgação de dados pessoais a terceiros?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='44-q'>
+                            <input type='radio' name='A.2.5.4'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='44-q'>
+                            <input type='radio' name='A.2.5.4'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='44-subq'>
+                                        <input type='radio' name='A.2.5.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='44-subq'>
+                                        <input type='radio' name='A.2.5.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.5.4-ob">Observação</label>
+                                    <input type="text" name="A.2.5.4-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='44-q'>
+                            <input type='radio' name='A.2.5.4'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1646,31 +1732,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.5.5 A organização notifica solicitações de divulgação de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='45-q'>
+                            <input type='radio' name='A.2.5.5'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='45-q'>
+                            <input type='radio' name='A.2.5.5'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='45-subq'>
+                                        <input type='radio' name='A.2.5.5-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='45-subq'>
+                                        <input type='radio' name='A.2.5.5-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.5.5-ob">Observação</label>
+                                    <input type="text" name="A.2.5.5-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='45-q'>
+                            <input type='radio' name='A.2.5.5'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1680,31 +1768,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.5.6 A organização controla divulgações de dados pessoais legalmente obrigatórias?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='46-q'>
+                            <input type='radio' name='A.2.5.6'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='46-q'>
+                            <input type='radio' name='A.2.5.6'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='46-subq'>
+                                        <input type='radio' name='A.2.5.6-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='46-subq'>
+                                        <input type='radio' name='A.2.5.6-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.5.6-ob">Observação</label>
+                                    <input type="text" name="A.2.5.6-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='46-q'>
+                            <input type='radio' name='A.2.5.6'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1714,31 +1804,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.5.7 A organização divulga os subcontratados utilizados no tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='47-q'>
+                            <input type='radio' name='A.2.5.7'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='47-q'>
+                            <input type='radio' name='A.2.5.7'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='47-subq'>
+                                        <input type='radio' name='A.2.5.7-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='47-subq'>
+                                        <input type='radio' name='A.2.5.7-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.5.7-ob">Observação</label>
+                                    <input type="text" name="A.2.5.7-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='47-q'>
+                            <input type='radio' name='A.2.5.7'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1748,31 +1840,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.5.8 A organização controla o envolvimento de subcontratados no tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='48-q'>
+                            <input type='radio' name='A.2.5.8'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='48-q'>
+                            <input type='radio' name='A.2.5.8'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='48-subq'>
+                                        <input type='radio' name='A.2.5.8-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='48-subq'>
+                                        <input type='radio' name='A.2.5.8-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.5.8-ob">Observação</label>
+                                    <input type="text" name="A.2.5.8-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='48-q'>
+                            <input type='radio' name='A.2.5.8'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1786,31 +1880,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.2.5.9 A organização controla a troca de subcontratados envolvidos no tratamento de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='49-q'>
+                            <input type='radio' name='A.2.5.9'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='49-q'>
+                            <input type='radio' name='A.2.5.9'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='49-subq'>
+                                        <input type='radio' name='A.2.5.9-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='49-subq'>
+                                        <input type='radio' name='A.2.5.9-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.2.5.9-ob">Observação</label>
+                                    <input type="text" name="A.2.5.9-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='49-q'>
+                            <input type='radio' name='A.2.5.9'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1824,31 +1920,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.3 A organização possui políticas de segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='50-q'>
+                            <input type='radio' name='A.3.3'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='50-q'>
+                            <input type='radio' name='A.3.3'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='50-subq'>
+                                        <input type='radio' name='A.3.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='50-subq'>
+                                        <input type='radio' name='A.3.3-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.3-ob">Observação</label>
+                                    <input type="text" name="A.3.3-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='50-q'>
+                            <input type='radio' name='A.3.3'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1858,31 +1956,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.4 A organização define papéis e responsabilidades em segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='51-q'>
+                            <input type='radio' name='A.3.4'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='51-q'>
+                            <input type='radio' name='A.3.4'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='51-subq'>
+                                        <input type='radio' name='A.3.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='51-subq'>
+                                        <input type='radio' name='A.3.4-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.4-ob">Observação</label>
+                                    <input type="text" name="A.3.4-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='51-q'>
+                            <input type='radio' name='A.3.4'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1892,31 +1992,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.5 A organização realiza classificação das informações?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='52-q'>
+                            <input type='radio' name='A.3.5'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='52-q'>
+                            <input type='radio' name='A.3.5'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='52-subq'>
+                                        <input type='radio' name='A.3.5-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='52-subq'>
+                                        <input type='radio' name='A.3.5-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.5-ob">Observação</label>
+                                    <input type="text" name="A.3.5-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='52-q'>
+                            <input type='radio' name='A.3.5'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1930,31 +2032,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.6 A organização aplica rotulagem das informações?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='53-q'>
+                            <input type='radio' name='A.3.6'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='53-q'>
+                            <input type='radio' name='A.3.6'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='53-subq'>
+                                        <input type='radio' name='A.3.6-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='53-subq'>
+                                        <input type='radio' name='A.3.6-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.6-ob">Observação</label>
+                                    <input type="text" name="A.3.6-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='53-q'>
+                            <input type='radio' name='A.3.6'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1964,31 +2068,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.7 A organização controla a transferência de informações?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='54-q'>
+                            <input type='radio' name='A.3.7'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='54-q'>
+                            <input type='radio' name='A.3.7'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='54-subq'>
+                                        <input type='radio' name='A.3.7-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='54-subq'>
+                                        <input type='radio' name='A.3.7-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.7-ob">Observação</label>
+                                    <input type="text" name="A.3.7-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='54-q'>
+                            <input type='radio' name='A.3.7'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -1998,31 +2104,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.8 A organização realiza gestão de identidade?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='55-q'>
+                            <input type='radio' name='A.3.8'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='55-q'>
+                            <input type='radio' name='A.3.8'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='55-subq'>
+                                        <input type='radio' name='A.3.8-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='55-subq'>
+                                        <input type='radio' name='A.3.8-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.8-ob">Observação</label>
+                                    <input type="text" name="A.3.8-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='55-q'>
+                            <input type='radio' name='A.3.8'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2032,31 +2140,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.9 A organização controla os direitos de acesso?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='56-q'>
+                            <input type='radio' name='A.3.9'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='56-q'>
+                            <input type='radio' name='A.3.9'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='56-subq'>
+                                        <input type='radio' name='A.3.9-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='56-subq'>
+                                        <input type='radio' name='A.3.9-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.9-ob">Observação</label>
+                                    <input type="text" name="A.3.9-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='56-q'>
+                            <input type='radio' name='A.3.9'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2070,31 +2180,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.10 A organização aplica requisitos de segurança da informação em contratos com fornecedores?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='57-q'>
+                            <input type='radio' name='A.3.10'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='57-q'>
+                            <input type='radio' name='A.3.10'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='57-subq'>
+                                        <input type='radio' name='A.3.10-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='57-subq'>
+                                        <input type='radio' name='A.3.10-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.10-ob">Observação</label>
+                                    <input type="text" name="A.3.10-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='57-q'>
+                            <input type='radio' name='A.3.10'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2104,31 +2216,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.11 A organização realiza planejamento e preparação para gestão de incidentes de segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='58-q'>
+                            <input type='radio' name='A.3.11'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='58-q'>
+                            <input type='radio' name='A.3.11'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='58-subq'>
+                                        <input type='radio' name='A.3.11-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='58-subq'>
+                                        <input type='radio' name='A.3.11-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.11-ob">Observação</label>
+                                    <input type="text" name="A.3.11-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='58-q'>
+                            <input type='radio' name='A.3.11'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2138,23 +2252,23 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.12 A organização possui resposta a incidentes de segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='59-q'>
+                            <input type='radio' name='A.3.12'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='59-q'>
+                            <input type='radio' name='A.3.12'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='59-subq'>
+                                        <input type='radio' name='A.3.12-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='59-subq'>
+                                        <input type='radio' name='A.3.12-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
@@ -2162,7 +2276,7 @@ if(!isset($_SESSION["usuario"])){
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='59-q'>
+                            <input type='radio' name='A.3.12'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2172,31 +2286,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.13 A organização atende requisitos legais, estatutários, regulatórios e contratuais?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='60-q'>
+                            <input type='radio' name='A.3.13'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='60-q'>
+                            <input type='radio' name='A.3.13'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='60-subq'>
+                                        <input type='radio' name='A.3.13-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='60-subq'>
+                                        <input type='radio' name='A.3.13-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.13-ob">Observação</label>
+                                    <input type="text" name="A.3.13-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='60-q'>
+                            <input type='radio' name='A.3.13'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2210,31 +2326,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.14 A organização protege registros e informações documentadas?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='61-q'>
+                            <input type='radio' name='A.3.14'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='61-q'>
+                            <input type='radio' name='A.3.14'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='61-subq'>
+                                        <input type='radio' name='A.3.14-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='61-subq'>
+                                        <input type='radio' name='A.3.14-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.14-ob">Observação</label>
+                                    <input type="text" name="A.3.14-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='61-q'>
+                            <input type='radio' name='A.3.14-q'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2244,31 +2362,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.15 A organização realiza análise crítica independente da segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='62-q'>
+                            <input type='radio' name='A.3.15'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='62-q'>
+                            <input type='radio' name='A.3.15'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='62-subq'>
+                                        <input type='radio' name='A.3.15-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='62-subq'>
+                                        <input type='radio' name='A.3.15-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.15-ob">Observação</label>
+                                    <input type="text" name="A.3.15-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='62-q'>
+                            <input type='radio' name='A.3.15'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2278,31 +2398,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.16 A organização verifica compliance com políticas e normas de segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='63-q'>
+                            <input type='radio' name='A.3.16'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='63-q'>
+                            <input type='radio' name='A.3.16'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='63-subq'>
+                                        <input type='radio' name='A.3.16-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='63-subq'>
+                                        <input type='radio' name='A.3.16-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.16-ob">Observação</label>
+                                    <input type="text" name="A.3.16-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='63-q'>
+                            <input type='radio' name='A.3.16'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2312,31 +2434,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.17 A organização promove conscientização, educação e treinamento em segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='64-q'>
+                            <input type='radio' name='A.3.17'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='64-q'>
+                            <input type='radio' name='A.3.17'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='64-subq'>
+                                        <input type='radio' name='A.3.17-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='64-subq'>
+                                        <input type='radio' name='A.3.17-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.17-ob">Observação</label>
+                                    <input type="text" name="A.3.17-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='64-q'>
+                            <input type='radio' name='A.3.17'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2350,31 +2474,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.18 A organização utiliza acordos de confidencialidade ou não divulgação?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='65-q'>
+                            <input type='radio' name='A.3.18'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='65-q'>
+                            <input type='radio' name='A.3.18'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='65-subq'>
+                                        <input type='radio' name='A.3.18-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='65-subq'>
+                                        <input type='radio' name='A.3.18-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.18-ob">Observação</label>
+                                    <input type="text" name="A.3.18-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='65-q'>
+                            <input type='radio' name='A.3.18'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2384,31 +2510,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.19 A organização aplica política de mesa limpa e tela limpa?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='66-q'>
+                            <input type='radio' name='A.3.19'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='66-q'>
+                            <input type='radio' name='A.3.19'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='66-subq'>
+                                        <input type='radio' name='A.3.19-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='66-subq'>
+                                        <input type='radio' name='A.3.19-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.19-ob">Observação</label>
+                                    <input type="text" name="A.3.19-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='66-q'>
+                            <input type='radio' name='A.3.19'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2418,31 +2546,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.20 A organização controla mídias de armazenamento?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='67-q'>
+                            <input type='radio' name='A.3.20'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='67-q'>
+                            <input type='radio' name='A.3.20'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='67-subq'>
+                                        <input type='radio' name='A.3.20-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='67-subq'>
+                                        <input type='radio' name='A.3.20-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.20-ob">Observação</label>
+                                    <input type="text" name="A.3.20-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='67-q'>
+                            <input type='radio' name='A.3.20'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2452,31 +2582,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.21 A organização realiza descarte seguro ou reutilização adequada de equipamentos?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='68-q'>
+                            <input type='radio' name='A.3.21'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='68-q'>
+                            <input type='radio' name='A.3.21'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='68-subq'>
+                                        <input type='radio' name='A.3.21-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='68-subq'>
+                                        <input type='radio' name='A.3.21-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.21-ob">Observação</label>
+                                    <input type="text" name="A.3.21-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='68-q'>
+                            <input type='radio' name='A.3.21'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2490,31 +2622,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.22 A organização protege dispositivos endpoint dos usuários?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='69-q'>
+                            <input type='radio' name='A.3.22'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='69-q'>
+                            <input type='radio' name='A.3.22'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='69-subq'>
+                                        <input type='radio' name='A.3.22-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='69-subq'>
+                                        <input type='radio' name='A.3.22-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.22-ob">Observação</label>
+                                    <input type="text" name="A.3.22-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='69-q'>
+                            <input type='radio' name='A.3.22'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2524,31 +2658,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.23 A organização aplica autenticação segura?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='70-q'>
+                            <input type='radio' name='A.3.23'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='70-q'>
+                            <input type='radio' name='A.3.23'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='70-subq'>
+                                        <input type='radio' name='A.3.23-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='70-subq'>
+                                        <input type='radio' name='A.3.23-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.23-ob">Observação</label>
+                                    <input type="text" name="A.3.23-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='70-q'>
+                            <input type='radio' name='A.3.23'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2558,31 +2694,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.24 A organização realiza backup das informações?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='71-q'>
+                            <input type='radio' name='A.3.24'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='71-q'>
+                            <input type='radio' name='A.3.24'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='71-subq'>
+                                        <input type='radio' name='A.3.24-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='71-subq'>
+                                        <input type='radio' name='A.3.24-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.24-ob">Observação</label>
+                                    <input type="text" name="A.3.24-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='71-q'>
+                            <input type='radio' name='A.3.24'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2592,31 +2730,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.25 A organização mantém registros de log?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='72-q'>
+                            <input type='radio' name='A.3.25'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='72-q'>
+                            <input type='radio' name='A.3.25'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='72-subq'>
+                                        <input type='radio' name='A.3.25-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='72-subq'>
+                                        <input type='radio' name='A.3.25-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.25-ob">Observação</label>
+                                    <input type="text" name="A.3.25-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='72-q'>
+                            <input type='radio' name='A.3.25'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2630,31 +2770,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.26 A organização utiliza criptografia para proteção das informações?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='73-q'>
+                            <input type='radio' name='A.3.26'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='73-q'>
+                            <input type='radio' name='A.3.26'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='73-subq'>
+                                        <input type='radio' name='A.3.26-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='73-subq'>
+                                        <input type='radio' name='A.3.26-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.26-ob">Observação</label>
+                                    <input type="text" name="A.3.26-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='73-q'>
+                            <input type='radio' name='A.3.26'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2664,31 +2806,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.27 A organização aplica ciclo de vida de desenvolvimento seguro?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='74-q'>
+                            <input type='radio' name='A.3.27'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='74-q'>
+                            <input type='radio' name='A.3.27'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='74-subq'>
+                                        <input type='radio' name='A.3.27-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='74-subq'>
+                                        <input type='radio' name='A.3.27-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.27-ob">Observação</label>
+                                    <input type="text" name="A.3.27-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='74-q'>
+                            <input type='radio' name='A.3.27'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2698,31 +2842,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.28 A organização define requisitos de segurança para aplicações?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='75-q'>
+                            <input type='radio' name='A.3.28'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='75-q'>
+                            <input type='radio' name='A.3.28'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='75-subq'>
+                                        <input type='radio' name='A.3.28-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='75-subq'>
+                                        <input type='radio' name='A.3.28-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.28-ob">Observação</label>
+                                    <input type="text" name="A.3.28-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='75-q'>
+                            <input type='radio' name='A.3.28'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2732,31 +2878,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.29 A organização aplica princípios de arquitetura e engenharia de sistemas seguros?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='76-q'>
+                            <input type='radio' name='A.3.29'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='76-q'>
+                            <input type='radio' name='A.3.29'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='76-subq'>
+                                        <input type='radio' name='A.3.29-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='76-subq'>
+                                        <input type='radio' name='A.3.29-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.29-ob">Observação</label>
+                                    <input type="text" name="A.3.29-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='76-q'>
+                            <input type='radio' name='A.3.29'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2770,31 +2918,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.30 A organização controla o desenvolvimento terceirizado?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='77-q'>
+                            <input type='radio' name='A.3.30'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='77-q'>
+                            <input type='radio' name='A.3.30'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='77-subq'>
+                                        <input type='radio' name='A.3.30-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='77-subq'>
+                                        <input type='radio' name='A.3.30-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.30-ob">Observação</label>
+                                    <input type="text" name="A.3.30-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='77-q'>
+                            <input type='radio' name='A.3.30'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
@@ -2804,31 +2954,33 @@ if(!isset($_SESSION["usuario"])){
                 <section class='question'>A.3.31 A organização protege as informações utilizadas em testes?
                     <div class='options'>
                         <label class='radio-option sim'>
-                            <input type='radio' name='78-q'>
+                            <input type='radio' name='A.3.31'>
                             <span class='custom-radio'></span>
                             <span>Conforme</span>
                         </label>
                         <label class='radio-option não'>
-                            <input type='radio' name='78-q'>
+                            <input type='radio' name='A.3.31'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
                             <section class='sub-question'>Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
-                                        <input type='radio' name='78-subq'>
+                                        <input type='radio' name='A.3.31-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Sim</span>
                                     </label>
                                     <label class='radio-option não'>
-                                        <input type='radio' name='78-subq'>
+                                        <input type='radio' name='A.3.31-subq'>
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="A.3.31-ob">Observação</label>
+                                    <input type="text" name="A.3.31-ob" style="display: inline;">
                                 </div>
                             </section>
                         </label>
                         <label class='radio-option NA'>
-                            <input type='radio' name='78-q'>
+                            <input type='radio' name='A.3.31'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
                         </label>
