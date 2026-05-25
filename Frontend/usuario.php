@@ -14,7 +14,7 @@ if(!isset($_SESSION["usuario"])){
     <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/x-icon" href="../assets/img/logo.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Cadastro de Empresas</title>
+    <title>Controles ISO 27001</title>
 </head>
 <body>
 
