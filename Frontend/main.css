@@ -126,6 +126,8 @@ header{
 
     display:flex;
 
+    width: 100%;
+
     grid-template-areas: 1fr 1fr;
 
     gap:30px;

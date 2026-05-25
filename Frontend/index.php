@@ -71,52 +71,19 @@ if(!isset($_SESSION["usuario"])){
 
                 <h2>Empresas</h2>
 
-                <p>
-                    Cadastre uma empresa
-                </p>
-
-                <div class="cadastro-box">
-
-                    <input
-                        type="text"
-                        id="novaEmpresa"
-                        placeholder="Nome da Empresa"
-                    >
-
-                    <input
-                        type="text"
-                        id="cnpjEmpresa"
-                        placeholder="Digite o CNPJ"
-                    >
-
-                    <button onclick="cadastrarEmpresa()">
-                        Cadastrar Empresa
+                <div style="align-content: center; height: 70%;">
+                    <button onclick="abrirPagina('empresa')" class="norma-btn iso27001">
+                        Cadastrar uma Empresa
                     </button>
 
-                </div>
+                    <button onclick="abrirPagina('historico')" class="norma-btn iso27701">
+                        Abrir histórico de Auditoria
+                    </button>
+                </div>  
 
             </section>
 
-        </div>
-        <section class="card">
-                <h2>
-                    Empresas cadastradas
-                </h2>
-
-                <select id="empresaSelect">
-
-                    <option value="">
-                        Nenhuma empresa cadastrada
-                    </option>
-
-                </select>
-
-                <button onclick="abrirPagina('historico')">
-
-                    Ver Histórico
-
-                </button>
-            </section>
+        </div>  
     </div>
 
     
