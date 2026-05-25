@@ -65,9 +65,9 @@ function selectEmpresa() {
 }
 
 function resultadoFormulario() {
-    if (!validacaoSubmit()) {
-        return;
-    }
+    // if (!validacaoSubmit()) {
+    //     return;
+    // }
     $.ajax({
         url: "../Backend/formulario.php",
         type: "post",
@@ -91,20 +91,32 @@ function resultadoFormulario() {
 function SalvarAuditoria(idPesquisa) {
     let respostas = {};
     $("input[type='radio']:checked").each(function () {
+
         let nome = $(this).attr("name");
+
         if (nome.includes("-subq")) {
             return;
         }
 
         let numeroControle = nome;
+
         let resultado = $(this)
             .closest("label")
             .find("span:last")
             .text()
             .trim();
 
-        let andamento = $(`input[name='${numeroControle}-subq']:checked`).closest("label").find("span:last").text().trim();
-        let observacao = $(`input[name='${numeroControle}-ob']`).val();
+        let andamento = $(
+            `input[name='${numeroControle}-subq']:checked`
+        )
+        .closest("label")
+        .find("span:last")
+        .text()
+        .trim();
+
+        let observacao = $(
+            `input[name='${numeroControle}-ob']`
+        ).val();
 
         respostas[numeroControle] = {
             resultado: resultado,
@@ -112,6 +124,7 @@ function SalvarAuditoria(idPesquisa) {
             observacao: observacao || null
         };
     });
+
     console.log(respostas);
     $.ajax({
         url: "../Backend/formulario.php",
@@ -187,7 +200,7 @@ function validacaoSubmit(){
         return false;
     }
 
-     let perguntas = new Set();
+    let perguntas = new Set();
 
     $("input[type='radio']").each(function () {
         let nome = $(this).attr("name");

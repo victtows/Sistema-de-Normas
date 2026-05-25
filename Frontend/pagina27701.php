@@ -2995,7 +2995,7 @@ if(!isset($_SESSION["usuario"])){
                 <div style='float:right; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem;'>  
                     <button type='button' id='prevBtn' onclick='nextPrev(-1)'>Previous</button>
                     <button type='button' id='nextBtn' onclick='nextPrev(1)'>Next</button>
-                    <button type='button' id='submBtn' onclick=''>Submit</button>
+                    <button type='button' id='submBtn' onclick='resultadoFormulario()'>Submit</button>
                 </div>
             </div>
         </form>
