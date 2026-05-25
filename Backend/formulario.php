@@ -33,17 +33,19 @@
 
         } elseif($tipo_acao === "cadastro_resultado"){
             $filtros = $_POST["filtros"];
-            $CNPJ = $filtros['cnpj'];
-            $nomeEmpresa = $filtros['nomeEmpresa'];
+            $empresa = $_POST["empresa"];
 
-            $sql = "INSERT INTO Empresa (CNPJ, nomeEmpresa)
-            VALUES ('$CNPJ', '$nomeEmpresa');";
+            $sql = "INSERT INTO Pesquisa (Empresa, dataPesquisa)
+            VALUES ('$empresa', CURDATE())";
 
             if (mysqli_query($conexao, $sql)) {
                 echo "Novo registro criado com sucesso";
             } else {
                 echo "Erro: " . $sql . "<br>" . mysqli_error($conexao);
             }
+
+            $sql = "INSERT INTO Resultado (Empresa, dataPesquisa)
+            VALUES ('$empresa', CURDATE())";
         }
 
     }
