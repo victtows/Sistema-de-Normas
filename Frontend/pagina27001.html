@@ -5,12 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/x-icon" href="../assets/img/logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Controles ISO 27001</title>
 </head>
 <body>
-    <div class="iso-header">
-        <a href="index.html" class="back-arrow">&#8592;</a>
-        <h1 class="iso-topo">ISO 27001</h1>
+
+    <div class="floating-sidebar">
+
+        <a href="index.html" class="menu-item">
+            <span class="icon"><i class="fa-solid fa-solid fa-house"></i></span>
+            <span class="text">Início</span>
+        </a>
+    
+        <a href="pagina27001.html" class="menu-item">
+            <span class="icon"><i class="fa-solid fa-shield-halved"></i></span>
+            <span class="text">ISO 27001</span>
+        </a>
+    
+        <a href="pagina27701.html" class="menu-item">
+            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+            <span class="text">ISO 27701</span>
+        </a>
+    
+        <a href="historico.html" class="menu-item">
+            <span class="icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
+            <span class="text">Histórico</span>
+        </a>
+    
     </div>
     
     <div class="container">
@@ -47,7 +68,11 @@
         <form id="formulario" class="question-card">
             <div class="tab">
                 
-                <section class='question'>Existem políticas de segurança da informação definidas?
+                <h3 class="norma-classe">
+                    A.5 - Políticas de segurança da informação
+                </h3>
+
+                <section class='question'>5.1 Existem políticas de segurança da informação definidas?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='1-q'>
@@ -81,7 +106,7 @@
                     </div>
                 </section>
                 
-                <section class='question'>Os papéis e responsabilidades pela segurança da informação estão definidos?
+                <section class='question'>5.2 Os papéis e responsabilidades pela segurança da informação estão definidos?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='2-q'>
@@ -115,7 +140,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe segregação de funções?
+                <section class='question'>5.3 Existe segregação de funções?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='3-q'>
@@ -149,7 +174,7 @@
                     </div>
                 </section>
                 
-                <section class='question'>A direção possui responsabilidades definidas sobre segurança da informação?
+                <section class='question'>5.4 A direção possui responsabilidades definidas sobre segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='4-q'>
@@ -186,7 +211,7 @@
 
             <div class="tab">
                 
-                <section class='question'>Existe contato com autoridades?
+                <section class='question'>5.5 Existe contato com autoridades?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='5-q'>
@@ -220,7 +245,7 @@
                     </div>
                 </section>  
 
-                <section class='question'>7Existe contato com grupos de interesse especial?
+                <section class='question'>5.6 Existe contato com grupos de interesse especial?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='6-q'>
@@ -254,7 +279,7 @@
                     </div>
                 </section>  
 
-                <section class='question'>Existe inteligência de ameaças?
+                <section class='question'>5.7 Existe inteligência de ameaças?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='7-q'>
@@ -288,7 +313,7 @@
                     </div>
                 </section>  
 
-                <section class='question'>A segurança da informação é considerada no gerenciamento de projetos?
+                <section class='question'>5.8 A segurança da informação é considerada no gerenciamento de projetos?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='8-q'>
@@ -326,7 +351,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe inventário de informações e outros ativos associados?
+                <section class='question'>5.9 Existe inventário de informações e outros ativos associados?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='9-q'>
@@ -360,7 +385,7 @@
                     </div>
                 </section> 
                 
-                <section class='question'>Existe uso aceitável de informações e outros ativos associados?
+                <section class='question'>5.10 Existe uso aceitável de informações e outros ativos associados?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='10-q'>
@@ -394,7 +419,7 @@
                     </div>
                 </section>  
 
-                <section class='question'>Existe devolução de ativos?
+                <section class='question'>5.11 Existe devolução de ativos?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='11-q'>
@@ -428,7 +453,7 @@
                     </div>
                 </section>  
 
-                <section class='question'>As informações são classificadas?
+                <section class='question'>5.12 As informações são classificadas?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='12-q'>
@@ -466,7 +491,7 @@
 
             <div class="tab">
 
-                <section class='question'>As informações possuem rotulagem?
+                <section class='question'>5.13 As informações possuem rotulagem?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='13-q'>
@@ -500,7 +525,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe transferência segura de informações?
+                <section class='question'>5.14 Existe transferência segura de informações?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='14-q'>
@@ -534,7 +559,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe controle de acesso?
+                <section class='question'>5.15 Existe controle de acesso?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='15-q'>
@@ -568,7 +593,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe gestão de identidade?
+                <section class='question'>5.16 Existe gestão de identidade?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='16-q'>
@@ -606,7 +631,7 @@
 
             <div class="tab">
 
-                <section class='question'>'As informações de autenticação são protegidas?
+                <section class='question'>5.17 As informações de autenticação são protegidas?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='17-q'>
@@ -640,7 +665,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Os direitos de acesso são gerenciados?
+                <section class='question'>5.18 Os direitos de acesso são gerenciados?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='18-q'>
@@ -674,7 +699,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe segurança da informação nas relações com fornecedores?
+                <section class='question'>5.19 Existe segurança da informação nas relações com fornecedores?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='19-q'>
@@ -708,7 +733,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe abordagem de segurança da informação nos contratos de fornecedores?
+                <section class='question'>5.20 Existe abordagem de segurança da informação nos contratos de fornecedores?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='20-q'>
@@ -746,7 +771,7 @@
 
             <div class="tab">
 
-                <section class='question'>'Existe gestão da segurança da informação na cadeia de fornecimento de TIC?
+                <section class='question'>5.21 Existe gestão da segurança da informação na cadeia de fornecimento de TIC?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='21-q'>
@@ -780,7 +805,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe monitoramento, análise crítica e gestão de mudanças dos serviços de fornecedores?
+                <section class='question'>5.22 Existe monitoramento, análise crítica e gestão de mudanças dos serviços de fornecedores?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='22-q'>
@@ -814,7 +839,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe segurança da informação para uso de serviços em nuvem?
+                <section class='question'>5.23 Existe segurança da informação para uso de serviços em nuvem?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='23-q'>
@@ -848,7 +873,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe planejamento e preparação da gestão de incidentes da segurança da informação?
+                <section class='question'>5.24 Existe planejamento e preparação da gestão de incidentes da segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='24-q'>
@@ -886,7 +911,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe avaliação e decisão sobre eventos da segurança da informação?
+                <section class='question'>5.25 Existe avaliação e decisão sobre eventos da segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='25-q'>
@@ -920,7 +945,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe resposta a incidentes da segurança da informação?
+                <section class='question'>5.26 Existe resposta a incidentes da segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='26-q'>
@@ -954,7 +979,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe aprendizado com incidentes de segurança da informação?
+                <section class='question'>5.27 Existe aprendizado com incidentes de segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='27-q'>
@@ -988,7 +1013,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe coleta de evidências?
+                <section class='question'>5.28 Existe coleta de evidências?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='28-q'>
@@ -1026,7 +1051,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe segurança da informação durante a disrupção?
+                <section class='question'>5.29 Existe segurança da informação durante a disrupção?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='29-q'>
@@ -1060,7 +1085,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe prontidão de TIC para continuidade de negócios?
+                <section class='question'>5.30 Existe prontidão de TIC para continuidade de negócios?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='30-q'>
@@ -1094,7 +1119,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existem requisitos legais, estatutários, regulamentares e contratuais definidos?
+                <section class='question'>5.32 Existem requisitos legais, estatutários, regulamentares e contratuais definidos?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='31-q'>
@@ -1128,7 +1153,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existem direitos de propriedade intelectual protegidos?
+                <section class='question'>5.33 Existem direitos de propriedade intelectual protegidos?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='32-q'>
@@ -1166,7 +1191,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe proteção de registros?
+                <section class='question'>5.34 Existe proteção de registros?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='33-q'>
@@ -1200,7 +1225,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe privacidade e proteção de dados pessoais?
+                <section class='question'>5.35 Existe privacidade e proteção de dados pessoais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='34-q'>
@@ -1234,7 +1259,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe análise crítica independente da segurança da informação?
+                <section class='question'>5.36 Existe análise crítica independente da segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='35-q'>
@@ -1268,7 +1293,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe compliance com políticas, regras e normas para segurança da informação?
+                <section class='question'>5.37 Existe compliance com políticas, regras e normas para segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='36-q'>
@@ -1305,6 +1330,10 @@
             </div>
 
             <div class="tab">
+
+                <h3 class="norma-classe">
+                    A.6 - Controles de pessoas
+                </h3>
 
                 <section class='question'>Existe documentação dos procedimentos de operação?
                     <div class='options'>
@@ -1340,7 +1369,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe processo de seleção?
+                <section class='question'>6.1 Existe processo de seleção?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='38-q'>
@@ -1374,7 +1403,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existem termos e condições de contratação definidos?
+                <section class='question'>6.2 Existem termos e condições de contratação definidos?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='39-q'>
@@ -1408,7 +1437,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe conscientização, educação e treinamento em segurança da informação?
+                <section class='question'>6.3 Existe conscientização, educação e treinamento em segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='40-q'>
@@ -1446,7 +1475,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe processo disciplinar?
+                <section class='question'>6.4 Existe processo disciplinar?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='41-q'>
@@ -1480,7 +1509,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existem responsabilidades após encerramento ou mudança de contratação?
+                <section class='question'>6.5 Existem responsabilidades após encerramento ou mudança de contratação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='42-q'>
@@ -1514,7 +1543,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existem acordos de confidencialidade ou não divulgação?
+                <section class='question'>6.6 Existem acordos de confidencialidade ou não divulgação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='43-q'>
@@ -1548,7 +1577,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe política de trabalho remoto?
+                <section class='question'>6.7 Existe política de trabalho remoto?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='44-q'>
@@ -1586,7 +1615,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe relato de eventos de segurança da informação?
+                <section class='question'>6.8 Existe relato de eventos de segurança da informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='45-q'>
@@ -1620,7 +1649,11 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existem perímetros de segurança física?
+                <h3 class="norma-classe">
+                    A.7 - Controles físicos 
+                </h3> 
+
+                <section class='question'>7.1 Existem perímetros de segurança física?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='46-q'>
@@ -1654,7 +1687,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe controle de entrada física?
+                <section class='question'>7.2 Existe controle de entrada física?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='47-q'>
@@ -1688,7 +1721,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe segurança de escritórios, salas e instalações?
+                <section class='question'>7.3 Existe segurança de escritórios, salas e instalações?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='48-q'>
@@ -1726,7 +1759,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe monitoramento de segurança física?
+                <section class='question'>7.4 Existe monitoramento de segurança física?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='49-q'>
@@ -1760,7 +1793,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe proteção contra ameaças físicas e ambientais?
+                <section class='question'>7.5 Existe proteção contra ameaças físicas e ambientais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='50-q'>
@@ -1794,7 +1827,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe controle para trabalho em áreas seguras?
+                <section class='question'>7.6 Existe controle para trabalho em áreas seguras?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='51-q'>
@@ -1828,7 +1861,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe política de mesa limpa e tela limpa?
+                <section class='question'>7.7 Existe política de mesa limpa e tela limpa?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='52-q'>
@@ -1866,7 +1899,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe localização e proteção adequada de equipamentos?
+                <section class='question'>7.8 Existe localização e proteção adequada de equipamentos?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='53-q'>
@@ -1900,7 +1933,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe segurança de ativos fora das instalações da organização?
+                <section class='question'>7.9 Existe segurança de ativos fora das instalações da organização?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='54-q'>
@@ -1934,7 +1967,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe controle sobre mídias de armazenamento?
+                <section class='question'>7.10 Existe controle sobre mídias de armazenamento?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='55-q'>
@@ -1968,7 +2001,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existem serviços de infraestrutura seguros?
+                <section class='question'>7.11 Existem serviços de infraestrutura seguros?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='56-q'>
@@ -2006,7 +2039,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe segurança do cabeamento?
+                <section class='question'>7.12 Existe segurança do cabeamento?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='57-q'>
@@ -2040,7 +2073,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe manutenção de equipamentos?
+                <section class='question'>7.13 Existe manutenção de equipamentos?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='58-q'>
@@ -2074,7 +2107,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe descarte seguro ou reutilização de equipamentos?
+                <section class='question'>7.14 Existe descarte seguro ou reutilização de equipamentos?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='59-q'>
@@ -2108,7 +2141,11 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existem controles para dispositivos endpoint do usuário?
+                <h3 class="norma-classe">
+                    A.8 - Controles tecnológicos 
+                </h3> 
+
+                <section class='question'>8.1 Existem controles para dispositivos endpoint do usuário?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='60-q'>
@@ -2146,7 +2183,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existem direitos de acessos privilegiados controlados?
+                <section class='question'>8.2 Existem direitos de acessos privilegiados controlados?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='61-q'>
@@ -2180,7 +2217,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe restrição de acesso à informação?
+                <section class='question'>8.3 Existe restrição de acesso à informação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='62-q'>
@@ -2214,7 +2251,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe controle de acesso ao código-fonte?
+                <section class='question'>8.4 Existe controle de acesso ao código-fonte?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='63-q'>
@@ -2248,7 +2285,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe autenticação segura?
+                <section class='question'>8.5 Existe autenticação segura?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='64-q'>
@@ -2286,7 +2323,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe gestão de capacidade?
+                <section class='question'>8.6 Existe gestão de capacidade?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='65-q'>
@@ -2320,7 +2357,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe proteção contra malware?
+                <section class='question'>8.7 Existe proteção contra malware?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='66-q'>
@@ -2331,7 +2368,7 @@
                             <input type='radio' name='66-q'>
                             <span class='custom-radio'></span>
                             <span>Não Conforme</span>
-                            <section class='sub-question'>Está em Andamento? 
+                            <section class='sub-question'>5.8 Está em Andamento? 
                                 <div class='options'>
                                     <label class='radio-option sim'>
                                         <input type='radio' name='66-subq'>
@@ -2354,7 +2391,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe gestão de vulnerabilidades técnicas?
+                <section class='question'>8.8 Existe gestão de vulnerabilidades técnicas?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='67-q'>
@@ -2388,7 +2425,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe gestão de configuração?
+                <section class='question'>8.9 Existe gestão de configuração?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='68-q'>
@@ -2426,7 +2463,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe exclusão de informações?
+                <section class='question'>8.10 Existe exclusão de informações?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='69-q'>
@@ -2460,7 +2497,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe mascaramento de dados?
+                <section class='question'>8.11 Existe mascaramento de dados?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='70-q'>
@@ -2494,7 +2531,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe prevenção de vazamento de dados?
+                <section class='question'>8.12 Existe prevenção de vazamento de dados?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='71-q'>
@@ -2528,7 +2565,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe backup das informações?
+                <section class='question'>8.13 Existe backup das informações?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='72-q'>
@@ -2566,7 +2603,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe redundância dos recursos de processamento de informações?
+                <section class='question'>8.14 Existe redundância dos recursos de processamento de informações?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='73-q'>
@@ -2600,7 +2637,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe geração de logs?
+                <section class='question'>8.15 Existe geração de logs?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='74-q'>
@@ -2634,7 +2671,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existem atividades de monitoramento?
+                <section class='question'>8.16 Existem atividades de monitoramento?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='75-q'>
@@ -2668,7 +2705,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe sincronização do relógio?
+                <section class='question'>8.17 Existe sincronização do relógio?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='76-q'>
@@ -2706,7 +2743,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe controle sobre o uso de programas utilitários privilegiados?
+                <section class='question'>8.18 Existe controle sobre o uso de programas utilitários privilegiados?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='77-q'>
@@ -2740,7 +2777,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe controle de instalação de software em sistemas operacionais?
+                <section class='question'>8.19 Existe controle de instalação de software em sistemas operacionais?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='78-q'>
@@ -2774,7 +2811,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe segurança de redes?
+                <section class='question'>8.20 Existe segurança de redes?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='79-q'>
@@ -2808,7 +2845,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe segurança dos serviços de rede?
+                <section class='question'>8.21 Existe segurança dos serviços de rede?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='80-q'>
@@ -2846,7 +2883,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe segregação de redes?
+                <section class='question'>8.22 Existe segregação de redes?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='81-q'>
@@ -2880,7 +2917,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe filtragem da web?
+                <section class='question'>8.23 Existe filtragem da web?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='82-q'>
@@ -2914,7 +2951,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe uso de criptografia?
+                <section class='question'>8.24 Existe uso de criptografia?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='83-q'>
@@ -2948,7 +2985,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe ciclo de vida de desenvolvimento seguro?
+                <section class='question'>8.25 Existe ciclo de vida de desenvolvimento seguro?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='84-q'>
@@ -2986,7 +3023,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existem requisitos de segurança da aplicação?
+                <section class='question'>8.26 Existem requisitos de segurança da aplicação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='85-q'>
@@ -3020,7 +3057,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existem princípios de arquitetura e engenharia de sistemas seguros?
+                <section class='question'>8.27 Existem princípios de arquitetura e engenharia de sistemas seguros?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='86-q'>
@@ -3054,7 +3091,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe codificação segura?
+                <section class='question'>8.28 Existe codificação segura?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='87-q'>
@@ -3088,7 +3125,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existem testes de segurança em desenvolvimento e aceitação?
+                <section class='question'>8.29 Existem testes de segurança em desenvolvimento e aceitação?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='88-q'>
@@ -3126,7 +3163,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe desenvolvimento terceirizado controlado?
+                <section class='question'>8.30 Existe desenvolvimento terceirizado controlado?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='89-q'>
@@ -3160,7 +3197,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe separação dos ambientes de desenvolvimento, teste e produção?
+                <section class='question'>8.31 Existe separação dos ambientes de desenvolvimento, teste e produção?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='90-q'>
@@ -3194,7 +3231,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existe gestão de mudanças?
+                <section class='question'>8.32 Existe gestão de mudanças?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='91-q'>
@@ -3228,7 +3265,7 @@
                     </div>
                 </section> 
 
-                <section class='question'>Existem informações de teste protegidas?
+                <section class='question'>8.33 Existem informações de teste protegidas?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='92-q'>
@@ -3266,7 +3303,7 @@
 
             <div class="tab">
 
-                <section class='question'>Existe proteção de sistemas de informação durante os testes de auditoria?
+                <section class='question'>8.34 Existe proteção de sistemas de informação durante os testes de auditoria?
                     <div class='options'>
                         <label class='radio-option sim'>
                             <input type='radio' name='93-q'>
