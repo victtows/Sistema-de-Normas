@@ -59,6 +59,40 @@ function selectEmpresa() {
     });
 }
 
+function resultadoFormulario() {
+    let respostas = {};
+
+    $("input[type='radio']:checked").each(function () {
+        let nome = $(this).attr("name");
+        let valor = $(this).closest("label").find("span:last").text().trim();
+
+        respostas[nome] = valor;
+    });
+
+    console.log(respostas);
+    console.log($("#empresaSelect").val())
+
+    $.ajax({
+        url: "../Backend/formulario.php",
+        type: "POST",
+        data: {
+            tipo_acao: "cadastro_resultado",
+            filtros: respostas,
+            empresa: $("#empresaSelect").val(),
+        },
+        dataType: "json",
+        contentType: "application/json",
+        success: function (response) {
+            console.log("Sucesso:", response);
+        },
+        error: function (xhr, status, error) {
+            console.log("Erro:", error);
+        }
+    });
+}
+
+
+
 function limparSelect() {
     document.getElementById('empresaSelect').options.length = 0;
 }
