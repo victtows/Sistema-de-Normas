@@ -74,15 +74,17 @@ function showTab(n) {
     x[n].style.display = "block";
     
     if (n == 0) {
-        document.getElementById("prevBtn").style.display = "none"
+        document.getElementById("prevBtn").style.display = "none";
     } else {
-        document.getElementById("prevBtn").style.display = "inline"
+        document.getElementById("prevBtn").style.display = "inline";
     }
 
     if (n == (x.length - 1)) {
-        document.getElementById("nextBtn").style.display = "none"
+        document.getElementById("nextBtn").style.display = "none";
+        document.getElementById("submBtn").style.display = "inline";
     } else {
-        document.getElementById("nextBtn").style.display = "inline"
+        document.getElementById("nextBtn").style.display = "inline";
+        document.getElementById("submBtn").style.display = "none";
     }
 }
 
