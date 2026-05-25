@@ -5,6 +5,8 @@ function abrirPagina(pagina){
         window.location.href = 'pagina27701.php';
     } else if(pagina === 'historico'){
         window.location.href = "historico.php";
+    } else if(pagina === 'empresa') {
+        window.location.href = 'empresa.php'
     } else {
         alert("Página não encontrada");
     }
