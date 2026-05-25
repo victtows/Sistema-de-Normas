@@ -56,12 +56,12 @@
             $filtros = $_POST["filtros"];
 
             foreach($filtros as $controle => $resultado){
-                $idControle = explode("-", $controle)[0];
+                $NomeControle = explode("-", $controle)[0];
 
                 $sql = "INSERT INTO Resultado
-                (idPesquisa, idControle, resultado, andamento)
+                (idPesquisa, NomeControle, resultado, andamento)
                 VALUES
-                ('$idPesquisa', '$idControle', '$resultado', 'Pendente')";
+                ('$idPesquisa', '$NomeControle', '$resultado', 'Pendente')";
 
                 mysqli_query($conexao, $sql);
             }

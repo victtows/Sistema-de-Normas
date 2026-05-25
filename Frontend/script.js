@@ -60,6 +60,9 @@ function selectEmpresa() {
 }
 
 function resultadoFormulario() {
+    if (!validacaoSubmit()) {
+        return;
+    }
     $.ajax({
         url: "../Backend/formulario.php",
         type: "post",
@@ -156,6 +159,42 @@ function nextPrev(n) {
     }
 
     showTab(currentTab);
+}
+
+function validacaoSubmit(){
+    let empresa = $("#empresaSelect").val();
+
+    if (!empresa) {
+        alert("Selecione uma empresa.");
+        $("#empresaSelect").focus();
+        return false;
+    }
+
+     let perguntas = new Set();
+
+    $("input[type='radio']").each(function () {
+        let nome = $(this).attr("name");
+        if (nome.includes("-q") && !nome.includes("subq")) {
+            perguntas.add(nome);
+        }
+    });
+
+    for (let pergunta of perguntas) {
+        let selecionado = $(`input[name="${pergunta}"]:checked`);
+        if (selecionado.length === 0) {
+            alert(`Falta responder a pergunta ${pergunta}`);
+            $(`input[name="${pergunta}"]`)
+                .first()[0]
+                .scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+
+            return false;
+        }
+    }
+
+    return true;
 }
 
 function validateForm() {
