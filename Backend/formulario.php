@@ -79,6 +79,8 @@ if(!isset($_SESSION["usuario"])){
                     case "Não Aplicavel":
                         $resultado = 3;
                         break;
+                    default:
+                        $resultado = 0;
                 }
                 switch($dados["andamento"] ?? ""){
                     case "Sim":
