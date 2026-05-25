@@ -11,7 +11,7 @@ if($tipo_acao === "cadastro"){
     $email = $_POST["email"];
     $senha = $_POST["senha"];
 
-    $sql = "SELECT * FROM usuario WHERE email = '$email'";
+    $sql = "SELECT * FROM usuario WHERE emailUsuario = '$email'";
     $resultado = mysqli_query($conexao, $sql);
 
     if(mysqli_num_rows($resultado) > 0){
@@ -31,7 +31,7 @@ if($tipo_acao === "cadastro"){
     );
 
     $sql = "INSERT INTO usuario
-    (nomeUsuario , emailUsuario , senhaUsuario )
+    (nomeUsuario , emailUsuario, senhaUsuario )
     VALUES
     ('$nome', '$email', '$senhaHash')";
 

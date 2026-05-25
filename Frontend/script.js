@@ -121,68 +121,6 @@ function limparSelect() {
     document.getElementById('empresaSelect').options.length = 0;
 }
 
-function cadastro(){
-    let nome = $("#cad_nome").val().trim();
-    let email = $("#cad_email").val().trim();
-    let senha = $("#cad_senha").val();
-    let confirmarSenha = $("#cad_confirmarSenha").val();
-
-    if(!nome || !usuario || !email || !senha || !confirmarSenha){
-        alert("Campos vazios");
-        return;
-    }
-    if(senha.length < 8){
-        alert("A senha deve ter no mínimo 8 caracteres.");
-        return;
-    }
-
-    if(senha !== confirmarSenha){
-        alert("As senhas não coincidem.");
-        return;
-    }
-
-    $.ajax({
-        url: "../Backend/auth.php",
-        type: "post",
-        dataType: "json",
-        data: {
-            tipo_acao: "cadastro",
-            nome: nome,
-            email: email,
-            senha: senha
-        },
-        success: function(result){
-            if(result.success){
-                alert("Conta criada!");
-                window.location.href =
-                    "login.php";
-            } else {
-                alert(result.mensagem);
-            }
-        }
-    });
-}
-
-function login(){
-    $.ajax({
-        url: "../Backend/auth.php",
-        type: "post",
-        dataType: "json",
-        data: {
-            tipo_acao: "login",
-            email: $("#email").val(),
-            senha: $("#senha").val()
-        },
-        success: function(result){
-            if(result.success){
-                window.location.href =
-                    "dashboard.php";
-            } else {
-                alert(result.mensagem);
-            }
-        }
-    });
-}
 
 /// CÓDIGO DAS TABS DO FORMULARIO ///
 
