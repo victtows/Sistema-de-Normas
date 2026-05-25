@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION["usuario"])){
+    header("Location: login.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,22 +20,22 @@
 
     <div class="floating-sidebar">
 
-        <a href="index.html" class="menu-item">
+        <a href="index.php" class="menu-item">
             <span class="icon"><i class="fa-solid fa-solid fa-house"></i></span>
             <span class="text">Início</span>
         </a>
     
-        <a href="pagina27001.html" class="menu-item">
+        <a href="pagina27001.php" class="menu-item">
             <span class="icon"><i class="fa-solid fa-shield-halved"></i></span>
             <span class="text">ISO 27001</span>
         </a>
     
-        <a href="pagina27701.html" class="menu-item">
+        <a href="pagina27701.php" class="menu-item">
             <span class="icon"><i class="fa-solid fa-lock"></i></span>
             <span class="text">ISO 27701</span>
         </a>
     
-        <a href="historico.html" class="menu-item">
+        <a href="historico.php" class="menu-item">
             <span class="icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
             <span class="text">Histórico</span>
         </a>
