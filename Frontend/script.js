@@ -121,3 +121,50 @@ function validateForm() {
 
   return valid; 
 }
+
+/// CONTADOR DE QUESTOES ///
+
+const radios = document.querySelectorAll("input[type='radio']");
+
+function updateProgress() {
+    const questions = document.querySelectorAll(".question");
+    const total = questions.length;
+
+    let answered = 0;
+
+    questions.forEach(question => {
+        const inputs = question.querySelectorAll("input[type='radio']");
+        const isAnswered = Array.from(inputs).some(input => input.checked);
+
+        if (isAnswered) {
+            answered++;
+        }
+    });
+
+    const percent = total === 0 ? 0 : (answered / total) * 100;
+
+    document.getElementById("progressText").innerText =
+        `${answered} / ${total} respondidas`;
+
+    document.getElementById("progressFill").style.width =
+        percent + "%";
+}
+
+radios.forEach(radio => {
+    radio.addEventListener("change", function () {
+
+        const question = radio.closest(".question");
+
+        const naoConformeRadio = question.querySelectorAll("input[type='radio']")[1];
+
+        const subRadios = question.querySelectorAll("input[name$='subq']");
+
+        if (!naoConformeRadio.checked) {
+            subRadios.forEach(r => r.checked = false);
+        }
+
+        updateProgress();
+    });
+});
+
+updateProgress();
