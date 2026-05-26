@@ -174,6 +174,27 @@ function resultadoFormulario() {
     });
 }
 
+function selectHistorico(idEmpresa) {
+    $.ajax({
+        url: "../Backend/formulario.php",
+        type: "POST",
+        data: {
+            tipo_acao: "select_historico",
+            idEmpresa: idEmpresa,
+        },
+        dataType: "json",
+
+        success: function (result) {
+            console.log(result);
+
+        },
+        error: function (xhr) {
+            console.log(xhr.responseText);
+            alert("Erro ao pesquisar empresas");
+        }
+    });
+}
+
 function SalvarAuditoria(idPesquisa) {
     let respostas = {};
     $("input[type='radio']:checked").each(function () {

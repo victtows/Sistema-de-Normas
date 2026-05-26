@@ -268,7 +268,50 @@ if(!isset($_SESSION["usuario"])){
             }
 
             echo json_encode($auditorias);
-        }       
+        } elseif($tipo_acao === "select_historico"){
+            $idEmpresa = $_POST["idEmpresa"];
+            $sql = "SELECT idAuditoria FROM Auditoria WHERE idEmpresa = '$idEmpresa' LIMIT 3";
+            $resultado = mysqli_query($conexao, $sql);
+            
+            if($resultado){
+                $todasAuditorias = [];
+                while($row = mysqli_fetch_assoc($resultado)){
+                    $auditoria = $row['idAuditoria'];
+                    $sqlResultado = "SELECT r.*, c.descricaoControle FROM resultado r INNER JOIN controle c ON c.numero = r.numeroControle WHERE r.idAuditoria = '$auditoria'";
+                    $queryResultado = mysqli_query($conexao, $sqlResultado);
+                    $dados = [];
 
-    }
+                    while($linha = mysqli_fetch_assoc($queryResultado)){
+                        $dados[] = $linha;
+                    }
+
+                    $sqlEstatistica = "SELECT COUNT(CASE WHEN resultado = 1 THEN 1 END) AS conforme, COUNT(CASE WHEN resultado = 2 THEN 1 END) AS naoConforme, COUNT(CASE WHEN resultado = 3 THEN 1 END) AS naoAplicavel FROM resultado WHERE idAuditoria = '$auditoria'";
+                    $queryEstatistica = mysqli_query($conexao, $sqlEstatistica);
+                    $estatisticas = mysqli_fetch_assoc($queryEstatistica);
+
+                    $sqlData = "SELECT dataAuditoria FROM auditoria WHERE idAuditoria = '$auditoria'";
+                    $queryData = mysqli_query($conexao, $sqlData);
+                    $dataAuditoria = mysqli_fetch_assoc($queryData);
+                    $sqlObservacoes = "SELECT r.numeroControle, c.descricaoControle, r.observacao FROM resultado r INNER JOIN controle c ON c.numero = r.numeroControle WHERE r.idAuditoria = '$auditoria' AND r.observacao IS NOT NULL AND r.observacao != ''";
+                    $queryObservacoes = mysqli_query($conexao, $sqlObservacoes);
+                    $observacoes = [];
+                    
+                    while($linha = mysqli_fetch_assoc($queryObservacoes)){
+                        $observacoes[] = $linha;
+                    }
+
+                    $todasAuditorias[] = [
+                        "success" => true,
+                        "estatisticas" => $estatisticas,
+                        "dados" => $dados,
+                        "dataAuditoria" => $dataAuditoria["dataAuditoria"],
+                        "observacoes" => $observacoes
+                    ];
+                }
+
+                echo json_encode($todasAuditorias);
+            } else {
+                echo json_encode(["success" => false, "error" => mysqli_error($conexao)]);
+            }    
+}   
 ?>
