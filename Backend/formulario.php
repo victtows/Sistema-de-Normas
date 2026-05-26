@@ -114,16 +114,16 @@ if(!isset($_SESSION["usuario"])){
                 "idPesquisa" => $idPesquisa,
             ]);
         } elseif($tipo_acao === "select_resultado"){
-            $empresa = $_POST["idPesquisa"];
+            $auditoria = $_POST["idPesquisa"];
 
-            $sql = "SELECT * FROM empresa WHERE idUsuario = '$idUsuario'";
+            $sql = "SELECT * FROM resultado WHERE idAuditoria = '$auditoria'";
             $resultado = mysqli_query($conexao, $sql);
             if($resultado){
-                $empresas = [];
+                $resultadoAuditoria = [];
                 while($linha = mysqli_fetch_assoc($resultado)){
-                    $empresas[] = $linha;
+                    $resultadoAuditoria[] = $linha;
                 }
-                echo json_encode($empresas);
+                echo json_encode($resultadoAuditoria);
             } else {
                 echo "Erro: " . mysqli_error($conexao);
             }

@@ -162,7 +162,6 @@ function resultadosPesquisa(idPesquisa) {
         success: function(result) {
             console.log(result);
 
-
         },
         error: function(xhr) {
             console.log(xhr.responseText);
