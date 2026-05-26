@@ -93,6 +93,7 @@ if(!isset($_SESSION["usuario"])){
     let idPesquisa = sessionStorage.getItem("idPesquisa");
     console.log(idPesquisa);
     resultadosPesquisa(idPesquisa); 
+    resultadoPesquisaSegregado(idPesquisa);
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 

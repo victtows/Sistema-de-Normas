@@ -267,6 +267,27 @@ function resultadosPesquisa(idPesquisa) {
     });
 }
 
+function resultadoPesquisaSegregado(idPesquisa) {
+    $.ajax({
+        url: "../Backend/formulario.php",
+        type: "POST",
+        data: {
+            tipo_acao: "select_resultado_segregado",
+            idPesquisa: idPesquisa
+        },
+        dataType: "json",
+        success: function(result) {
+            console.log(result);
+        },
+        error: function(xhr) {
+            console.log(xhr.responseText);
+            alert("Erro ao pesquisar empresas");
+        }
+    })
+}
+
+function gerarGraficoBarraSegregado(resultado) {}
+
 function gerarGraficoPizza(resultado) {
     const data = {
         labels: [
