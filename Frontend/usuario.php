@@ -49,7 +49,7 @@ if(!isset($_SESSION["usuario"])){
                 <div>
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; align-items: center;">
                         <h2 style="margin: auto;"><?php echo $_SESSION['usuario']['nome'];?></h2>
-                        <button type='button' id='submBtn' onclick=''>Deslogar</button>  
+                        <button type='button' id='submBtn' onclick='logout()'>Deslogar</button>  
                     </div>
                     <p><?php echo $_SESSION['usuario']['email'] ?></p>
                 </div>
@@ -59,4 +59,10 @@ if(!isset($_SESSION["usuario"])){
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="./script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    function logout() {
+        <?php session_destroy()?>
+        location.reload()
+    }
+</script>
 </html>
