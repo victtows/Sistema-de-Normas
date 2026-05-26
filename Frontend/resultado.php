@@ -38,6 +38,11 @@ if(!isset($_SESSION["usuario"])){
             <span class="icon"><i class="fa-solid fa-user"></i></span>
             <span class="text">Usuário</span>
         </a>
+
+        <a href="#" class="menu-item" onclick="gerarPDF()">
+            <span class="icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
+            <span class="text">Gerar PDF</span>
+        </a>
     
     </div>
     <div class="container">

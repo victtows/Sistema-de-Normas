@@ -306,6 +306,10 @@ function limparSelect() {
     document.getElementById('empresaSelect').options.length = 0;
 }
 
+function GerarPDF(){
+    
+}
+
 
 /// CÓDIGO DAS TABS DO FORMULARIO ///
 
