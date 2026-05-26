@@ -13,10 +13,34 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: var(--cor_2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;      
+}
+
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+.brand img {
+    width: 90px;
+    height: auto;
+}
+
+.brand span {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--cor_3);
 }
 
 .container {
@@ -25,6 +49,11 @@ body {
     border-radius: 14px;
     box-shadow: 0 10px 25px var(--sombra);
     overflow: hidden;
+    padding: 0%;
+}
+
+.inner {
+    padding: 20px;
 }
 
 .tabs {
@@ -34,7 +63,7 @@ body {
 
 .tab {
     flex: 1;
-    padding: 14px;
+    padding: 12px;
     text-align: center;
     cursor: pointer;
     font-weight: bold;
@@ -50,7 +79,7 @@ body {
 
 .form {
     display: none;
-    padding: 25px;
+    padding: 20px;
 }
 
 .form.active {
@@ -60,20 +89,21 @@ body {
 h2 {
     text-align: center;
     color: var(--cor_3);
-    margin-bottom: 10px;
 }
 
 input {
     width: 100%;
-    padding: 10px 5px;
-    margin: 18px 0;
+    padding: 10px 0;   /* 👈 sem padding lateral */
+    margin: 15px 0;
+
     border: none;
     border-bottom: 2px solid var(--cor_1);
+
     outline: none;
     background: transparent;
-    font-size: 14px;
-}
 
+    display: block;
+}
 input:focus {
     border-bottom: 2px solid var(--cor_1_complemento);
 }
@@ -82,20 +112,13 @@ button {
     width: 100%;
     padding: 12px;
     background: var(--cor_1);
-    color: var(--cor_3);
     border: none;
     border-radius: 8px;
-    cursor: pointer;
     font-weight: bold;
-    margin-top: 10px;
+    cursor: pointer;
+    color: var(--cor_3);
 }
 
 button:hover {
     background: var(--cor_1_complemento);
-}
-
-.rules {
-    font-size: 12px;
-    color: var(--cinza);
-    margin-top: -10px;
 }

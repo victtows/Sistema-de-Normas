@@ -24,16 +24,18 @@ if(!isset($_SESSION["usuario"])){
 
     <div class="container">
 
-        <section class="introducao">
+    <section class="introducao">
 
-            <h1>Auditoria ISO</h1>
+    <div class="brand">
+        <img src="/assets/img/beecat.png" alt="BeeCat Logo">
+        <span>BeeCat Auditoria</span>
+    </div>
 
-            <p>
-                Sistema para gestão e conformidade
-                com normas ISO.
-            </p>
+    <p>
+        Sistema para gestão e conformidade com normas ISO.
+    </p>
 
-        </section>
+    </section>
 
         <div class="recursos">
 

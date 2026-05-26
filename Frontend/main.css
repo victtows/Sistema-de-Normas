@@ -99,18 +99,16 @@ header{
 }
 
 .introducao{
+    text-align: center;
+    margin-top: 80px;   /* 👈 aumenta espaço superior */
+    margin-bottom: 50px;
+}
+
+.introducao{
 
     text-align:center;
 
     margin-bottom:50px;
-
-}
-
-.introducao h1{
-
-    font-size:4rem;
-
-    margin-bottom:15px;
 
 }
 
@@ -788,4 +786,26 @@ canvas{
     #tabelaObservacoes td textarea {
         min-height: 70px;
     }
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    margin-bottom: 5px;
+}
+
+/* LOGO MAIOR */
+.brand img {
+    width: 100px !important;
+    height: auto !important;
+    max-width: none !important;
+}
+
+/* TEXTO MAIOR */
+.brand span {
+    font-weight: 800;
+    font-size: 2rem;  /* 👈 aumentei */
+    color: #111;
 }

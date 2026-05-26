@@ -8,6 +8,11 @@
 
 <body>
 
+<div class="brand">
+    <img src="/assets/img/beecat.png" alt="BeeCat Logo">
+    <span>BeeCat Login</span>
+</div>
+
 <div class="container">
 
     <div class="tabs">
@@ -15,6 +20,7 @@
         <div class="tab" onclick="showTab('register')">Cadastro</div>
     </div>
 
+    <div class="inner">
     <div id="login" class="form active">
         <h2>Entrar</h2>
         <input type="text" placeholder="Email" id="login_email">
@@ -29,6 +35,7 @@
         <input type="password" placeholder="Mínimo 8 caracteres" id="cad_senha">
         <input type="password" placeholder="Confirme sua senha" id="cad_senhaconfirmar">
         <button onclick="cadastro()">Cadastrar</button>
+    </div>
     </div>
 
 </div>
