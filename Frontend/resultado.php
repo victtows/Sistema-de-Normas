@@ -87,17 +87,16 @@ if(!isset($_SESSION["usuario"])){
 </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="./script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+
+<script src="./script.js"></script>
 <script>
     let idPesquisa = sessionStorage.getItem("idPesquisa");
     console.log(idPesquisa);
     resultadosPesquisa(idPesquisa); 
     resultadoPesquisaSegregado(idPesquisa);
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
-
-<script src="./script.js"></script>
 </html>
