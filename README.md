@@ -13,9 +13,10 @@ O sistema de auditoria de empresa busca facilitar o gerenciamento de audiotorias
 
 ## 👨‍🎓 Colaboradores
 
-- @FabioPYAug
-- @victtows
-- @Otaviopax
+- Github: [FabioPYaug](https://github.com/FabioPYAug)
+- Github: [Victtows](https://github.com/victtows)
+- Github: [Otaviopax ](https://github.com/Otaviopax) 
+
   
 ---
 
