@@ -35,7 +35,7 @@ O sistema permite o cadastro de usuários, empresas e a realização de auditori
 
 ---
 
-## 🧱 Modelo do Sistema
+## 📐 Modelo do Sistema
 
 ### Entidades principais:
 
@@ -44,6 +44,18 @@ O sistema permite o cadastro de usuários, empresas e a realização de auditori
 - Auditoria
 - Controle
 - Resultado
+
+---
+
+## 🗒️ Norma 27001
+
+Estabelece requisitos para implementar, manter e melhorar um Sistema de Gestão de Segurança da Informação (SGSI), focando na proteção geral dos dados.
+
+---
+
+## 🗒️ Norma 27701
+
+Usa a ISO 27001 como extensão introduzindo requisitos específicos para um Sistema de Gestão de Privacidade de Informação (SGPI), voltado exclusivamente para a proteção de dados pessoas.
 
 ---
 
