@@ -34,9 +34,9 @@ if(!isset($_SESSION["usuario"])){
             <span class="text">ISO 27701</span>
         </a>
     
-        <a href="historico.php" class="menu-item">
-            <span class="icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
-            <span class="text">Histórico</span>
+        <a href="usuario.php" class="menu-item">
+            <span class="icon"><i class="fa-solid fa-user"></i></span>
+            <span class="text">Usuário</span>
         </a>
     
     </div>
