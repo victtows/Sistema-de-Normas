@@ -14,7 +14,7 @@ if(!isset($_SESSION["usuario"])){
     <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/x-icon" href="../assets/img/logo.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Controles ISO 27001</title>
+    <title>Painel do Usuário</title>
 </head>
 <body>
 
@@ -43,31 +43,17 @@ if(!isset($_SESSION["usuario"])){
     </div>
     
     <div class="container">
-        <section class="card formulario">
-            <h2> Cadastro de Empresa</h2>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <section class="card">
+            <div style="display: flex; flex-direction: row; align-items: center; gap: 1rem;">
+                <img src="../assets/img/avatar.webp" style="max-width: 10rem; border-radius: 40px;">
                 <div>
-                    <label for='nomeEmpresa'>Nome:</label>
-                    <input type='text' name='nomeEmpresa' id="novaEmpresa">
-                </div>
-                <div>
-                    <label for='enderecoEmpresa'>Endereço:</label>
-                    <input type='text' name='enderecoEmpresa' id="enderecoEmpresa">
-                </div>
-                <div>
-                    <label for='emailEmpresa'>Email:</label>
-                    <input type='text' name='emailEmpresa' id="emailEmpresa">
-                </div>
-                <div>
-                    <label for='cnpjEmpresa'>CNPJ:</label>
-                    <input type='text' name='cnpjEmpresa' id="cnpjEmpresa">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; align-items: center;">
+                        <h2 style="margin: auto;"><?php echo $_SESSION['usuario']['nome'];?></h2>
+                        <button type='button' id='submBtn' onclick=''>Deslogar</button>  
+                    </div>
+                    <p><?php echo $_SESSION['usuario']['email'] ?></p>
                 </div>
             </div>
-            <div>
-                <label for='descricaoEmpresa'>Descrição:</label>
-                <input type='text' name='descricaoEmpresa' id="descricaoEmpresa">
-            </div>
-            <button type='button' id='submBtn' onclick='cadastrarEmpresa()'>Submit</button>
         </section>
     </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
