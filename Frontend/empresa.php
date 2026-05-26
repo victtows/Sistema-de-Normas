@@ -34,6 +34,11 @@ if(!isset($_SESSION["usuario"])){
             <span class="icon"><i class="fa-solid fa-lock"></i></span>
             <span class="text">ISO 27701</span>
         </a>
+
+        <a href="empresa.php" class="menu-item">
+            <span class="icon"><i class="fa-solid fa-building"></i></span>
+            <span class="text">Empresas</span>
+        </a>
     
         <a href="usuario.php" class="menu-item">
             <span class="icon"><i class="fa-solid fa-user"></i></span>
