@@ -115,19 +115,28 @@ if(!isset($_SESSION["usuario"])){
             ]);
         } elseif($tipo_acao === "select_resultado"){
             $auditoria = $_POST["idPesquisa"];
+            $sqlResultado = "SELECT * FROM resultado WHERE idAuditoria = '$auditoria'";
+            $queryResultado = mysqli_query($conexao, $sqlResultado);
+            $dados = [];
 
-            $sql = "SELECT * FROM resultado WHERE idAuditoria = '$auditoria'";
-            $resultado = mysqli_query($conexao, $sql);
-            if($resultado){
-                $resultadoAuditoria = [];
-                while($linha = mysqli_fetch_assoc($resultado)){
-                    $resultadoAuditoria[] = $linha;
-                }
-                echo json_encode($resultadoAuditoria);
-            } else {
-                echo "Erro: " . mysqli_error($conexao);
+            while($linha = mysqli_fetch_assoc($queryResultado)){
+                $dados[] = $linha;
             }
 
+            $sqlEstatistica = "SELECT
+                COUNT(CASE WHEN resultado = 1 THEN 1 END) AS conforme,
+                COUNT(CASE WHEN resultado = 2 THEN 1 END) AS naoConforme,
+                COUNT(CASE WHEN resultado = 3 THEN 1 END) AS naoAplicavel
+            FROM resultado
+            WHERE idAuditoria = '$auditoria'";
+
+            $queryEstatistica = mysqli_query($conexao, $sqlEstatistica);
+            $estatisticas = mysqli_fetch_assoc($queryEstatistica);
+            echo json_encode([
+                "success" => true,
+                "estatisticas" => $estatisticas,
+                "dados" => $dados
+            ]);
         }
 
     }
