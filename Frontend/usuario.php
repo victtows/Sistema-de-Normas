@@ -83,7 +83,7 @@ if(!isset($_SESSION["usuario"])){
 <script>
     selectEmpresaUser()
     function logout(){
-        window.location.href = "logout.php";
+        window.location.href = "../Backend/logout.php";
     }
 </script>
 </html>
