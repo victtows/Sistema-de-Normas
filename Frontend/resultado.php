@@ -4,6 +4,7 @@ if(!isset($_SESSION["usuario"])){
     header("Location: login.php");
     exit;
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -16,4 +17,9 @@ if(!isset($_SESSION["usuario"])){
 <body>
     
 </body>
+<script>
+    let idPesquisa = sessionStorage.getItem("idPesquisa");
+    console.log(idPesquisa);
+    resultadosSubmit(idPesquisa)
+</script>
 </html>

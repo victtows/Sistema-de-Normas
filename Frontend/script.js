@@ -138,6 +138,9 @@ function SalvarAuditoria(idPesquisa) {
         success: function (result) {
                 console.log("auditoriaaasdasdasdasdasde me mataaaa salvou");
                 alert('auditoria salvouu');
+                sessionStorage.setItem("idPesquisa", result.idPesquisa);
+                window.location.href = "resultado.php";
+
             },
             error: function (data) {
                 console.log(data);
@@ -146,6 +149,27 @@ function SalvarAuditoria(idPesquisa) {
     });
 }
 
+function resultadosPesquisa(idPesquisa) {
+    $.ajax({
+        url: "../Backend/formulario.php",
+        type: "POST",
+        data: {
+            tipo_acao: "select_resultado",
+            idPesquisa: idPesquisa
+        },
+        dataType: "json",
+        
+        success: function(result) {
+            console.log(result);
+
+
+        },
+        error: function(xhr) {
+            console.log(xhr.responseText);
+            alert("Erro ao pesquisar empresas");
+        }
+    });
+}
 
 function limparSelect() {
     document.getElementById('empresaSelect').options.length = 0;
