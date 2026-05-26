@@ -62,6 +62,7 @@ if(!isset($_SESSION["usuario"])){
             <progress id="barraProgresso" value="0" max="93" style="width: 100%; height: 1rem;"> </progress>
         </section>
     </div>
+    <div class="tabela-container">
         <table id="tabelaObservacoes">
             <thead>
                 <tr>
@@ -73,6 +74,7 @@ if(!isset($_SESSION["usuario"])){
         <tbody id="corpoObservacoes">
     </tbody>
 </table>
+</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="./script.js"></script>

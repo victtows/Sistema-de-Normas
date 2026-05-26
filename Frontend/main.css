@@ -693,3 +693,99 @@ canvas{
     margin-bottom:20px;
 
 }
+
+/** Estilos para a tabela de resultados*/
+
+.tabela-container {
+    max-width: 1450px;
+    margin: 30px auto;
+    padding: 0 20px;
+    overflow-x: auto;
+}
+
+
+#tabelaObservacoes {
+    width: 100%;
+    table-layout: fixed; 
+    border-collapse: separate;
+    border-spacing: 0 14px;
+}
+
+#tabelaObservacoes thead th {
+    background: #f4cf3a;
+    color: #111;
+    padding: 16px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 5px solid #d6aa22;
+}
+
+#tabelaObservacoes thead th:first-child {
+    border-top-left-radius: 14px;
+}
+
+#tabelaObservacoes thead th:last-child {
+    border-top-right-radius: 14px;
+}
+
+#tabelaObservacoes tbody tr {
+    background: #fff;
+    box-shadow: 0 5px 0 #e5e7eb, 0 10px 20px rgba(0,0,0,0.05);
+    transition: all 0.25s ease;
+}
+
+#tabelaObservacoes tbody tr:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+#tabelaObservacoes td {
+    padding: 18px;
+    font-size: 15px;
+    color: #374151;
+    overflow-wrap: break-word;
+}
+
+#tabelaObservacoes tbody td:first-child {
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    font-weight: 700;
+    color: #111827;
+}
+
+#tabelaObservacoes tbody td:last-child {
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+#tabelaObservacoes td textarea {
+    width: 100%;
+    min-height: 90px;
+    resize: vertical;
+    padding: 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    outline: none;
+    font-size: 14px;
+    background: #fafafa;
+    transition: 0.2s;
+    box-sizing: border-box;
+}
+
+#tabelaObservacoes td textarea:focus {
+    border-color: #f4cf3a;
+    box-shadow: 0 0 0 4px rgba(244,207,58,0.2);
+}
+
+@media (max-width: 768px) {
+    #tabelaObservacoes td,
+    #tabelaObservacoes thead th {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    #tabelaObservacoes td textarea {
+        min-height: 70px;
+    }
+}
