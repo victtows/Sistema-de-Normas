@@ -34,10 +34,15 @@ if(!isset($_SESSION["usuario"])){
             <span class="icon"><i class="fa-solid fa-lock"></i></span>
             <span class="text">ISO 27701</span>
         </a>
+
+        <a href="empresa.php" class="menu-item">
+            <span class="icon"><i class="fa-solid fa-building"></i></span>
+            <span class="text">Empresas</span>
+        </a>
     
-        <a href="historico.php" class="menu-item">
-            <span class="icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
-            <span class="text">Histórico</span>
+        <a href="usuario.php" class="menu-item">
+            <span class="icon"><i class="fa-solid fa-user"></i></span>
+            <span class="text">Usuário</span>
         </a>
     
     </div>
@@ -49,20 +54,33 @@ if(!isset($_SESSION["usuario"])){
                 <div>
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; align-items: center;">
                         <h2 style="margin: auto;"><?php echo $_SESSION['usuario']['nome'];?></h2>
-                        <button type='button' id='submBtn' onclick='logout()'>Deslogar</button>  
+                        <button type="button" id="submBtn" onclick="logout()">Deslogar</button>
                     </div>
                     <p><?php echo $_SESSION['usuario']['email'] ?></p>
                 </div>
             </div>
         </section>
+        <section class="card formulario">
+            <div>
+                <p>Selecione a empresa</p>
+
+                <select id="empresaSelect">
+                    <option value="">
+                        Nenhuma empresa selecionada
+                    </option>
+                </select>
+            </div>
+        </section>
+        <div id="auditoriasContainer" style="display: grid; grid-template-columns:1fr 1fr; gap: 1rem;"></div>
     </body>
+
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="./script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-    function logout() {
-        <?php session_destroy()?>
-        location.reload()
+    selectEmpresaUser()
+    function logout(){
+        window.location.href = "logout.php";
     }
 </script>
 </html>

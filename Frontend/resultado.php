@@ -33,10 +33,20 @@ if(!isset($_SESSION["usuario"])){
             <span class="icon"><i class="fa-solid fa-lock"></i></span>
             <span class="text">ISO 27701</span>
         </a>
+
+        <a href="empresa.php" class="menu-item">
+            <span class="icon"><i class="fa-solid fa-building"></i></span>
+            <span class="text">Empresas</span>
+        </a>
+
+        <a href="#" class="menu-item" onclick="gerarPDF()">
+            <span class="icon"><i class="fa-solid fa-file-pdf"></i></span>
+            <span class="text">Gerar PDF</span>
+        </a>
     
-        <a href="historico.php" class="menu-item">
-            <span class="icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
-            <span class="text">Histórico</span>
+        <a href="usuario.php" class="menu-item">
+            <span class="icon"><i class="fa-solid fa-user"></i></span>
+            <span class="text">Usuário</span>
         </a>
     
     </div>
