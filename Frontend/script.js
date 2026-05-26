@@ -7,6 +7,8 @@ function abrirPagina(pagina){
         window.location.href = "historico.php";
     } else if(pagina === 'empresa') {
         window.location.href = 'empresa.php'
+    } else if(pagina === 'usuario') {
+        window.location.href = 'usuario.php'
     } else {
         alert("Página não encontrada");
     }
@@ -37,6 +39,89 @@ function cadastrarEmpresa(){
                 alert('OCorreu um erro eu acho');
             }
         });
+}
+
+function selectAuditoriaEmpresa(idEmpresa){
+    console.log("ele verificou papai")
+    $.ajax({
+        url: "../Backend/formulario.php",
+        type: "POST",
+        dataType: "json",
+        data: {
+            tipo_acao: "select_auditoria",
+            idEmpresa: idEmpresa
+        },
+
+        success: function(result){
+            $("#auditoriasContainer").html("");
+            if(result.length === 0){
+                $("#auditoriasContainer").html(`
+                    <section class="card">
+                        Nenhuma auditoria encontrada
+                    </section>
+                `);
+                return;
+            }
+            result.forEach((auditoria) => {
+                $("#auditoriasContainer").append(`
+                    <section class="card auditoria-card">
+                        <h3>Auditoria #${auditoria.idAuditoria}</h3>
+                        <p>Data: ${auditoria.dataAuditoria}</p>
+
+                        <button onclick="abrirResultadoUser(${auditoria.idAuditoria})">
+                            Ver Resultado
+                        </button>
+                    </section>
+                `);
+            });
+        },
+
+        error: function(xhr){
+            console.log(xhr.responseText);
+            alert("Erro ao buscar auditorias");
+        }
+    });
+}
+
+function abrirResultadoUser(idPesquisa){
+    sessionStorage.setItem("idPesquisa", idPesquisa);
+    window.location.href = "resultado.php";
+}
+
+function selectEmpresaUser(){
+    $.ajax({
+        url: "../Backend/formulario.php",
+        type: "POST",
+        data: {
+            tipo_acao: "select_empresa"
+        },
+        dataType: "json",
+        
+        success: function(result) {
+            console.log(result);
+
+            result.forEach((element) => {
+                document.getElementById('empresaSelect').innerHTML += '\n\n<option value="' + element['idEmpresa'] + '">\n' + element['nomeEmpresa'] + '\n</option>\n\n'
+            });
+            console.log(result['idEmpresa'])
+
+            $("#empresaSelect").on("change", function () {
+                let idEmpresa = $(this).val();
+
+                if(idEmpresa === ""){
+                    $("#auditoriasContainer").html("");
+                    return;
+                }
+
+                selectAuditoriaEmpresa(idEmpresa);
+            });
+
+        },
+        error: function(xhr) {
+            console.log(xhr.responseText);
+            alert("Erro ao pesquisar empresas");
+        }
+    });
 }
 
 function selectEmpresa() {
