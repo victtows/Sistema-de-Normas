@@ -1,3 +1,5 @@
+const { jsPDF } = window.jspdf;
+
 function abrirPagina(pagina){
     if(pagina === 'iso27001'){
         window.location.href = 'pagina27001.php';
@@ -306,8 +308,124 @@ function limparSelect() {
     document.getElementById('empresaSelect').options.length = 0;
 }
 
-function GerarPDF(){
-    
+function gerarPDF(idPesquisa){
+    $.ajax({
+        url: "../Backend/formulario.php",
+        type: "POST",
+        data: {
+            tipo_acao: "select_resultado",
+            idPesquisa: idPesquisa
+        },
+        dataType: "json",
+
+        success: function(result) {
+
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+
+
+            // CABEÇALHO
+            doc.setFontSize(20);
+            doc.text("Relatório de Auditoria", 14, 20);
+
+            doc.setFontSize(11);
+            doc.text(`Data da Auditoria: ${result.dataAuditoria}`, 14, 30);
+
+
+
+            // RESUMO
+            doc.setFontSize(14);
+            doc.text("Resumo", 14, 45);
+
+            doc.setFontSize(11);
+            doc.text(`Conforme: ${result.estatisticas.conforme}`, 14, 55);
+            doc.text(`Não Conforme: ${result.estatisticas.naoConforme}`, 75, 55);
+            doc.text(`Não Aplicável: ${result.estatisticas.naoAplicavel}`, 145, 55);
+
+
+
+            // TABELA
+            let tabela = [];
+
+            result.dados.forEach(item => {
+
+                let resultadoTexto = "";
+                let andamentoTexto = "";
+
+                switch(item.resultado){
+                    case "1": resultadoTexto = "Conforme"; break;
+                    case "0": resultadoTexto = "Não Conforme"; break;
+                    case "3": resultadoTexto = "Não Aplicável"; break;
+                }
+
+                switch(item.andamento){
+                    case "1": andamentoTexto = "Sim"; break;
+                    case "2": andamentoTexto = "Não"; break;
+                    default: andamentoTexto = "-";
+                }
+
+                tabela.push([
+                    item.numeroControle,
+                    item.descricaoControle || "-", 
+                    resultadoTexto,
+                    andamentoTexto,
+                    item.observacao || "-"
+                ]);
+            });
+
+            doc.autoTable({
+                startY: 65,
+
+                head: [[
+                    "Controle",
+                    "Descrição",
+                    "Resultado",
+                    "Andamento",
+                    "Observação"
+                ]],
+
+                body: tabela,
+
+                styles: {
+                    fontSize: 8,
+                    cellPadding: 3,
+                    overflow: "linebreak"
+                },
+
+                headStyles: {
+                    fillColor: [248, 217, 66],
+                    textColor: [0, 0, 0]
+                },
+
+                columnStyles: {
+                    0: { cellWidth: 25 },
+                    1: { cellWidth: 60 },
+                    2: { cellWidth: 25 },
+                    3: { cellWidth: 25 },
+                    4: { cellWidth: 55 }
+                }
+            });
+
+
+
+            // RODAPÉ
+            const paginas = doc.internal.getNumberOfPages();
+
+            for(let i = 1; i <= paginas; i++){
+                doc.setPage(i);
+                doc.setFontSize(9);
+                doc.text(`Página ${i} de ${paginas}`, 170, 290);
+            }
+
+            doc.save(`auditoria_${idPesquisa}_${result.dataAuditoria}.pdf`);
+        },
+
+        error: function(xhr){
+            console.log(xhr.responseText);
+            alert("Erro ao gerar PDF");
+        }
+    });
 }
 
 

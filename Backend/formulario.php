@@ -115,9 +115,13 @@ if(!isset($_SESSION["usuario"])){
             ]);
         } elseif($tipo_acao === "select_resultado"){
             $auditoria = $_POST["idPesquisa"];
-            $sqlResultado = "SELECT * 
-            FROM resultado 
-            WHERE idAuditoria = '$auditoria'";
+            $sqlResultado = "SELECT 
+                r.*,
+                c.descricaoControle
+            FROM resultado r
+            INNER JOIN controle c
+                ON c.numero = r.numeroControle
+            WHERE r.idAuditoria = '$auditoria';";
 
             $queryResultado = mysqli_query(
                 $conexao, 

@@ -39,7 +39,7 @@ if(!isset($_SESSION["usuario"])){
             <span class="text">Empresas</span>
         </a>
 
-        <a href="#" class="menu-item" onclick="gerarPDF()">
+        <a href="#" class="menu-item" onclick="gerarPDF(idPesquisa)">
             <span class="icon"><i class="fa-solid fa-file-pdf"></i></span>
             <span class="text">Gerar PDF</span>
         </a>
@@ -94,4 +94,9 @@ if(!isset($_SESSION["usuario"])){
     console.log(idPesquisa);
     resultadosPesquisa(idPesquisa); 
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+
+<script src="./script.js"></script>
 </html>
