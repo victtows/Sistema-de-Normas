@@ -188,6 +188,22 @@ if(!isset($_SESSION["usuario"])){
                 "dataAuditoria" => $dataAuditoria["dataAuditoria"],
                 "observacoes" => $observacoes
             ]);
+        } elseif($tipo_acao === "select_auditoria"){
+            $idEmpresa = $_POST["idEmpresa"];
+            $sql = "SELECT * 
+            FROM Auditoria
+            WHERE idEmpresa = '$idEmpresa'
+            ORDER BY dataAuditoria DESC";
+
+            $resultado = mysqli_query($conexao, $sql);
+
+            $auditorias = [];
+
+            while($linha = mysqli_fetch_assoc($resultado)){
+                $auditorias[] = $linha;
+            }
+
+            echo json_encode($auditorias);
         }
 
     }

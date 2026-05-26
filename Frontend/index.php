@@ -76,8 +76,8 @@ if(!isset($_SESSION["usuario"])){
                         <h3>Cadastrar uma Empresa</h3>
                     </button>
 
-                    <button onclick="abrirPagina('historico')" class="norma-btn iso27701">
-                        <h3>Abrir histórico de Auditoria</h3>
+                    <button onclick="abrirPagina('usuario')" class="norma-btn iso27701">
+                        <h3>Abrir Perfil de Usuário</h3>
                     </buttn>
                 </div>  
 
