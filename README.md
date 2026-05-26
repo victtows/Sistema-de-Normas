@@ -49,7 +49,7 @@ O sistema permite o cadastro de usuários, empresas e a realização de auditori
 
 ## 👤 Diagrama de Caso de Uso
 
-![Diagrama de Caso de Uso](assets/img/diagramadecasodeuso.png)
+![Diagrama de Caso de Uso](assets/img/diagramacasodeuso.png)
 
 ---
 
@@ -61,5 +61,5 @@ O sistema permite o cadastro de usuários, empresas e a realização de auditori
 
 ## 📊 Outro Diagrama
 
-![Diagrama](assets/img/diagramadecase.png)
+![Diagrama](assets/img/diagramadeclase.png)
 
