@@ -312,6 +312,7 @@ if(!isset($_SESSION["usuario"])){
                 echo json_encode($todasAuditorias);
             } else {
                 echo json_encode(["success" => false, "error" => mysqli_error($conexao)]);
-            }    
+            }
+        }
 }   
 ?>

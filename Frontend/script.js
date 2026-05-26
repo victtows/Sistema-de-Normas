@@ -288,6 +288,22 @@ function resultadosPesquisa(idPesquisa) {
     });
 }
 
+var grafico_atual = 0;
+var numero_de_categorias = 4;
+
+function nextGrafico(n) {
+    
+    if (grafico_atual >= numero_de_categorias.length) {
+        return false;
+    } else {
+        grafico_atual = grafico_atual + n;
+        Chart.getChart('grafico_segregado').destroy()
+    }
+
+    resultadoPesquisaSegregado(idPesquisa);
+}
+
+
 function resultadoPesquisaSegregado(idPesquisa) {
     $.ajax({
         url: "../Backend/formulario.php",
@@ -298,12 +314,10 @@ function resultadoPesquisaSegregado(idPesquisa) {
         },
         dataType: "json",
         
-        success: function(result) {
-            console.log(result);
-            result['estatisticas'].forEach(element => {
-                document.getElementById('grafico_segregado').innerHTML += '<canvas id="grafico_barra'+element['categoria']+'"></canvas>'
-                gerarGraficoBarraSegregada(element);
-            });
+        success: function(result) {        
+            console.log(result['estatisticas'][grafico_atual])
+            numero_de_categorias = result['estatisticas'].length
+            gerarGraficoBarraSegregada(result['estatisticas'][grafico_atual]);
              
         },
         error: function(xhr) {
@@ -314,24 +328,54 @@ function resultadoPesquisaSegregado(idPesquisa) {
 }
 
 function gerarGraficoBarraSegregada(resultado) {
+    const categoriaControle = ['Condições para coleta e tratamento', 'Obrigações com os titulares de DP',
+    'Privacidade por design e privacidade por default',
+    'Compartilhamento, transferência e divulgaçãod e DP',
+    'Controles Organizacionais',
+    'Controles de Pessoas',
+    'Controles Físicos',
+    'Controles Tecnológicos',
+    'Considerações de Segurança para controladores e operadores de DP']
+    
+    if (grafico_atual == 0) {
+        document.getElementById("prevBtn").style.display = "none";
+    } else {
+        document.getElementById("prevBtn").style.display = "inline";
+    }
+
+    if (grafico_atual == (numero_de_categorias - 1)) {
+        document.getElementById("nextBtn").style.display = "none";
+
+    } else {
+        document.getElementById("nextBtn").style.display = "inline";
+    }
+
+    
     const data = {
-        
+        labels: [
+            'Não Conforme',
+            'Não Aplicavel',
+            'Conforme',
+        ],
+        datasets: [{
+            label: categoriaControle[(resultado['categoria'] -1)],
+            data: [resultado['naoConforme'], resultado['naoAplicavel'], resultado['conforme']],
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(255, 205, 86)',
+                'rgb(86, 255, 205)'
+
+            ],
+            hoverOffset: 4
+        }]
     }
     const config = {
-        type: 'bar',
+        type: 'pie',
         data: data,
-        options: {
-            scales: {
-                x: {
-                    stacked: true
-                },
-                y: {
-                    stacked: true
-                }
-            }
-        }
     }
+    new Chart(document.getElementById('grafico_segregado'), config);
     
+    document.getElementById('categoriaControle').innerHTML = categoriaControle[(resultado['categoria'] -1)]
 }
 
 

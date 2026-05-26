@@ -51,7 +51,7 @@ if(!isset($_SESSION["usuario"])){
     
     </div>
     <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 1rem;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
             <section class="card">
                 <div style="width: 100%; text-align: center;">
                     <h2>Resultado da Auditoria</h2>
@@ -59,8 +59,18 @@ if(!isset($_SESSION["usuario"])){
                 </div>
             </section>
             <section class="card">
-                <div style="width: 100%; text-align: center;" id="grafico_segregado">
-                    <h2>Resultado Parcial</h2>
+                <div style="width: 100%; text-align: center;">
+                    <h2>Resultado Parcial:</h2>
+                    <h3 id="categoriaControle"></h3>
+                    <div id="grafico_que_segrega">
+                        <canvas id="grafico_segregado"></canvas>
+                    </div>
+                    <div style='overflow:auto;'> 
+                    <div style='float:center; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; '>  
+                        <button type='button' id='prevBtn' onclick='nextGrafico(-1)'>Previous</button>
+                        <button type='button' id='nextBtn' onclick='nextGrafico(1)'>Next</button>
+                    </div>
+            </div>
                 </div>
             </section>
         </div>

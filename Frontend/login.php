@@ -9,7 +9,7 @@
 <body>
 
 <div class="brand">
-    <img src="/assets/img/beecat.png" alt="BeeCat Logo">
+    <img src="../assets/img/beecat.png" alt="BeeCat Logo">
     <span>BeeCat Login</span>
 </div>
 
