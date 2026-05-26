@@ -1,49 +1,49 @@
 const { jsPDF } = window.jspdf;
 
-function abrirPagina(pagina){
-    if(pagina === 'iso27001'){
+function abrirPagina(pagina) {
+    if (pagina === 'iso27001') {
         window.location.href = 'pagina27001.php';
-    } else if(pagina === 'iso27701'){
+    } else if (pagina === 'iso27701') {
         window.location.href = 'pagina27701.php';
-    } else if(pagina === 'historico'){
+    } else if (pagina === 'historico') {
         window.location.href = "historico.php";
-    } else if(pagina === 'empresa') {
+    } else if (pagina === 'empresa') {
         window.location.href = 'empresa.php'
-    } else if(pagina === 'usuario') {
+    } else if (pagina === 'usuario') {
         window.location.href = 'usuario.php'
     } else {
         alert("Página não encontrada");
     }
 }
 
-function cadastrarEmpresa(){
+function cadastrarEmpresa() {
     $.ajax({
-            url: "../Backend/formulario.php",
-            type: "post",
-            data: {
-                tipo_acao: "cadastro",
-                filtros: {
-                    cnpj: $("#cnpjEmpresa").val(),
-                    nomeEmpresa: $("#novaEmpresa").val(), 
-                    email: $("#emailEmpresa").val(), 
-                    descricao: $("#descricaoEmpresa").val(), 
-                    endereco: $("#enderecoEmpresa").val(), 
-                }
-            },
-            success: function (result) {
-                console.log("Empresa salvou");
-                alert('salvouu');
-                limparSelect()
-                selectEmpresa() 
-            },
-            error: function (data) {
-                console.log(data);
-                alert('OCorreu um erro eu acho');
+        url: "../Backend/formulario.php",
+        type: "post",
+        data: {
+            tipo_acao: "cadastro",
+            filtros: {
+                cnpj: $("#cnpjEmpresa").val(),
+                nomeEmpresa: $("#novaEmpresa").val(),
+                email: $("#emailEmpresa").val(),
+                descricao: $("#descricaoEmpresa").val(),
+                endereco: $("#enderecoEmpresa").val(),
             }
-        });
+        },
+        success: function (result) {
+            console.log("Empresa salvou");
+            alert('salvouu');
+            limparSelect()
+            selectEmpresa()
+        },
+        error: function (data) {
+            console.log(data);
+            alert('OCorreu um erro eu acho');
+        }
+    });
 }
 
-function selectAuditoriaEmpresa(idEmpresa){
+function selectAuditoriaEmpresa(idEmpresa) {
     console.log("ele verificou papai")
     $.ajax({
         url: "../Backend/formulario.php",
@@ -54,9 +54,9 @@ function selectAuditoriaEmpresa(idEmpresa){
             idEmpresa: idEmpresa
         },
 
-        success: function(result){
+        success: function (result) {
             $("#auditoriasContainer").html("");
-            if(result.length === 0){
+            if (result.length === 0) {
                 $("#auditoriasContainer").html(`
                     <section class="card">
                         Nenhuma auditoria encontrada
@@ -65,32 +65,31 @@ function selectAuditoriaEmpresa(idEmpresa){
                 return;
             }
             result.forEach((auditoria) => {
+                console.log(auditoria)
                 $("#auditoriasContainer").append(`
                     <section class="card auditoria-card">
+                        <h2>${auditoria.nomeEmpresa}</h2>
                         <h3>Auditoria #${auditoria.idAuditoria}</h3>
-                        <p>Data: ${auditoria.dataAuditoria}</p>
-
-                        <button onclick="abrirResultadoUser(${auditoria.idAuditoria})">
-                            Ver Resultado
-                        </button>
-                    </section>
-                `);
-            });
+                        <p style="font-weight: bold";>Data: ${auditoria.dataAuditoria}</p>
+                        <p style="font-weight: bold";>Endereço: ${auditoria.enderecoEmpresa}</p>
+                        <p style="font-weight: bold";>Email: ${auditoria.emailEmpresa}</p>
+                        <p style="font-weight: bold";>Descrição: ${auditoria.descricaoEmpresa}</p>
+                        <button onclick="abrirResultadoUser(${auditoria.idAuditoria})">Ver Resultado</button>
+                    </section>`);});
         },
-
-        error: function(xhr){
+        error: function (xhr) {
             console.log(xhr.responseText);
             alert("Erro ao buscar auditorias");
         }
     });
 }
 
-function abrirResultadoUser(idPesquisa){
+function abrirResultadoUser(idPesquisa) {
     sessionStorage.setItem("idPesquisa", idPesquisa);
     window.location.href = "resultado.php";
 }
 
-function selectEmpresaUser(){
+function selectEmpresaUser() {
     $.ajax({
         url: "../Backend/formulario.php",
         type: "POST",
@@ -98,8 +97,8 @@ function selectEmpresaUser(){
             tipo_acao: "select_empresa"
         },
         dataType: "json",
-        
-        success: function(result) {
+
+        success: function (result) {
             console.log(result);
 
             result.forEach((element) => {
@@ -110,7 +109,7 @@ function selectEmpresaUser(){
             $("#empresaSelect").on("change", function () {
                 let idEmpresa = $(this).val();
 
-                if(idEmpresa === ""){
+                if (idEmpresa === "") {
                     $("#auditoriasContainer").html("");
                     return;
                 }
@@ -119,7 +118,7 @@ function selectEmpresaUser(){
             });
 
         },
-        error: function(xhr) {
+        error: function (xhr) {
             console.log(xhr.responseText);
             alert("Erro ao pesquisar empresas");
         }
@@ -134,8 +133,8 @@ function selectEmpresa() {
             tipo_acao: "select_empresa"
         },
         dataType: "json",
-        
-        success: function(result) {
+
+        success: function (result) {
             console.log(result);
 
             result.forEach((element) => {
@@ -144,7 +143,7 @@ function selectEmpresa() {
 
 
         },
-        error: function(xhr) {
+        error: function (xhr) {
             console.log(xhr.responseText);
             alert("Erro ao pesquisar empresas");
         }
@@ -164,14 +163,14 @@ function resultadoFormulario() {
             empresa: $("#empresaSelect").val(),
         },
         success: function (result) {
-                console.log("Pesquisa salvou");
-                let idPesquisa = result.idPesquisa;
-                SalvarAuditoria(idPesquisa)
-            },
-            error: function (data) {
-                console.log(data);
-                alert('OCorreu um erro eu acho');
-            }
+            console.log("Pesquisa salvou");
+            let idPesquisa = result.idPesquisa;
+            SalvarAuditoria(idPesquisa)
+        },
+        error: function (data) {
+            console.log(data);
+            alert('OCorreu um erro eu acho');
+        }
     });
 }
 
@@ -196,10 +195,10 @@ function SalvarAuditoria(idPesquisa) {
         let andamento = $(
             `input[name='${numeroControle}-subq']:checked`
         )
-        .closest("label")
-        .find("span:last")
-        .text()
-        .trim();
+            .closest("label")
+            .find("span:last")
+            .text()
+            .trim();
 
         let observacao = $(
             `input[name='${numeroControle}-ob']`
@@ -223,16 +222,16 @@ function SalvarAuditoria(idPesquisa) {
             idPesquisa: idPesquisa,
         },
         success: function (result) {
-                console.log("auditoriaaasdasdasdasdasde me mataaaa salvou");
-                alert('auditoria salvouu');
-                sessionStorage.setItem("idPesquisa", result.idPesquisa);
-                window.location.href = "resultado.php";
+            console.log("auditoriaaasdasdasdasdasde me mataaaa salvou");
+            alert('auditoria salvouu');
+            sessionStorage.setItem("idPesquisa", result.idPesquisa);
+            window.location.href = "resultado.php";
 
-            },
-            error: function (data) {
-                console.log(data);
-                alert('OCorreu um erro eu acho');
-            }
+        },
+        error: function (data) {
+            console.log(data);
+            alert('OCorreu um erro eu acho');
+        }
     });
 }
 
@@ -245,8 +244,8 @@ function resultadosPesquisa(idPesquisa) {
             idPesquisa: idPesquisa
         },
         dataType: "json",
-        
-        success: function(result) {
+
+        success: function (result) {
             console.log(result);
             let html = "";
             gerarGraficoPizza(result);
@@ -257,10 +256,11 @@ function resultadosPesquisa(idPesquisa) {
                         <td>${obs.numeroControle}</td>
                         <td>${obs.descricaoControle}</td>
                         <td>${obs.observacao}</td>
-                        </tr>`;});
+                        </tr>`;
+            });
             $("#corpoObservacoes").html(html);
         },
-        error: function(xhr) {
+        error: function (xhr) {
             console.log(xhr.responseText);
             alert("Erro ao pesquisar empresas");
         }
@@ -276,12 +276,12 @@ function gerarGraficoPizza(resultado) {
         ],
         datasets: [{
             label: 'Distribuição de Conformidade',
-            data: [(resultado['dados'].length - (resultado['estatisticas']['conforme']) - ( + resultado['estatisticas']['naoAplicavel'])), resultado['estatisticas']['naoAplicavel'], resultado['estatisticas']['conforme']],
+            data: [(resultado['dados'].length - (resultado['estatisticas']['conforme']) - (+ resultado['estatisticas']['naoAplicavel'])), resultado['estatisticas']['naoAplicavel'], resultado['estatisticas']['conforme']],
             backgroundColor: [
                 'rgb(255, 99, 132)',
                 'rgb(255, 205, 86)',
                 'rgb(86, 255, 205)'
-                
+
             ],
             hoverOffset: 4
         }]
@@ -294,8 +294,8 @@ function gerarGraficoPizza(resultado) {
 }
 
 function percentage(partialValue, totalValue) {
-   return (100 * partialValue) / totalValue;
-} 
+    return (100 * partialValue) / totalValue;
+}
 
 function gerarBarraProgresso(resultado) {
 
@@ -308,7 +308,7 @@ function limparSelect() {
     document.getElementById('empresaSelect').options.length = 0;
 }
 
-function gerarPDF(idPesquisa){
+function gerarPDF(idPesquisa) {
     $.ajax({
         url: "../Backend/formulario.php",
         type: "POST",
@@ -318,7 +318,7 @@ function gerarPDF(idPesquisa){
         },
         dataType: "json",
 
-        success: function(result) {
+        success: function (result) {
 
             const { jsPDF } = window.jspdf;
             const doc = new jsPDF();
@@ -353,13 +353,13 @@ function gerarPDF(idPesquisa){
                 let resultadoTexto = "";
                 let andamentoTexto = "";
 
-                switch(item.resultado){
+                switch (item.resultado) {
                     case "1": resultadoTexto = "Conforme"; break;
                     case "0": resultadoTexto = "Não Conforme"; break;
                     case "3": resultadoTexto = "Não Aplicável"; break;
                 }
 
-                switch(item.andamento){
+                switch (item.andamento) {
                     case "1": andamentoTexto = "Sim"; break;
                     case "2": andamentoTexto = "Não"; break;
                     default: andamentoTexto = "-";
@@ -367,7 +367,7 @@ function gerarPDF(idPesquisa){
 
                 tabela.push([
                     item.numeroControle,
-                    item.descricaoControle || "-", 
+                    item.descricaoControle || "-",
                     resultadoTexto,
                     andamentoTexto,
                     item.observacao || "-"
@@ -412,7 +412,7 @@ function gerarPDF(idPesquisa){
             // RODAPÉ
             const paginas = doc.internal.getNumberOfPages();
 
-            for(let i = 1; i <= paginas; i++){
+            for (let i = 1; i <= paginas; i++) {
                 doc.setPage(i);
                 doc.setFontSize(9);
                 doc.text(`Página ${i} de ${paginas}`, 170, 290);
@@ -421,7 +421,7 @@ function gerarPDF(idPesquisa){
             doc.save(`auditoria_${idPesquisa}_${result.dataAuditoria}.pdf`);
         },
 
-        error: function(xhr){
+        error: function (xhr) {
             console.log(xhr.responseText);
             alert("Erro ao gerar PDF");
         }
@@ -436,7 +436,7 @@ showTab(currentTab)
 function showTab(n) {
     var x = document.getElementsByClassName('tab');
     x[n].style.display = "block";
-    
+
     if (n == 0) {
         document.getElementById("prevBtn").style.display = "none";
     } else {
@@ -454,8 +454,8 @@ function showTab(n) {
 
 function nextPrev(n) {
     var x = document.getElementsByClassName("tab");
-    
-    
+
+
 
     x[currentTab].style.display = "none";
     currentTab = currentTab + n;
@@ -468,7 +468,7 @@ function nextPrev(n) {
     showTab(currentTab);
 }
 
-function validacaoSubmit(){
+function validacaoSubmit() {
     let empresa = $("#empresaSelect").val();
 
     if (!empresa) {
@@ -505,21 +505,21 @@ function validacaoSubmit(){
 }
 
 function validateForm() {
-  var x, y, i, valid = true;
-  x = document.getElementsByClassName("tab");
-  y = x[currentTab].getElementsByTagName("input");
+    var x, y, i, valid = true;
+    x = document.getElementsByClassName("tab");
+    y = x[currentTab].getElementsByTagName("input");
 
-  for (i = 0; i < y.length; i++) {
+    for (i = 0; i < y.length; i++) {
 
-    if (y[i].value == "") {
+        if (y[i].value == "") {
 
-      y[i].className += " invalid";
+            y[i].className += " invalid";
 
-      valid = false;
+            valid = false;
+        }
     }
-  }
 
-  return valid; 
+    return valid;
 }
 
 /// CONTADOR DE QUESTOES ///

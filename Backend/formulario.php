@@ -246,10 +246,18 @@ if(!isset($_SESSION["usuario"])){
             ]);
         } elseif($tipo_acao === "select_auditoria"){
             $idEmpresa = $_POST["idEmpresa"];
-            $sql = "SELECT * 
-            FROM Auditoria
-            WHERE idEmpresa = '$idEmpresa'
-            ORDER BY dataAuditoria DESC";
+            $sql = "SELECT 
+                    a.*,
+                    e.nomeEmpresa,
+                    e.CNPJ,
+                    e.emailEmpresa,
+                    e.descricaoEmpresa,
+                    e.enderecoEmpresa
+                FROM Auditoria a
+                INNER JOIN Empresa e
+                    ON e.idEmpresa = a.idEmpresa
+                WHERE a.idEmpresa = '$idEmpresa'
+                ORDER BY a.dataAuditoria DESC;";
 
             $resultado = mysqli_query($conexao, $sql);
 
