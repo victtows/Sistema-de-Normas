@@ -188,7 +188,59 @@ if(!isset($_SESSION["usuario"])){
                 "dataAuditoria" => $dataAuditoria["dataAuditoria"],
                 "observacoes" => $observacoes
             ]);
-        }
+        } else if ($tipo_acao == "select_resultado_segregado") {
+            
+            $auditoria = $_POST["idPesquisa"];
+
+            $categorias_encontradas = "SELECT DISTINCT (
+                SELECT categoria
+                FROM Controle
+                WHERE Controle.numero = Resultado.numeroControle
+                LIMIT 1
+            ) AS categoria
+            FROM resultado
+            WHERE idAuditoria = '$auditoria';";
+            
+            $queryCategorias = mysqli_query(
+                $conexao,
+                $categorias_encontradas
+            );
+
+            $categorias = [];
+
+            while ($linha = mysqli_fetch_assoc($queryCategorias)){
+                $categorias[] = $linha;
+            };
+            
+            $estatisticas = [];
+
+            $cat = "categoria";
+
+            foreach($categorias as $categoria) {
+                $sqlEstatistica = "SELECT 
+	                COUNT(CASE WHEN resultado = 1 THEN 1 END) AS conforme,
+                    COUNT(CASE WHEN resultado = 0 THEN 1 END) AS naoConforme,
+	                COUNT(CASE WHEN resultado = 3 THEN 1 END) AS naoAplicavel,
+                    controle.categoria
+                FROM resultado, controle
+	                WHERE idAuditoria = '$auditoria' AND controle.categoria = '$categoria[$cat]' AND controle.numero = resultado.numeroControle";
+
+                $queryCategoria = mysqli_query(
+                    $conexao,
+                    $sqlEstatistica
+                );
+
+                $estatisticas[] = mysqli_fetch_assoc(
+                    $queryCategoria
+                );
+            }
+
+
+            echo json_encode([
+                "success" => true,
+                "estatisticas" => $estatisticas
+            ]);
+        }       
 
     }
 ?>

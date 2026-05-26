@@ -83,5 +83,6 @@ if(!isset($_SESSION["usuario"])){
     let idPesquisa = sessionStorage.getItem("idPesquisa");
     console.log(idPesquisa);
     resultadosPesquisa(idPesquisa); 
+    resultadoPesquisaSegregado(idPesquisa);
 </script>
 </html>
