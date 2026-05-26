@@ -49,17 +49,17 @@ O sistema permite o cadastro de usuários, empresas e a realização de auditori
 
 ## 👤 Diagrama de Caso de Uso
 
-![Diagrama de Caso de Uso](assets/img/diagramacasodeuso.png)
+![Diagrama de Caso de Uso](/assets/img/diagramacasodeuso.png)
 
 ---
 
 ## 🧱 Diagrama UML
 
-![Diagrama UML](assets/img/diagramauml.png)
+![Diagrama UML](/assets/img/diagramauml.png)
 
 ---
 
 ## 📊 Diagrama de classe
 
-![Diagrama](assets/img/diagramadeclasse.png)
+![Diagrama](/assets/img/diagramadeclasse.png)
 
