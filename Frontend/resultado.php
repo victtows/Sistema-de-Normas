@@ -59,9 +59,8 @@ if(!isset($_SESSION["usuario"])){
                 </div>
             </section>
             <section class="card">
-                <div style="width: 100%; text-align: center;">
+                <div style="width: 100%; text-align: center;" id="grafico_segregado">
                     <h2>Resultado Parcial</h2>
-                    <canvas id="grafico_barra"></canvas>
                 </div>
             </section>
         </div>

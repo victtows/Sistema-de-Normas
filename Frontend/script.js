@@ -267,6 +267,53 @@ function resultadosPesquisa(idPesquisa) {
     });
 }
 
+function resultadoPesquisaSegregado(idPesquisa) {
+    $.ajax({
+        url: "../Backend/formulario.php",
+        type: "POST",
+        data: {
+            tipo_acao: "select_resultado_segregado",
+            idPesquisa: idPesquisa
+        },
+        dataType: "json",
+        
+        success: function(result) {
+            console.log(result);
+            result['estatisticas'].forEach(element => {
+                document.getElementById('grafico_segregado').innerHTML += '<canvas id="grafico_barra'+element['categoria']+'"></canvas>'
+                gerarGraficoBarraSegregada(element);
+            });
+             
+        },
+        error: function(xhr) {
+            console.log(xhr.responseText);
+            alert("Erro ao pesquisar empresas");
+        }
+    });
+}
+
+function gerarGraficoBarraSegregada(resultado) {
+    const data = {
+        
+    }
+    const config = {
+        type: 'bar',
+        data: data,
+        options: {
+            scales: {
+                x: {
+                    stacked: true
+                },
+                y: {
+                    stacked: true
+                }
+            }
+        }
+    }
+    
+}
+
+
 function gerarGraficoPizza(resultado) {
     const data = {
         labels: [
