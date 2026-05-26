@@ -55,7 +55,7 @@ O sistema permite o cadastro de usuários, empresas e a realização de auditori
 
 ## 🧱 Diagrama UML
 
-![Diagrama UML](assets/img/diagramauml.png.png)
+![Diagrama UML](assets/img/diagramauml.png)
 
 ---
 
