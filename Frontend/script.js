@@ -162,6 +162,8 @@ function resultadosPesquisa(idPesquisa) {
         success: function(result) {
             console.log(result);
             let html = "";
+            gerarGraficoPizza(result);
+            gerarBarraProgresso(result);
 
             result.observacoes.forEach(obs => {
                 html += `<tr>
@@ -176,6 +178,43 @@ function resultadosPesquisa(idPesquisa) {
             alert("Erro ao pesquisar empresas");
         }
     });
+}
+
+function gerarGraficoPizza(resultado) {
+    const data = {
+        labels: [
+            'Não Conforme',
+            'Não Aplicavel',
+            'Conforme',
+        ],
+        datasets: [{
+            label: 'Distribuição de Conformidade',
+            data: [(resultado['dados'].length - (resultado['estatisticas']['conforme']) - ( + resultado['estatisticas']['naoAplicavel'])), resultado['estatisticas']['naoAplicavel'], resultado['estatisticas']['conforme']],
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(255, 205, 86)',
+                'rgb(86, 255, 205)'
+                
+            ],
+            hoverOffset: 4
+        }]
+    }
+    const config = {
+        type: 'pie',
+        data: data,
+    }
+    new Chart(document.getElementById('grafico_pizza'), config);
+}
+
+function percentage(partialValue, totalValue) {
+   return (100 * partialValue) / totalValue;
+} 
+
+function gerarBarraProgresso(resultado) {
+
+    document.getElementById('percentual').innerHTML = Math.round(percentage(resultado['estatisticas']['conforme'], resultado['dados'].length)) + '%';
+    document.getElementById('barraProgresso').value = resultado['estatisticas']['conforme'];
+    document.getElementById('barraProgresso').max = resultado['dados'].length;
 }
 
 function limparSelect() {

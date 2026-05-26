@@ -1028,9 +1028,9 @@ if(!isset($_SESSION["usuario"])){
                                         <span class='custom-radio'></span>
                                         <span>Não</span>
                                     </label>
+                                    <label for="5.26-ob">Observação</label>
+                                    <input type="text" name="5.26-ob" style="display: inline;">
                                 </div>
-                                <label for="5.26-ob">Observação</label>
-                                <input type="text" name="5.26-ob" style="display: inline;">
                             </section>
                         </label>
                         <label class='radio-option NA'>

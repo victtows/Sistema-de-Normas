@@ -40,10 +40,22 @@ if(!isset($_SESSION["usuario"])){
         </a>
     
     </div>
-    <div class="container" style="display: grid; grid-template-columns: 1fr 2fr;">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 1rem;">
+            <section class="card">
+                <div style="width: 100%; text-align: center;">
+                    <h2>Resultado da Auditoria</h2>
+                    <canvas id="grafico_pizza"></canvas>
+                </div>
+            </section>
+            <section class="card">
+            </section>
+        </div>
         <section class="card">
-        </section>
-        <section class="card">
+            <div style="display: flex; flex-direction: row; gap: 1rem;">
+                <h2>Percentual de Conformidade:</h2> <h2 id="percentual"></h2>
+            </div>
+            <progress id="barraProgresso" value="0" max="93" style="width: 100%; height: 1rem;"> </progress>
         </section>
     </div>
         <table id="tabelaObservacoes">
@@ -64,6 +76,6 @@ if(!isset($_SESSION["usuario"])){
 <script>
     let idPesquisa = sessionStorage.getItem("idPesquisa");
     console.log(idPesquisa);
-    resultadosPesquisa(idPesquisa);
+    resultadosPesquisa(idPesquisa); 
 </script>
 </html>
