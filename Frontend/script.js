@@ -161,7 +161,15 @@ function resultadosPesquisa(idPesquisa) {
         
         success: function(result) {
             console.log(result);
+            let html = "";
 
+            result.observacoes.forEach(obs => {
+                html += `<tr>
+                        <td>${obs.numeroControle}</td>
+                        <td>${obs.descricaoControle}</td>
+                        <td>${obs.observacao}</td>
+                        </tr>`;});
+            $("#corpoObservacoes").html(html);
         },
         error: function(xhr) {
             console.log(xhr.responseText);

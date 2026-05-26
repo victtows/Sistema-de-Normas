@@ -115,7 +115,6 @@ if(!isset($_SESSION["usuario"])){
             ]);
         } elseif($tipo_acao === "select_resultado"){
             $auditoria = $_POST["idPesquisa"];
-
             $sqlResultado = "SELECT * 
             FROM resultado 
             WHERE idAuditoria = '$auditoria'";
@@ -160,11 +159,34 @@ if(!isset($_SESSION["usuario"])){
                 $queryData
             );
 
+            $sqlObservacoes = "SELECT
+                r.numeroControle,
+                c.descricaoControle,
+                r.observacao
+            FROM resultado r
+            INNER JOIN controle c
+                ON c.numero = r.numeroControle
+            WHERE r.idAuditoria = '$auditoria'
+            AND r.observacao IS NOT NULL
+            AND r.observacao != ''";
+
+            $queryObservacoes = mysqli_query(
+                $conexao,
+                $sqlObservacoes
+            );
+
+            $observacoes = [];
+
+            while($linha = mysqli_fetch_assoc($queryObservacoes)){
+                $observacoes[] = $linha;
+            }
+
             echo json_encode([
                 "success" => true,
                 "estatisticas" => $estatisticas,
                 "dados" => $dados,
-                "dataAuditoria" => $dataAuditoria["dataAuditoria"]
+                "dataAuditoria" => $dataAuditoria["dataAuditoria"],
+                "observacoes" => $observacoes
             ]);
         }
 

@@ -46,6 +46,17 @@ if(!isset($_SESSION["usuario"])){
         <section class="card">
         </section>
     </div>
+        <table id="tabelaObservacoes">
+            <thead>
+                <tr>
+                    <th>Controle</th>
+                    <th>Pergunta</th>
+                    <th>Observação</th>
+                </tr>
+            </thead>
+        <tbody id="corpoObservacoes">
+    </tbody>
+</table>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="./script.js"></script>
