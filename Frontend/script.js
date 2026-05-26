@@ -89,6 +89,12 @@ function abrirResultadoUser(idPesquisa) {
     window.location.href = "resultado.php";
 }
 
+function abrirHistorico() {
+    var idEmpresa = document.getElementById('empresaSelect').value
+    sessionStorage.setItem("idEmpresa", idEmpresa);
+    window.location.href = "historico.php"
+}
+
 function selectEmpresaUser() {
     $.ajax({
         url: "../Backend/formulario.php",
@@ -186,13 +192,63 @@ function selectHistorico(idEmpresa) {
 
         success: function (result) {
             console.log(result);
-
+            gerarGraficoHistorico(result)
         },
         error: function (xhr) {
             console.log(xhr.responseText);
             alert("Erro ao pesquisar empresas");
         }
     });
+}                
+
+function gerarGraficoHistorico(resultado) {
+    const data = {
+        labels: [
+            resultado[2]['dataAuditoria'],
+            resultado[1]['dataAuditoria'],
+            resultado[0]['dataAuditoria'],
+        ],
+        datasets: [{
+            label: 'Não Conforme',
+            data: [
+                resultado[2]['estatisticas']['naoConforme'],
+                resultado[1]['estatisticas']['naoConforme'],
+                resultado[0]['estatisticas']['naoConforme']
+            ],
+            fill: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            tension: 0.1
+        },
+        {
+            label: 'Conforme',
+            data: [
+                resultado[2]['estatisticas']['conforme'],
+                resultado[1]['estatisticas']['conforme'],
+                resultado[0]['estatisticas']['conforme']
+            ],
+            fill: 'rgb(86, 255, 205)',
+            borderColor: 'rgb(86, 255, 205)',
+            tension: 0.1
+        },
+        {
+            label: 'Não Aplicavel',
+            data: [
+                resultado[2]['estatisticas']['naoAplicavel'],
+                resultado[1]['estatisticas']['naoAplicavel'],
+                resultado[0]['estatisticas']['naoAplicavel']
+            ],
+            fill: 'rgb(255, 205, 86)',
+            borderColor: 'rgb(255, 205, 86)',
+            tension: 0.1
+        }
+    ]
+    };
+    const config = {
+        type: 'line',
+        data: data,
+    };
+
+    new Chart(document.getElementById('grafico_historico'), config);
 }
 
 function SalvarAuditoria(idPesquisa) {
@@ -411,9 +467,9 @@ function percentage(partialValue, totalValue) {
 
 function gerarBarraProgresso(resultado) {
 
-    document.getElementById('percentual').innerHTML = Math.round(percentage(resultado['estatisticas']['conforme'], resultado['dados'].length)) + '%';
+    document.getElementById('percentual').innerHTML = Math.round(percentage(resultado['estatisticas']['conforme'], (resultado['dados'].length - resultado['estatisticas']['naoAplicavel']))) + '%';
     document.getElementById('barraProgresso').value = resultado['estatisticas']['conforme'];
-    document.getElementById('barraProgresso').max = resultado['dados'].length;
+    document.getElementById('barraProgresso').max = (resultado['dados'].length - resultado['estatisticas']['naoAplicavel']);
 }
 
 function limparSelect() {

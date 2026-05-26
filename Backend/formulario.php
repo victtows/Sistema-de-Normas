@@ -270,7 +270,10 @@ if(!isset($_SESSION["usuario"])){
             echo json_encode($auditorias);
         } elseif($tipo_acao === "select_historico"){
             $idEmpresa = $_POST["idEmpresa"];
-            $sql = "SELECT idAuditoria FROM Auditoria WHERE idEmpresa = '$idEmpresa' LIMIT 3";
+            $sql = "SELECT DISTINCT auditoria.idAuditoria FROM auditoria, resultado, controle WHERE idEmpresa = '$idEmpresa' 
+                AND resultado.idAuditoria = auditoria.idAuditoria 
+	            AND resultado.numeroControle = controle.numero AND controle.norma = '27701'
+	            ORDER BY idAuditoria DESC LIMIT 3";
             $resultado = mysqli_query($conexao, $sql);
             
             if($resultado){
@@ -285,7 +288,7 @@ if(!isset($_SESSION["usuario"])){
                         $dados[] = $linha;
                     }
 
-                    $sqlEstatistica = "SELECT COUNT(CASE WHEN resultado = 1 THEN 1 END) AS conforme, COUNT(CASE WHEN resultado = 2 THEN 1 END) AS naoConforme, COUNT(CASE WHEN resultado = 3 THEN 1 END) AS naoAplicavel FROM resultado WHERE idAuditoria = '$auditoria'";
+                    $sqlEstatistica = "SELECT COUNT(CASE WHEN resultado = 1 THEN 1 END) AS conforme, COUNT(CASE WHEN resultado = 0 THEN 1 END) AS naoConforme, COUNT(CASE WHEN resultado = 3 THEN 1 END) AS naoAplicavel FROM resultado WHERE idAuditoria = '$auditoria'";
                     $queryEstatistica = mysqli_query($conexao, $sqlEstatistica);
                     $estatisticas = mysqli_fetch_assoc($queryEstatistica);
 

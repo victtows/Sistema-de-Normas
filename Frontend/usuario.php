@@ -70,6 +70,7 @@ if(!isset($_SESSION["usuario"])){
                     </option>
                 </select>
             </div>
+            <button onclick="abrirHistorico()">Abrir Gráfico Comparativo</button>
         </section>
         <div id="auditoriasContainer" style="display: grid; grid-template-columns:1fr 1fr; gap: 1rem;"></div>
     </body>

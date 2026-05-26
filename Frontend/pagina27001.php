@@ -2678,7 +2678,7 @@ if(!isset($_SESSION["usuario"])){
                                 </div>
                             </section>
                         </label>
-                        <label class='radio-option NlA'>
+                        <label class='radio-option NA'>
                             <input type='radio' name='8.11'>
                             <span class='custom-radio'></span>
                             <span>Não Aplicavel</span>
