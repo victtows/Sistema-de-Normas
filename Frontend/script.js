@@ -65,9 +65,9 @@ function selectEmpresa() {
 }
 
 function resultadoFormulario() {
-    if (!validacaoSubmit()) {
-        return;
-    }
+    // if (!validacaoSubmit()) {
+    //     return;
+    // }
     $.ajax({
         url: "../Backend/formulario.php",
         type: "post",
@@ -91,20 +91,32 @@ function resultadoFormulario() {
 function SalvarAuditoria(idPesquisa) {
     let respostas = {};
     $("input[type='radio']:checked").each(function () {
+
         let nome = $(this).attr("name");
+
         if (nome.includes("-subq")) {
             return;
         }
 
         let numeroControle = nome;
+
         let resultado = $(this)
             .closest("label")
             .find("span:last")
             .text()
             .trim();
 
-        let andamento = $(`input[name='${numeroControle}-subq']:checked`).closest("label").find("span:last").text().trim();
-        let observacao = $(`input[name='${numeroControle}-ob']`).val();
+        let andamento = $(
+            `input[name='${numeroControle}-subq']:checked`
+        )
+        .closest("label")
+        .find("span:last")
+        .text()
+        .trim();
+
+        let observacao = $(
+            `input[name='${numeroControle}-ob']`
+        ).val();
 
         respostas[numeroControle] = {
             resultado: resultado,
@@ -112,6 +124,7 @@ function SalvarAuditoria(idPesquisa) {
             observacao: observacao || null
         };
     });
+
     console.log(respostas);
     $.ajax({
         url: "../Backend/formulario.php",
@@ -125,6 +138,9 @@ function SalvarAuditoria(idPesquisa) {
         success: function (result) {
                 console.log("auditoriaaasdasdasdasdasde me mataaaa salvou");
                 alert('auditoria salvouu');
+                sessionStorage.setItem("idPesquisa", result.idPesquisa);
+                window.location.href = "resultado.php";
+
             },
             error: function (data) {
                 console.log(data);
@@ -133,6 +149,26 @@ function SalvarAuditoria(idPesquisa) {
     });
 }
 
+function resultadosPesquisa(idPesquisa) {
+    $.ajax({
+        url: "../Backend/formulario.php",
+        type: "POST",
+        data: {
+            tipo_acao: "select_resultado",
+            idPesquisa: idPesquisa
+        },
+        dataType: "json",
+        
+        success: function(result) {
+            console.log(result);
+
+        },
+        error: function(xhr) {
+            console.log(xhr.responseText);
+            alert("Erro ao pesquisar empresas");
+        }
+    });
+}
 
 function limparSelect() {
     document.getElementById('empresaSelect').options.length = 0;
@@ -187,7 +223,7 @@ function validacaoSubmit(){
         return false;
     }
 
-     let perguntas = new Set();
+    let perguntas = new Set();
 
     $("input[type='radio']").each(function () {
         let nome = $(this).attr("name");

@@ -79,6 +79,8 @@ if(!isset($_SESSION["usuario"])){
                     case "Não Aplicavel":
                         $resultado = 3;
                         break;
+                    default:
+                        $resultado = 0;
                 }
                 switch($dados["andamento"] ?? ""){
                     case "Sim":
@@ -108,7 +110,61 @@ if(!isset($_SESSION["usuario"])){
 
             echo json_encode([
                 "success" => true,
-                "mensagem" => "Auditoria salva"
+                "mensagem" => "Auditoria salva",
+                "idPesquisa" => $idPesquisa,
+            ]);
+        } elseif($tipo_acao === "select_resultado"){
+            $auditoria = $_POST["idPesquisa"];
+
+            $sqlResultado = "SELECT * 
+            FROM resultado 
+            WHERE idAuditoria = '$auditoria'";
+
+            $queryResultado = mysqli_query(
+                $conexao, 
+                $sqlResultado
+            );
+
+            $dados = [];
+
+            while($linha = mysqli_fetch_assoc($queryResultado)){
+                $dados[] = $linha;
+            }
+
+            $sqlEstatistica = "SELECT
+                COUNT(CASE WHEN resultado = 1 THEN 1 END) AS conforme,
+                COUNT(CASE WHEN resultado = 2 THEN 1 END) AS naoConforme,
+                COUNT(CASE WHEN resultado = 3 THEN 1 END) AS naoAplicavel
+            FROM resultado
+            WHERE idAuditoria = '$auditoria'";
+
+            $queryEstatistica = mysqli_query(
+                $conexao,
+                $sqlEstatistica
+            );
+
+            $estatisticas = mysqli_fetch_assoc(
+                $queryEstatistica
+            );
+
+            $sqlData = "SELECT dataAuditoria
+            FROM auditoria
+            WHERE idAuditoria = '$auditoria'";
+
+            $queryData = mysqli_query(
+                $conexao,
+                $sqlData
+            );
+
+            $dataAuditoria = mysqli_fetch_assoc(
+                $queryData
+            );
+
+            echo json_encode([
+                "success" => true,
+                "estatisticas" => $estatisticas,
+                "dados" => $dados,
+                "dataAuditoria" => $dataAuditoria["dataAuditoria"]
             ]);
         }
 
