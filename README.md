@@ -59,7 +59,7 @@ O sistema permite o cadastro de usuários, empresas e a realização de auditori
 
 ---
 
-## 📊 Outro Diagrama
+## 📊 Diagrama de classe
 
-![Diagrama](assets/img/diagramadeclase.png)
+![Diagrama](assets/img/diagramadeclasse.png)
 
